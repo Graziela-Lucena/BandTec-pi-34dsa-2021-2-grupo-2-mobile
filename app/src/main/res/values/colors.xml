@@ -9,11 +9,13 @@
     <color name="white">#FFFFFFFF</color>
 
 <!--JustGeek NEUTRAL color pallet-->
+    <color name="pattern_light">#E9E9E9</color>
+    <color name="pattern_dark_transparent">#80000000</color>
     <color name="hot_gray">#8B80A5</color>
     <color name="dark_gray">#5E5769</color>
     <color name="light_gray">#34313A</color>
     <color name="medium_gray">#2C2831</color>
-    <color name="dark_purple_gray">#211F26</color>
+    <color name="pattern_dark">#211F26</color>
 <!-- END JustGeek NEUTRAL color pallet-->
 
 <!--JustGeek PINK - PURPLE color pallet-->
@@ -24,11 +26,12 @@
     <color name="dark_purple">#3F1378</color>
 <!-- END JustGeek PINK color pallet-->
 
-<!--JustGeek BLUE color pallet-->
+<!--JustGeek BLUE - GREEN color pallet-->
     <color name="hot_blue">#52C1CC</color>
     <color name="light_blue">#4F8AC8</color>
     <color name="medium_blue">#4B59C5</color>
     <color name="dark_blue">#46359C</color>
+    <color name="hot_green">#13B898</color>
 <!-- END JustGeek BLUE color pallet-->
 
 </resources>
