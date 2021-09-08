@@ -7,4 +7,28 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--JustGeek NEUTRAL color pallet-->
+    <color name="hot_gray">#8B80A5</color>
+    <color name="dark_gray">#5E5769</color>
+    <color name="light_gray">#34313A</color>
+    <color name="medium_gray">#2C2831</color>
+    <color name="dark_purple_gray">#211F26</color>
+<!-- END JustGeek NEUTRAL color pallet-->
+
+<!--JustGeek PINK - PURPLE color pallet-->
+    <color name="hot_pink">#F41B61</color>
+    <color name="dark_pink">#BD1574</color>
+    <color name="light_purple">#75118A</color>
+    <color name="medium_purple">#591381</color>
+    <color name="dark_purple">#3F1378</color>
+<!-- END JustGeek PINK color pallet-->
+
+<!--JustGeek BLUE color pallet-->
+    <color name="hot_blue">#52C1CC</color>
+    <color name="light_blue">#4F8AC8</color>
+    <color name="medium_blue">#4B59C5</color>
+    <color name="dark_blue">#46359C</color>
+<!-- END JustGeek BLUE color pallet-->
+
 </resources>
