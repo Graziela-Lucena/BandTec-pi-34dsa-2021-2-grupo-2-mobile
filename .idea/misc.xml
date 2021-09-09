@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_outline_shopping_bag_24.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_pink_logo.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_purple_logo.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_search.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_search_white.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_shop_black.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/ic_shop_white.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/login_background.xml" value="0.12083333333333333" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/nav_host.xml" value="0.1" />
       </map>
     </option>
