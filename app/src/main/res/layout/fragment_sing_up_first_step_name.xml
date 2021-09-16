@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="Cadastro"
+        app:titleTextAppearance="@style/Exo2_Regular_Title"
+        app:titleTextColor="@color/pattern_light"
+        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        android:background="@color/light_gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/Exo2_Regular_Subtitle_Highlight"
+        android:text="1/5"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/page_indicator"
+        app:layout_constraintTop_toTopOf="@id/page_indicator"
+        android:text="Dados Pessoais"
+        android:textAppearance="@style/Exo2_Regular_Subtitle"
+        android:layout_marginStart="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:src="@drawable/bg_hot_blue"
+        app:layout_constraintStart_toStartOf="@id/page_indicator"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/page_indicator"
+        android:layout_marginTop="6dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira seu nome:"
+        app:layout_constraintTop_toBottomOf="@id/page_indicator"
+        app:layout_constraintStart_toStartOf="@id/page_indicator"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name_title"
+        app:layout_constraintStart_toStartOf="@id/name_title"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/check_name"
+        android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_approve_transparent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira seu sobrenome:"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/page_indicator"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/last_name_title"
+        app:layout_constraintStart_toStartOf="@id/name_title"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/check_last_name"
+        android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/last_name"
+        app:layout_constraintBottom_toBottomOf="@id/last_name"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_approve_transparent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Continuar"
+        android:background="@drawable/bg_light_rounded"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
