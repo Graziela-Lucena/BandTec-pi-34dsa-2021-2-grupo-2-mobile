@@ -10,4 +10,18 @@
         android:name="com.example.justgeek_base_app.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/singUpNameFragment"
+        android:name="com.example.justgeek_base_app.SingUpNameFragment"
+        android:label="SingUpNameFragment"
+        tools:layout="@layout/fragment_sing_up_first_step_name">
+        <argument
+            android:name="name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="last_name_user"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
 </navigation>

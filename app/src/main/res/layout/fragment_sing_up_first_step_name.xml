@@ -111,12 +111,17 @@
         android:src="@drawable/ic_approve_transparent"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="Continuar"
-        android:background="@drawable/bg_light_rounded"/>
+        android:paddingVertical="8dp"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text"
+        android:background="@drawable/bg_button_next"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

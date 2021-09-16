@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/bg_button_next.xml" value="0.2203125" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/bg_hot_blue.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/bg_light_rounded.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/drawable/bg_pattern_button.xml" value="0.67" />
@@ -23,7 +24,7 @@
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/app_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_cadastro_etapa1_nome.xml" value="0.22" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_cadastro_etapa2_cpf.xml" value="0.25" />
-        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.41239316239316237" />
+        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.25" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/nav_host.xml" value="0.1" />
         <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/teste.xml" value="0.67" />
       </map>
