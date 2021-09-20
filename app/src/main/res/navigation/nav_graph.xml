@@ -15,6 +15,15 @@
         android:name="com.example.justgeek_base_app.SingUpNameFragment"
         android:label="SingUpNameFragment"
         tools:layout="@layout/fragment_sing_up_first_step_name">
+        <action
+            android:id="@+id/action_singUpNameFragment_to_singUpCpfFragment"
+            app:destination="@id/singUpCpfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpCpfFragment"
+        android:name="com.example.justgeek_base_app.SingUpCpfFragment"
+        android:label="SingUpCpfFragment"
+        tools:layout="@layout/fragment_sing_up_second_step_cpf">
         <argument
             android:name="name_user"
             app:argType="string"

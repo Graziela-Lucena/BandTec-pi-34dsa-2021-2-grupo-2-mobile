@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">justgeek-base-app</string>
+    <string name="page_indicator_text_sign_up">1/5</string>
+
 </resources>
