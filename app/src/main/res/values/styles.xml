@@ -2,26 +2,26 @@
 <resources>
     <style name="Exo2_Regular_Title">
         <item name="android:fontFamily">@font/regular_exo2</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
     </style>
     <style name="Exo2_Regular_Subtitle_Highlight">
         <item name="android:fontFamily">@font/bold_exo2</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
         <item name="android:textColor">@color/hot_blue</item>
     </style>
     <style name="Exo2_Regular_Subtitle">
         <item name="android:fontFamily">@font/regular_exo2</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
     <style name="Exo2_Regular_Small_Subtitle">
         <item name="android:fontFamily">@font/medium_exo2</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
     <style name="Exo2_Semibold_Button_Text">
         <item name="android:fontFamily">@font/semibold_exo2</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
         <item name="android:textColor">@color/pattern_light</item>
         <item name="android:textAllCaps">true</item>
     </style>

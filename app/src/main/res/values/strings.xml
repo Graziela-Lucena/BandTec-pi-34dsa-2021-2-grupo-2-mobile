@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">justgeek-base-app</string>
-    <string name="page_indicator_text_sign_up">1/5</string>
 
+<!--SING UP REGION STRINGS-->
+    <string name="page_indicator_text_sign_up">%1$d/5</string>
+    <string name="title_sing_up">Cadastro</string>
+    <string name="subtitle_personal_data">Dados Pessoais</string>
+    <string name="button_next_sing_up">Continuar</string>
+    <string name="button_back_sing_up">Voltar</string>
+    <string name="title_name">Insira seu nome:</string>
+    <string name="title_last_name">Insira seu sobrenome:</string>
+    <string name="title_cpf">Insira seu CPF:</string>
+    <string name="title_birthdate">Insira sua data de nascimento:</string>
 </resources>

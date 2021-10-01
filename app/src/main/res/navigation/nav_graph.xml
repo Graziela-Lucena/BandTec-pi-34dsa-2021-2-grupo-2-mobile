@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/singUpNameFragment">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.justgeek_base_app.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/singUpNameFragment"
         android:name="com.example.justgeek_base_app.SingUpNameFragment"
@@ -30,6 +25,27 @@
             app:nullable="false"/>
         <argument
             android:name="last_name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_singUpCpfFragment_to_singUpBirthDateFragment"
+            app:destination="@id/singUpBirthDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpBirthDateFragment"
+        android:name="com.example.justgeek_base_app.SingUpBirthDateFragment"
+        android:label="SingUpBirthDateFragment"
+        tools:layout="@layout/fragment_sign_up_third_step_birthdate">
+        <argument
+            android:name="name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="last_name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="cpf_user"
             app:argType="string"
             app:nullable="false"/>
     </fragment>
