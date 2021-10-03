@@ -45,4 +45,12 @@
     <string name="subtitle_coupon_homepage">Caso você esteja dando “só uma olhadinha”,
         que tal um cupom para impulsionar sua primeira compra?</string>
     <string name="coupon_code">0FF20</string>
+    <string name="title_showcase_category">Categorias - Em Alta</string>
+    <string name="subtitle_showcase_category">Que tal um mar de variedades?</string>
+    <string name="title_showcase_promotion">Promoções da semana</string>
+    <string name="subtitle_showcase_promotion">Confira os produtos disponíveis</string>
+    <string name="title_showcase_faq">FAQ - Suporte</string>
+    <string name="subtitle_showcase_faq">Precisa de uma ajudinha?</string>
+    <string name="title_showcase_be_a_partner">Seja um parceiro</string>
+    <string name="subtitle_showcase_be_a_partner">Faça parte da nossa equipe de artistas</string>
 </resources>
