@@ -11,4 +11,22 @@
     <string name="title_last_name">Insira seu sobrenome:</string>
     <string name="title_cpf">Insira seu CPF:</string>
     <string name="title_birthdate">Insira sua data de nascimento:</string>
+
+    <!--TUTORIAL FIRST ACCESS-->
+    <string name="title_just_geek_tutorial">Just Geek - Quem somos</string>
+    <string name="text_who_we_are">A JustGeek é um ecommerce que oferece uma variedade de estampas
+        que vão da pop culture até o mais oldschool.  Além de tudo, os produtos
+        são lindos e de qualidade.</string>
+    <string name="title_your_ideas_our_trace">Suas ideias, nosso traço</string>
+    <string name="text_your_ideas_our_trace">Você pode customizar suas roupas do modo que quiser.
+        É só deixar a criatividade fluir e conversar com a nossa equipe. Aqui, você com certeza
+        vai achar o que gosta.</string>
+    <string name="title_staff_artists">STAFF - Artistas</string>
+    <string name="text_staff_artists">Você pode se comunicar com a equipe de artistas da
+        JustGeek para fazer seus pedidos customizados. Tenha algo único, só para você.
+        É fácil, rápido e sem estresse.</string>
+    <string name="title_see_you_later">Até mais ver</string>
+    <string name="text_see_you_later">Aguardamos ansiosamente pelos seus pedidos, seja de qual
+        parte do Brasil forem. Agora, explore e aproveite nosso app, com uma variedade
+        imensa de estampas.  A JustGeek agradece!</string>
 </resources>
