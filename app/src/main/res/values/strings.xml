@@ -53,4 +53,18 @@
     <string name="subtitle_showcase_faq">Precisa de uma ajudinha?</string>
     <string name="title_showcase_be_a_partner">Seja um parceiro</string>
     <string name="subtitle_showcase_be_a_partner">Faça parte da nossa equipe de artistas</string>
+
+    <!--SIDE MENU-->
+    <string name="title_profile_sidemenu">Perfil</string>
+    <string name="title_configuration_sidemenu">Configurações</string>
+    <string name="title_notification_sidemenu">Notificações</string>
+    <string name="title_buy_sidemenu">Compras</string>
+    <string name="title_category_sidemenu">Categorias</string>
+    <string name="title_favorites_sidemenu">Favoritos</string>
+    <string name="title_custom_sidemenu">Customização</string>
+    <string name="title_artist_gallery_sidemenu">Galeria de Artistas</string>
+    <string name="title_coupons_sidemenu">Cupons</string>
+    <string name="title_faq_sidemenu">FAQ - Perguntas Frequentes</string>
+    <string name="title_about_us_sidemenu">Sobre nós</string>
+    <string name="title_logout_sidemenu">Sair</string>
 </resources>
