@@ -67,4 +67,28 @@
     <string name="title_faq_sidemenu">FAQ - Perguntas Frequentes</string>
     <string name="title_about_us_sidemenu">Sobre nós</string>
     <string name="title_logout_sidemenu">Sair</string>
+
+    <!--CATEGORY PAGE-->
+    <string name="title_showcase_category_page">CARTOONS - Séries animadas</string>
+    <string name="subtitle_showcase_category_page">Coleção de desenhos animados como Hora de
+    Aventura, Apenas um Show, Castlevania e mais.</string>
+    <string name="title_filter_category_page">FILTROS</string>
+    <string name="title_products_category_page">TODOS OS PRODUTOS</string>
+    <string name="title_filter_choose_t_shirt_category_page">Camiseta</string>
+    <string name="title_filter_choose_sweatshirt_category_page">Moletom</string>
+    <string name="title_filter_choose_pants_category_page">Calça</string>
+    <string name="title_filter_choose_custom_category_page">Custom</string>
+    <string name="title_filter_price_category_page">Preço</string>
+    <string name="subtitle_filter_price_bold_category_page">R$ 00.00</string>
+    <string name="subtitle_filter_start_price_category_page">R$ 00.00</string>
+    <string name="subtitle_filter_end_price_category_page">R$ 00.00</string>
+    <string name="title_filter_tam_category_page">Tamanho</string>
+    <string name="subtitle_filter_tam_pp">PP</string>
+    <string name="subtitle_filter_tam_p">P</string>
+    <string name="subtitle_filter_tam_m">M</string>
+    <string name="subtitle_filter_tam_g">G</string>
+    <string name="subtitle_filter_tam_gg">GG</string>
+    <string name="subtitle_filter_tam_xgg">XGG</string>
+    <string name="title_filter_title_category_page">Título</string>
+    <string name="subtitle_filter_title_category_page">Hora de Aventura</string>
 </resources>
