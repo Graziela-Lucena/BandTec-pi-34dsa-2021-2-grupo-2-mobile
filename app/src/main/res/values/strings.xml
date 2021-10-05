@@ -112,4 +112,12 @@
     <string name="title_finalize_request_question">Deseja finalizar o pedido?</string>
     <string name="title_button_finalize_yes">Sim</string>
     <string name="title_button_not_finalize">Não</string>
+
+    <!--FAQ PAGE-->
+    <string name="title_faq_toolbar" translatable="false">FAQ</string>
+    <string name="title_faq_option_product_custom">Produtos customizados</string>
+    <string name="title_faq_option_payment_promotion">Pagamento e promoções</string>
+    <string name="title_faq_option_return_refund">Devolução e reembolso</string>
+    <string name="title_faq_option_delivery">Entrega</string>
+    <string name="title_faq_option_account">Conta</string>
 </resources>

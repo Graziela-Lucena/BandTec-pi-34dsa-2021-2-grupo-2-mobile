@@ -83,4 +83,9 @@
     <string name="title_button_do_request">" MAKE ORDER"</string>
     <string name="title_other_arts">" OTHER GRAZIELA ARTS"</string>
     <string name="subtitle_description_art">Art by Artist: Graziela Lucena</string>
+    <string name="title_faq_option_product_custom">" Customized products"</string>
+    <string name="title_faq_option_payment_promotion">Payment and promotion</string>
+    <string name="title_faq_option_return_refund">Return and refund</string>
+    <string name="title_faq_option_delivery">Delivery</string>
+    <string name="title_faq_option_account">Account</string>
 </resources>
