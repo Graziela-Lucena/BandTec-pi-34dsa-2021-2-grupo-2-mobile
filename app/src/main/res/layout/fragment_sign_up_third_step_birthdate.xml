@@ -39,6 +39,15 @@
         app:layout_constraintStart_toEndOf="@id/page_indicator_birthday"
         android:layout_marginStart="@dimen/spacing_xs" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="@dimen/spacing_minimum"
+        android:src="@drawable/bg_hot_blue"
+        app:layout_constraintStart_toStartOf="@id/page_indicator_birthday"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/page_indicator_birthday"
+        android:layout_marginTop="@dimen/spacing_s" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/birthdate_title"
         android:layout_width="wrap_content"

@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.1" />
-        <entry key="..\:/Users/User/Desktop/mobile-app/app/src/main/res/layout/fragment_sing_up_second_step_cpf.xml" value="0.1" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/bg_back_button.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/bg_button_next.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/bg_hot_blue.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/bg_light_rounded.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_approve_transparent.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_blue_logo.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_continue_background.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_continue_to_back_transparent.xml" value="0.1925925925925926" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_little_ball_transparent.xml" value="0.1925925925925926" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_pink_logo.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_refuse_transparent.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_search_black.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_search_white.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_shop_black.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_shop_white.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_toolbar_nav_icon.xml" value="0.2078125" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/layout/activity_main.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.19166666666666668" />
-      </map>
-    </option>
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -3,13 +3,18 @@
 
 <!--SING UP REGION STRINGS-->
     <string name="page_indicator_text_sign_up" translatable="false">%1$d/5</string>
-    <string name="subtitle_personal_data">Dados Pessoais</string>
+    <string name="title_sing_up" translatable="false">Cadastro</string>
+    <string name="subtitle_personal_data" translatable="false">Dados pessoais</string>
+    <string name="subtitle_contact_data" translatable="false">Dados de contato</string>
     <string name="button_next_sing_up">Continuar</string>
     <string name="button_back_sing_up">Voltar</string>
     <string name="title_name">Insira seu nome:</string>
     <string name="title_last_name">Insira seu sobrenome:</string>
     <string name="title_cpf">Insira seu CPF:</string>
     <string name="title_birthdate">Insira sua data de nascimento:</string>
+    <string name="title_email" translatable="false">Insira seu email:</string>
+    <string name="title_cellphone" translatable="false">Insira seu número de celular:</string>
+    <string name="checkbox_newsletter" translatable="false">Desejo receber novidades e cupons pelo email</string>
 
     <!--TUTORIAL FIRST ACCESS-->
     <string name="title_just_geek_tutorial">Just Geek - Quem somos</string>

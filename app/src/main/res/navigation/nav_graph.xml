@@ -48,5 +48,34 @@
             android:name="cpf_user"
             app:argType="string"
             app:nullable="false"/>
+        <action
+            android:id="@+id/action_singUpBirthDateFragment_to_singUpContactsFragment"
+            app:destination="@id/singUpContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpContactsFragment"
+        android:name="com.example.justgeek_base_app.SingUpContactsFragment"
+        android:label="SingUpContactsFragment"
+        tools:layout="@layout/fragment_sing_up_fourth_step_contacts">
+        <argument
+            android:name="name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="last_name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="cpf_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="email_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="phone_user"
+            app:argType="string"
+            app:nullable="false"/>
     </fragment>
 </navigation>
