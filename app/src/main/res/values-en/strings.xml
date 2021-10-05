@@ -98,4 +98,12 @@
     <string name="title_button_signup">Sign Up</string>
     <string name="subtitle_error_invalid_email">Invalid email</string>
     <string name="subtitle_error_invalid_password">Invalid password</string>
+    <string name="title_my_orders_toolbar">My orders</string>
+    <string name="title_my_order_waiting_payment">Awaiting payment</string>
+    <string name="title_my_order_order_sent">Order dispatched</string>
+    <string name="title_my_order_order_delivered">Order delivered</string>
+    <string name="title_my_order_order_canceled">Order canceled</string>
+    <string name="title_my_order_order_detail">Order details</string>
+    <string name="title_my_order_released">Held on 8/38/2021</string>
+    <string name="title_my_order_product_quantity">+2 items</string>
 </resources>
