@@ -91,4 +91,26 @@
     <string name="subtitle_filter_tam_xgg">XGG</string>
     <string name="title_filter_title_category_page">Título</string>
     <string name="subtitle_filter_title_category_page">Hora de Aventura</string>
+
+    <!--ARTIST PAGE'S-->
+    <string name="title_popular_artists">ARTISTAS POPULARES</string>
+    <string name="title_name_artist_card">Graziela Lucena</string>
+    <string name="subtitle_quantity_arts">10 Exemplares</string>
+    <string name="title_artist_biography">Biografia</string>
+    <string name="title_art_from_artist">Por: Graziela Lucena</string>
+    <string name="title_similar_artists">ARTSITAS SIMILARES</string>
+    <string name="subtitle_description_art">Arte feita pela artista: Graziela Lucena</string>
+    <string name="title_other_arts">OUTRAS ARTES DA GRAZIELA</string>
+    <string name="title_button_do_request">FAZER PEDIDO</string>
+    <string name="title_choose_tam">Escolha o tamanho da sua camiseta</string>
+    <string name="title_choose_color">Escolha a cor da sua camiseta:</string>
+    <string name="title_request_revision">Revisão do pedido:</string>
+    <string name="subtitle_tam_choosed">Tamanho: M</string>
+    <string name="subtitle_color_choosed">Cor: Branco</string>
+    <string name="subtitle_art_choosed">Arte:</string>
+    <string name="subtitle_artist_choosed">Artista:</string>
+    <string name="title_button_finish_request">FINALIZAR PEDIDO</string>
+    <string name="title_finalize_request_question">Deseja finalizar o pedido?</string>
+    <string name="title_button_finalize_yes">Sim</string>
+    <string name="title_button_not_finalize">Não</string>
 </resources>
