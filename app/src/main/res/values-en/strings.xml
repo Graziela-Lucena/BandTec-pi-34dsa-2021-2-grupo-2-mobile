@@ -88,4 +88,9 @@
     <string name="title_faq_option_return_refund">Return and refund</string>
     <string name="title_faq_option_delivery">Delivery</string>
     <string name="title_faq_option_account">Account</string>
+    <string name="text_faq_answer_option_product_custom">To place an order for a custom product, you need to go to the artist\'s page of your choice, and then select the art that best suits you ;)</string>
+    <string name="text_faq_answer_option_payment_promotion">Just Geek\'s payment process is integrated with Mercado Pago, including the following payment methods: boleto, debit and credit. To get your discounts, collect discount coupons that appear through the APP, they have an expiration date ;)</string>
+    <string name="text_faq_answer_option_return_refund">If the product arrived at your residence with a defect, inadequate size, wrong print/color, it is possible to contact Just Geek through our email, we have a period of 2 to 4 days to review the email, plus the days estimated by the shipping company . The shipping fee is on us ;)</string>
+    <string name="text_faq_answer_option_delivery">The entire Just Geek product delivery system is done in partnership with Correios, the shipping price will depend on the distance between the stock and your residence ;)</string>
+    <string name="text_faq_answer_option_account">All your information can be accessed through the “Profile” button, you can view your current information, change them through your account settings.</string>
 </resources>

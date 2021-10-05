@@ -116,8 +116,25 @@
     <!--FAQ PAGE-->
     <string name="title_faq_toolbar" translatable="false">FAQ</string>
     <string name="title_faq_option_product_custom">Produtos customizados</string>
+    <string name="text_faq_answer_option_product_custom">Para fazer um pedido de um produto custumizado,
+        é necessário acessar a página do artista de sua preferência, e assim, selecionar a arte
+        que mais combina com você ;)</string>
     <string name="title_faq_option_payment_promotion">Pagamento e promoções</string>
+    <string name="text_faq_answer_option_payment_promotion">O processo de pagamento da Just Geek é
+        integrado com o Mercado Pago, incluindo as seguintes formas de pagamento: boleto, débito
+        e crédito. Para conseguir seus descontos, colecione cupons de descontos que surgem pelo APP,
+        eles tem data de expiração ;)</string>
     <string name="title_faq_option_return_refund">Devolução e reembolso</string>
+    <string name="text_faq_answer_option_return_refund">Caso o produto tenha chegado em sua
+        residência com defeito, tamanho inadequado, estampa/cor errada, é possÍvel contatar a
+        Just Geek através do nosso email, temos um prazo de 2 a 4 dias para revisar o email,
+        e mais os dias estimados pelo fretista. A taxa de envio fica por nossa conta ;)</string>
     <string name="title_faq_option_delivery">Entrega</string>
+    <string name="text_faq_answer_option_delivery">Todo o sistema de entrega dos produtos da
+        Just Geek é feito em parceria com a Correios, o preço do frete irá depender
+        da distância entre o estoque e sua residência ;)</string>
     <string name="title_faq_option_account">Conta</string>
+    <string name="text_faq_answer_option_account">Todas as suas informações podem ser acessadas
+        através do botão “Perfil”, podendo visualizar suas informações atuais, alterá - los
+        através das configurações da conta.</string>
 </resources>
