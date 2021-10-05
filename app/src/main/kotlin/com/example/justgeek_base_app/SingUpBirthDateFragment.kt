@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import java.util.*
 
-class SingUpBirthDateFragment: Fragment() {
+class SingUpBirthDateFragment: Fragment(R.layout.fragment_sign_up_third_step_birthdate) {
 
     private val birthDayArgs: SingUpBirthDateFragmentArgs by navArgs()
 

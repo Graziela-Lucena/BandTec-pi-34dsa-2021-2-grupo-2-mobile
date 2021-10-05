@@ -51,15 +51,16 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/birthdate"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/spacing_zero"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/birthdate_title"
-        app:layout_constraintStart_toStartOf="@id/birthdate_title"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/spacing_sm"
-        android:layout_marginTop="@dimen/spacing_sm"
-        app:layout_constraintEnd_toStartOf="@id/check_date"
+        android:background="@drawable/bg_light_rounded"
         android:inputType="date"
-        android:background="@drawable/bg_light_rounded"/>
+        app:layout_constraintEnd_toStartOf="@id/check_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/birthdate_title"
+        app:layout_constraintTop_toBottomOf="@id/birthdate_title" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_date"
