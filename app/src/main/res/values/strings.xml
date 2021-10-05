@@ -2,8 +2,7 @@
     <string name="app_name">justgeek-base-app</string>
 
 <!--SING UP REGION STRINGS-->
-    <string name="page_indicator_text_sign_up">%1$d/5</string>
-    <string name="title_sing_up">Cadastro</string>
+    <string name="page_indicator_text_sign_up" translatable="false">%1$d/5</string>
     <string name="subtitle_personal_data">Dados Pessoais</string>
     <string name="button_next_sing_up">Continuar</string>
     <string name="button_back_sing_up">Voltar</string>
@@ -79,22 +78,22 @@
     <string name="title_filter_choose_pants_category_page">Calça</string>
     <string name="title_filter_choose_custom_category_page">Custom</string>
     <string name="title_filter_price_category_page">Preço</string>
-    <string name="subtitle_filter_price_bold_category_page">R$ 00.00</string>
-    <string name="subtitle_filter_start_price_category_page">R$ 00.00</string>
-    <string name="subtitle_filter_end_price_category_page">R$ 00.00</string>
+    <string name="subtitle_filter_price_bold_category_page">R$ 00,00</string>
+    <string name="subtitle_filter_start_price_category_page">R$ 00,00</string>
+    <string name="subtitle_filter_end_price_category_page">R$ 00,00</string>
     <string name="title_filter_tam_category_page">Tamanho</string>
-    <string name="subtitle_filter_tam_pp">PP</string>
-    <string name="subtitle_filter_tam_p">P</string>
-    <string name="subtitle_filter_tam_m">M</string>
-    <string name="subtitle_filter_tam_g">G</string>
-    <string name="subtitle_filter_tam_gg">GG</string>
-    <string name="subtitle_filter_tam_xgg">XGG</string>
+    <string name="subtitle_filter_tam_pp" translatable="false">PP</string>
+    <string name="subtitle_filter_tam_p" translatable="false">P</string>
+    <string name="subtitle_filter_tam_m" translatable="false">M</string>
+    <string name="subtitle_filter_tam_g" translatable="false">G</string>
+    <string name="subtitle_filter_tam_gg" translatable="false">GG</string>
+    <string name="subtitle_filter_tam_xgg" translatable="false">XGG</string>
     <string name="title_filter_title_category_page">Título</string>
     <string name="subtitle_filter_title_category_page">Hora de Aventura</string>
 
     <!--ARTIST PAGE'S-->
     <string name="title_popular_artists">ARTISTAS POPULARES</string>
-    <string name="title_name_artist_card">Graziela Lucena</string>
+    <string name="title_name_artist_card" translatable="false">Graziela Lucena</string>
     <string name="subtitle_quantity_arts">10 Exemplares</string>
     <string name="title_artist_biography">Biografia</string>
     <string name="title_art_from_artist">Por: Graziela Lucena</string>
@@ -102,7 +101,7 @@
     <string name="subtitle_description_art">Arte feita pela artista: Graziela Lucena</string>
     <string name="title_other_arts">OUTRAS ARTES DA GRAZIELA</string>
     <string name="title_button_do_request">FAZER PEDIDO</string>
-    <string name="title_choose_tam">Escolha o tamanho da sua camiseta</string>
+    <string name="title_choose_tam">Escolha o tamanho da sua camiseta:</string>
     <string name="title_choose_color">Escolha a cor da sua camiseta:</string>
     <string name="title_request_revision">Revisão do pedido:</string>
     <string name="subtitle_tam_choosed">Tamanho: M</string>
