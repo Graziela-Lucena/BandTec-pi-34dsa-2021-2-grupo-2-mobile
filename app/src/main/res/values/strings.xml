@@ -137,4 +137,11 @@
     <string name="text_faq_answer_option_account">Todas as suas informações podem ser acessadas
         através do botão “Perfil”, podendo visualizar suas informações atuais, alterá - los
         através das configurações da conta.</string>
+
+    <!--LOGIN PAGE-->
+    <string name="subtitle_forgot_password">Esqueci minha senha</string>
+    <string name="title_button_signin">Entrar</string>
+    <string name="title_button_signup">Cadastrar</string>
+    <string name="subtitle_error_invalid_email">Email inválido</string>
+    <string name="subtitle_error_invalid_password">Senha inválida</string>
 </resources>
