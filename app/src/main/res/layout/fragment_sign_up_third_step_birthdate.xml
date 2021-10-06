@@ -61,7 +61,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/birthdate"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:background="@drawable/bg_light_rounded"

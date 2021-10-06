@@ -62,13 +62,24 @@
     <EditText
         android:id="@+id/name"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         app:layout_constraintTop_toBottomOf="@id/name_title"
         app:layout_constraintStart_toStartOf="@id/name_title"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:layout_marginTop="@dimen/spacing_sm"
         app:layout_constraintEnd_toStartOf="@id/check_name"
         android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_name"
@@ -78,7 +89,30 @@
         app:layout_constraintTop_toTopOf="@id/name"
         app:layout_constraintBottom_toBottomOf="@id/name"
         android:layout_marginEnd="@dimen/spacing_xsl"
-        android:src="@drawable/ic_approve_transparent"/>
+        android:src="@drawable/ic_approve_transparent"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_invalid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_refuse_transparent"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_invalid_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/last_name"
+        app:layout_constraintBottom_toBottomOf="@id/last_name"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_refuse_transparent"
+        android:visibility="gone"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/last_name_title"
@@ -93,13 +127,24 @@
     <EditText
         android:id="@+id/last_name"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         app:layout_constraintTop_toBottomOf="@id/last_name_title"
         app:layout_constraintStart_toStartOf="@id/name_title"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:layout_marginTop="@dimen/spacing_sm"
         app:layout_constraintEnd_toStartOf="@id/check_last_name"
         android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/last_name"
+        app:layout_constraintTop_toBottomOf="@id/last_name"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_last_name"
@@ -109,7 +154,8 @@
         app:layout_constraintTop_toTopOf="@id/last_name"
         app:layout_constraintBottom_toBottomOf="@id/last_name"
         android:layout_marginEnd="@dimen/spacing_xsl"
-        android:src="@drawable/ic_approve_transparent"/>
+        android:src="@drawable/ic_approve_transparent"
+        android:visibility="invisible"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/continue_button"

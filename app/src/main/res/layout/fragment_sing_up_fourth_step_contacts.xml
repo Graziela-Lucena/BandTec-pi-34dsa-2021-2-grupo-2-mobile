@@ -61,7 +61,7 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         app:layout_constraintTop_toBottomOf="@id/email_title"
         app:layout_constraintStart_toStartOf="@id/email_title"
         android:layout_marginEnd="@dimen/spacing_sm"
@@ -92,7 +92,7 @@
     <EditText
         android:id="@+id/cellphone"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         app:layout_constraintTop_toBottomOf="@id/cellphone_title"
         app:layout_constraintStart_toStartOf="@id/cellphone_title"
         android:layout_marginEnd="@dimen/spacing_sm"
