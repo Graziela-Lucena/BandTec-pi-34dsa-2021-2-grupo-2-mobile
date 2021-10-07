@@ -143,4 +143,21 @@
     <string name="text_faq_answer_option_account">Todas as suas informações podem ser acessadas
         através do botão “Perfil”, podendo visualizar suas informações atuais, alterá - los
         através das configurações da conta.</string>
+
+    <!--LOGIN PAGE-->
+    <string name="subtitle_forgot_password">Esqueci minha senha</string>
+    <string name="title_button_signin">Entrar</string>
+    <string name="title_button_signup">Cadastrar</string>
+    <string name="subtitle_error_invalid_email">Email inválido</string>
+    <string name="subtitle_error_invalid_password">Senha inválida</string>
+
+    <!--LOGIN PAGE-->
+    <string name="title_my_orders_toolbar">Meus pedidos</string>
+    <string name="title_my_order_waiting_payment">Aguardando pagamento</string>
+    <string name="title_my_order_order_sent">Pedido enviado</string>
+    <string name="title_my_order_order_delivered">Pedido entregue</string>
+    <string name="title_my_order_order_canceled">Pedido cancelado</string>
+    <string name="title_my_order_order_detail">Detalhes do pedido</string>
+    <string name="title_my_order_released">Realizado em 38/08/2021</string>
+    <string name="title_my_order_product_quantity">+2 itens</string>
 </resources>
