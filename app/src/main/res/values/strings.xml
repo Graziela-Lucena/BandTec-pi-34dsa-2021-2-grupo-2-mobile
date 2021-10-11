@@ -33,9 +33,9 @@
     <string name="custom_how_you_want">Customize suas roupas como quiser</string>
     <string name="title_promotion">PROMOÇÕES</string>
     <string name="title_product_name">Camiseta Naruto</string>
-    <string name="subtitle_old_price">R$ 92,00</string>
-    <string name="subtitle_new_price">R$ 70,00</string>
-    <string name="tag_promotion">50%</string>
+    <string name="subtitle_old_price" translatable="false">R$ %1$.2f</string>
+    <string name="subtitle_new_price" translatable="false">R$ %1$.2f</string>
+    <string name="tag_promotion" translatable="false">%1$d%</string>
     <string name="title_popular">POPULARES</string>
     <string name="title_assessments">AVALIAÇÕES</string>
     <string name="title_name_client">Denise Franco</string>
@@ -43,7 +43,7 @@
     <string name="title_coupon_homepage">Oi, você vem sempre aqui?</string>
     <string name="subtitle_coupon_homepage">Caso você esteja dando “só uma olhadinha”,
         que tal um cupom para impulsionar sua primeira compra?</string>
-    <string name="coupon_code">0FF20</string>
+    <string name="coupon_code" translatable="false">%1$s</string>
     <string name="title_showcase_category">Categorias - Em Alta</string>
     <string name="subtitle_showcase_category">Que tal um mar de variedades?</string>
     <string name="title_showcase_promotion">Promoções da semana</string>

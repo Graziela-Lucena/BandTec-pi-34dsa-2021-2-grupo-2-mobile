@@ -19,16 +19,12 @@
     <string name="custom_how_you_want">Customize your clothes however you want</string>
     <string name="title_promotion">PROMOTIONS</string>
     <string name="title_product_name">Naruto T-shirt</string>
-    <string name="subtitle_old_price">$ 92,00</string>
-    <string name="subtitle_new_price">" $ 70,00"</string>
-    <string name="tag_promotion">50%</string>
     <string name="title_popular">POPULAR</string>
     <string name="title_assessments">ASSESSMENTS</string>
     <string name="title_name_client">Denise Franco</string>
     <string name="text_comment_client">comment</string>
     <string name="title_coupon_homepage">Hi, do you always come here?</string>
     <string name="subtitle_coupon_homepage">" If you're “just peeking,” how about a coupon to boost your first purchase?"</string>
-    <string name="coupon_code">0FF20</string>
     <string name="title_showcase_category">Categories - On the Rise</string>
     <string name="subtitle_showcase_category">How about a sea of ​​variety?</string>
     <string name="title_showcase_promotion">Promotions of the week</string>
