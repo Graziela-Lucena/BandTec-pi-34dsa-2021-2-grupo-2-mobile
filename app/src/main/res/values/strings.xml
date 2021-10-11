@@ -155,4 +155,8 @@
     <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
     <string name="title_my_order_product_quantity">+%1$d itens</string>
     <string name="title_version_app_login">Versão %1$d.%2$d.%3$d</string>
+    
+    <!--ABOUT US PAGE -->
+    <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
+    
 </resources>
