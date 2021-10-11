@@ -152,6 +152,6 @@
     <string name="title_my_order_order_delivered">Pedido entregue</string>
     <string name="title_my_order_order_canceled">Pedido cancelado</string>
     <string name="title_my_order_order_detail">Detalhes do pedido</string>
-    <string name="title_my_order_released">Realizado em 38/08/2021</string>
-    <string name="title_my_order_product_quantity">+2 itens</string>
+    <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
+    <string name="title_my_order_product_quantity">+%1$d itens</string>
 </resources>
