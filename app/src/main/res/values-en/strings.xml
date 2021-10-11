@@ -54,9 +54,6 @@
     <string name="title_filter_choose_pants_category_page">Pants</string>
     <string name="title_filter_choose_custom_category_page">Custom</string>
     <string name="title_filter_price_category_page">Price</string>
-    <string name="subtitle_filter_price_bold_category_page">$ 00,00</string>
-    <string name="subtitle_filter_start_price_category_page">$ 00,00</string>
-    <string name="subtitle_filter_end_price_category_page">$ 00,00</string>
     <string name="title_filter_tam_category_page">Size</string>
     <string name="title_filter_title_category_page">Title</string>
     <string name="subtitle_filter_title_category_page">Adventure Time</string>
