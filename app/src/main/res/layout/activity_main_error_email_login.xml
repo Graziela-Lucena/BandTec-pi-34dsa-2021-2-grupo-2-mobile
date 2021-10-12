@@ -65,7 +65,7 @@
         android:layout_height="30dp"
         android:background="@drawable/bg_light_rounded"
         android:hint="@string/title_sign_in_input_password"
-        android:paddingStart="@dimen/spacing_sm"
+        android:paddingStart="@dimen/spacing_medium"
         android:textAppearance="@style/Exo2_Regular_Subtitle"
         android:layout_marginTop="@dimen/spacing_medium"
         app:layout_constraintEnd_toEndOf="parent"
