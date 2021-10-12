@@ -8,8 +8,8 @@
     android:background="@mipmap/background_login">
 
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="39dp"
-        android:layout_height="54dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_question"
@@ -23,7 +23,8 @@
         android:src="@mipmap/just_geek"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_email_error_question_login" />
+        app:layout_constraintTop_toBottomOf=
+            "@+id/toolbar_email_error_question_login" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="373dp"
@@ -49,7 +50,7 @@
         android:id="@+id/icon_wrong_email"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/appCompatTextView2"
+        android:id="@+id/title_wrong_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_sm"
@@ -70,11 +71,11 @@
         android:layout_marginTop="@dimen/spacing_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/title_wrong_email"
         android:id="@+id/input_password_error_email_login"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/button_sign_in_error_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_max_big"
@@ -87,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_password_error_email_login" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/button_sign_up_error_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_big"
@@ -95,9 +96,9 @@
         android:text="@string/title_button_signup"
         android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Semibold_Button_Text"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatButton"
-        app:layout_constraintStart_toStartOf="@+id/appCompatButton"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+        app:layout_constraintEnd_toEndOf="@+id/button_sign_in_error_email"
+        app:layout_constraintStart_toStartOf="@+id/button_sign_in_error_email"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_in_error_email" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -107,7 +108,7 @@
         android:textAppearance="@style/Exo2_Regular_Subtitle"
         android:layout_marginBottom="@dimen/spacing_medium"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
-        app:layout_constraintStart_toStartOf="@+id/appCompatButton2"/>
+        app:layout_constraintEnd_toEndOf="@+id/button_sign_up_error_email"
+        app:layout_constraintStart_toStartOf="@+id/button_sign_up_error_email"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
