@@ -69,6 +69,17 @@
         app:layout_constraintEnd_toStartOf="@id/check_valid"
         android:background="@drawable/bg_light_rounded"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/cpf"
+        app:layout_constraintTop_toBottomOf="@id/cpf"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_valid"
         android:layout_width="wrap_content"

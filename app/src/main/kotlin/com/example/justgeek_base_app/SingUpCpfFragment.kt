@@ -21,6 +21,7 @@ class SingUpCpfFragment: Fragment(R.layout.fragment_sing_up_second_step_cpf) {
         val cpf = view.findViewById<AppCompatEditText>(R.id.cpf)
         val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
         val pageIndicator = view.findViewById<AppCompatTextView>(R.id.page_indicator)
+        val errorMessage = view.findViewById<AppCompatTextView>(R.id.error_message_cpf)
         pageIndicator.text = resources.getString(R.string.page_indicator_text_sign_up, 2)
 
         fun goBack() {

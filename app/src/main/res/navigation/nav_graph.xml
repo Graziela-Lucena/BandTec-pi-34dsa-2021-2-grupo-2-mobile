@@ -73,9 +73,5 @@
             android:name="email_user"
             app:argType="string"
             app:nullable="false"/>
-        <argument
-            android:name="phone_user"
-            app:argType="string"
-            app:nullable="false"/>
     </fragment>
 </navigation>
