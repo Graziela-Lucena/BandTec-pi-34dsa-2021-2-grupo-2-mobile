@@ -16,6 +16,9 @@
     <string name="title_cellphone" translatable="false">Insira seu número de celular:</string>
     <string name="checkbox_newsletter" translatable="false">Desejo receber novidades e cupons pelo email</string>
     <string name="error_message" translatable="false">%1$s</string>
+    <string name="subtitle_access_key" translatable="false">Chave de acesso</string>
+    <string name="title_password" translatable="false">Crie uma senha:</string>
+    <string name="title_confirm_password" translatable="false">Confirme a senha:</string>
 
     <!--TUTORIAL FIRST ACCESS-->
     <string name="title_just_geek_tutorial">Just Geek - Quem somos</string>

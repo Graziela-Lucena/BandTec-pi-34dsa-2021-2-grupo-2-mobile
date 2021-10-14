@@ -28,12 +28,12 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
 
         fun checkNameValidation(): Boolean {
             errorMessage?.isVisible = false
-            validName?.visibility = View.INVISIBLE
-            invalidName?.visibility = View.GONE
+            validName?.isVisible = false
+            invalidName?.isVisible = false
             val filteredText = name.text.trim().length
             when {
                 name.text.isNullOrEmpty() -> {
-                    invalidName?.visibility = View.VISIBLE
+                    invalidName?.isVisible = true
                     errorMessage?.isVisible = true
                     errorMessage?.text = resources.getString(
                         R.string.error_message,
@@ -42,7 +42,7 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
                     return false
                 }
                 filteredText <= 2 -> {
-                    invalidName?.visibility = View.VISIBLE
+                    invalidName?.isVisible = true
                     errorMessage?.isVisible = true
                     errorMessage?.text = resources.getString(
                         R.string.error_message,
@@ -51,8 +51,8 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
                     return false
                 }
                 else -> {
-                    validName?.visibility = View.VISIBLE
-                    invalidName?.visibility = View.GONE
+                    validName?.isVisible = true
+                    invalidName?.isVisible = false
                     errorMessage?.isVisible = false
                     return true
                 }
