@@ -144,6 +144,8 @@
     <string name="title_button_signup">Cadastrar</string>
     <string name="subtitle_error_invalid_email">Email inválido</string>
     <string name="subtitle_error_invalid_password">Senha inválida</string>
+    <string name="title_sign_in_input_email" translatable="false">Email</string>
+    <string name="title_sign_in_input_password">Senha</string>
 
     <!--LOGIN PAGE-->
     <string name="title_my_orders_toolbar">Meus pedidos</string>
