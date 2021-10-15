@@ -41,29 +41,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_just_geek_login" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_refuse_email_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:src="@drawable/ic_refuse_background_pink"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/input_email"
+        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_wrong_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_sm"
+        android:text="@string/subtitle_error_invalid_email"
+        android:textAppearance="@style/Exo2_Regular_Subtitle"
+        android:textColor="@color/hot_pink"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_refuse_email_error"
+        app:layout_constraintStart_toEndOf="@+id/icon_refuse_email_error"
+        app:layout_constraintTop_toTopOf="@+id/icon_refuse_email_error" />
+
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_password"
         android:layout_width="373dp"
         android:layout_height="30dp"
-        android:layout_marginTop="@dimen/spacing_medium"
-        android:paddingStart="@dimen/spacing_medium"
-        android:hint="@string/title_sign_in_input_password"
-        android:textAppearance="@style/Exo2_Regular_Subtitle"
         android:background="@drawable/bg_light_rounded"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email"
-        android:id="@+id/input_password"/>
+        android:hint="@string/title_sign_in_input_password"
+        android:paddingStart="@dimen/spacing_medium"
+        android:textAppearance="@style/Exo2_Regular_Subtitle"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintEnd_toEndOf="@+id/input_email"
+        app:layout_constraintStart_toStartOf="@+id/icon_refuse_email_error"
+        app:layout_constraintTop_toBottomOf="@+id/text_wrong_email" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_refuse_password_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refuse_background_pink"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintStart_toStartOf="@+id/input_password"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_wrong_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_error_invalid_password"
+        android:textAppearance="@style/Exo2_Regular_Subtitle"
+        android:textColor="@color/hot_pink"
+        android:visibility="invisible"
+        android:layout_marginLeft="@dimen/spacing_sm"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_refuse_password_error"
+        app:layout_constraintStart_toEndOf="@+id/icon_refuse_password_error"
+        app:layout_constraintTop_toTopOf="@+id/icon_refuse_password_error" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_forgot_passcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_sm"
         android:text="@string/subtitle_forgot_password"
-        android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Regular_Subtitle"
-        app:layout_constraintStart_toStartOf="@+id/input_password"
-        app:layout_constraintTop_toBottomOf="@+id/input_password"/>
+        android:textColor="@color/pattern_light"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintStart_toStartOf="@+id/icon_refuse_password_error"
+        app:layout_constraintTop_toBottomOf="@+id/icon_refuse_password_error" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_sign_in"
