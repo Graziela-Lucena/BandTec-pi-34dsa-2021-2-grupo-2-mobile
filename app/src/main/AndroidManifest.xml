@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Justgeekbaseapp">
         <activity
+            android:name=".TutorialFirstAccessThirdStepActivity"
+            android:exported="false" />
+        <activity
             android:name=".TutorialFirstAccessSecondStepActivity"
             android:exported="false" />
         <activity
