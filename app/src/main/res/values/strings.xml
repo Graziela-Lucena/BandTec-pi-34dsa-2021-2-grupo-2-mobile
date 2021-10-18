@@ -161,4 +161,29 @@
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
 
+
+    <!--ACCOUNT CONFIG -->
+    <string name="title_account_config_toolbar">Configurações da conta</string>
+    <string name="title_client_name" translatable="false">%1$s</string>
+    <string name="cpf_client" translatable="false">%1$s</string>
+    <string name="birth_date_client" translatable="false">%1$s</string>
+    <string name="email_client" translatable="false">%1$s</string>
+    <string name="contact_number_client" translatable="false">%1$s</string>
+    <string name="change_data">Alterar dados pessoais</string>
+    <string name="my_addresses">Meus endereços</string>
+
+    <!--ACCOUNT CONFIG (Addresses 1) -->
+    <string name="adresses_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_one" translatable="false">CEP %1$s</string>
+    
+    <!--ACCOUNT CONFIG (Addresses 2) -->
+    <string name="adresses_two_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
+    <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
+    
+
 </resources>
