@@ -144,6 +144,8 @@
     <string name="title_button_signup">Cadastrar</string>
     <string name="subtitle_error_invalid_email">Email inválido</string>
     <string name="subtitle_error_invalid_password">Senha inválida</string>
+    <string name="title_sign_in_input_email" translatable="false">Email</string>
+    <string name="title_sign_in_input_password">Senha</string>
 
     <!--LOGIN PAGE-->
     <string name="title_my_orders_toolbar">Meus pedidos</string>
@@ -155,9 +157,10 @@
     <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
     <string name="title_my_order_product_quantity">+%1$d itens</string>
     <string name="title_version_app_login">Versão %1$d.%2$d.%3$d</string>
-    
+
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
+
 
     <!--ACCOUNT CONFIG -->
     <string name="title_account_config_toolbar">Configurações da conta</string>
@@ -182,4 +185,5 @@
     <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
     <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
     
+
 </resources>
