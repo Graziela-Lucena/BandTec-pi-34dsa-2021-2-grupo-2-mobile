@@ -156,6 +156,8 @@
     <string name="title_button_signup">Cadastrar</string>
     <string name="subtitle_error_invalid_email">Email inválido</string>
     <string name="subtitle_error_invalid_password">Senha inválida</string>
+    <string name="title_sign_in_input_email" translatable="false">Email</string>
+    <string name="title_sign_in_input_password">Senha</string>
 
     <!--LOGIN PAGE-->
     <string name="title_my_orders_toolbar">Meus pedidos</string>
@@ -167,8 +169,33 @@
     <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
     <string name="title_my_order_product_quantity">+%1$d itens</string>
     <string name="title_version_app_login">Versão %1$d.%2$d.%3$d</string>
-    
+
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
+
+
+    <!--ACCOUNT CONFIG -->
+    <string name="title_account_config_toolbar">Configurações da conta</string>
+    <string name="title_client_name" translatable="false">%1$s</string>
+    <string name="cpf_client" translatable="false">%1$s</string>
+    <string name="birth_date_client" translatable="false">%1$s</string>
+    <string name="email_client" translatable="false">%1$s</string>
+    <string name="contact_number_client" translatable="false">%1$s</string>
+    <string name="change_data">Alterar dados pessoais</string>
+    <string name="my_addresses">Meus endereços</string>
+
+    <!--ACCOUNT CONFIG (Addresses 1) -->
+    <string name="adresses_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_one" translatable="false">CEP %1$s</string>
     
+    <!--ACCOUNT CONFIG (Addresses 2) -->
+    <string name="adresses_two_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
+    <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
+    
+
 </resources>
