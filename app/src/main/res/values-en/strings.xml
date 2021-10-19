@@ -101,5 +101,11 @@
     <string name="title_my_order_product_quantity">+%1$d items</string>
     <string name="title_version_app_login">Version %1$d.%2$d.%3$</string>
     <string name="title_justgeek_aboutus">JustGeek - About Us</string>
+
+    <string name="title_account_config_toolbar">Account configuration</string>
+    <string name="change_data">"Change personal data "</string>
+    <string name="my_addresses">My addresses</string>
+
     <string name="title_sign_in_input_password">Password</string>
+
 </resources>
