@@ -27,13 +27,14 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
         pageIndicator?.text = resources.getString(R.string.page_indicator_text_sign_up, 1)
 
         fun checkNameValidation(): Boolean {
-            errorMessage?.isVisible = false
-            validName?.isVisible = false
-            invalidName?.isVisible = false
             val filteredText = name.text.trim().length
+            errorMessage?.isVisible = false
+            validName?.visibility = View.INVISIBLE
+            invalidName?.visibility = View.GONE
             when {
                 name.text.isNullOrEmpty() -> {
-                    invalidName?.isVisible = true
+                    validName?.visibility = View.INVISIBLE
+                    invalidName?.visibility = View.VISIBLE
                     errorMessage?.isVisible = true
                     errorMessage?.text = resources.getString(
                         R.string.error_message,

@@ -66,8 +66,20 @@
         app:layout_constraintStart_toStartOf="@id/email_title"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:layout_marginTop="@dimen/spacing_sm"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toStartOf="@id/check_email"
         android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_email"
@@ -77,7 +89,19 @@
         app:layout_constraintTop_toTopOf="@id/email"
         app:layout_constraintBottom_toBottomOf="@id/email"
         android:layout_marginEnd="@dimen/spacing_xsl"
-        android:src="@drawable/ic_approve_transparent" />
+        android:src="@drawable/ic_approve_transparent"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_email_invalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/email"
+        app:layout_constraintBottom_toBottomOf="@id/email"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_refuse_transparent"
+        android:visibility="gone"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/cellphone_title"
@@ -97,8 +121,20 @@
         app:layout_constraintStart_toStartOf="@id/cellphone_title"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:layout_marginTop="@dimen/spacing_sm"
+        android:inputType="phone"
         app:layout_constraintEnd_toStartOf="@id/cellphone_check"
         android:background="@drawable/bg_light_rounded"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/cellphone"
+        app:layout_constraintTop_toBottomOf="@id/cellphone"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cellphone_check"
@@ -108,7 +144,19 @@
         app:layout_constraintTop_toTopOf="@id/cellphone"
         app:layout_constraintBottom_toBottomOf="@id/cellphone"
         android:layout_marginEnd="@dimen/spacing_xsl"
-        android:src="@drawable/ic_approve_transparent"/>
+        android:src="@drawable/ic_approve_transparent"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cellphone_check_invalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cellphone"
+        app:layout_constraintBottom_toBottomOf="@id/cellphone"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_refuse_transparent"
+        android:visibility="gone"/>
 
     <CheckBox
         android:layout_width="wrap_content"
