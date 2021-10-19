@@ -19,6 +19,9 @@
     <string name="subtitle_access_key" translatable="false">Chave de acesso</string>
     <string name="title_password" translatable="false">Crie uma senha:</string>
     <string name="title_confirm_password" translatable="false">Confirme a senha:</string>
+    <string name="title_finish" translatable="false">Oba!\nSua conta na</string>
+    <string name="title_finish_2" translatable="false">foi criada com \nsucesso!</string>
+    <string name="button_sing_up_login_text" translatable="false">Fazer Login</string>
 
     <!--TUTORIAL FIRST ACCESS-->
     <string name="title_just_geek_tutorial">Just Geek - Quem somos</string>
