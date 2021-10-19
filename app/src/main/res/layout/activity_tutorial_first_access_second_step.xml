@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_subtitle_second_step_tutorial" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:onClick="nextStepThree"
+        android:id="@+id/go_to_step_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/spacing_medium"
@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:onClick="backStepOne"
+        android:id="@+id/ic_back_step_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_continue_to_back_transparent"
