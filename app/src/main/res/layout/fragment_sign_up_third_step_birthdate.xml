@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/page_indicator_text_sign_up"
-        style="@style/Exo2_Regular_Subtitle_Highlight"
+        style="@style/Exo2_Bold_Subtitle_Highlight"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="@dimen/spacing_xsl"
@@ -39,6 +39,15 @@
         app:layout_constraintStart_toEndOf="@id/page_indicator_birthday"
         android:layout_marginStart="@dimen/spacing_xs" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="@dimen/spacing_minimum"
+        android:src="@drawable/bg_hot_blue"
+        app:layout_constraintStart_toStartOf="@id/page_indicator_birthday"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/page_indicator_birthday"
+        android:layout_marginTop="@dimen/spacing_s" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/birthdate_title"
         android:layout_width="wrap_content"
@@ -52,7 +61,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/birthdate"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:background="@drawable/bg_light_rounded"

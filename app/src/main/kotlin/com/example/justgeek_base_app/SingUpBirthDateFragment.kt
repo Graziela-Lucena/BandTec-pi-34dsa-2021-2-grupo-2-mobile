@@ -6,6 +6,7 @@ import android.widget.CalendarView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -18,6 +19,7 @@ class SingUpBirthDateFragment: Fragment(R.layout.fragment_sign_up_third_step_bir
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val buttonBack = view.findViewById<AppCompatButton>(R.id.back_button)
+        val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
         val buttonNext = view.findViewById<AppCompatButton>(R.id.continue_button)
         val birthDate = view.findViewById<AppCompatEditText>(R.id.birthdate)
         val pageIndicator = view.findViewById<AppCompatTextView>(R.id.page_indicator_birthday)
@@ -25,13 +27,23 @@ class SingUpBirthDateFragment: Fragment(R.layout.fragment_sign_up_third_step_bir
         val calendar = view.findViewById<CalendarView>(R.id.calendar)
         calendar.setDate(System.currentTimeMillis(), false, true)
 
-        buttonBack.setOnClickListener {
+        fun goBack() {
+            findNavController().popBackStack()
+        }
 
+        toolbar.setNavigationOnClickListener {
+            goBack()
+        }
+        buttonBack.setOnClickListener {
+            goBack()
         }
         buttonNext.setOnClickListener {
             findNavController().navigate(
-                SingUpNameFragmentDirections.actionSingUpNameFragmentToSingUpCpfFragment(
-                    birthDate.text.toString(), birthDayArgs.cpfUser
+                SingUpBirthDateFragmentDirections.actionSingUpBirthDateFragmentToSingUpContactsFragment(
+                    birthDate.text.toString(),
+                    birthDayArgs.nameUser,
+                    birthDayArgs.lastNameUser,
+                    birthDayArgs.cpfUser
                 )
             )
         }
