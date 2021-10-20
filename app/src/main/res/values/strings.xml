@@ -158,5 +158,19 @@
     
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
-    
+    <string name="subtitle_aboutus">O que é a JustGeek?</string>
+    <string name="text_aboutus">A justGeek é a loja perfeita para você que procura produtos de
+        qualidade do jeito que você quer. Nós eferecemos uma variedade de roupas dos temas mais
+        populares dos tempos atuais, além de termos a opção de customização, para você que gosta de
+        ser AUTÊNTICO.</string>
+    <string name="subtitle_customization_aboutus">Customização</string>
+    <string name="text_customization_aboutus">A nossa loja também tem a opção de CUSTOMIZAR suas
+        roupas. É fácil, simples e você sai com sua personalidade externelizada.
+        Quer saber sobre o processo? Veja nossa página explicando o processo AQUI.</string>
+    <string name="subtitle_team_justgeek">Equipe JustGeek</string>
+    <string name="text_team_justgeek">A nossa staff é composta pelos próprios desenvolvedores da
+        JustGeek, mas isso não quer dizer que a equipe não pode aumentar.
+        Entre em contato com a gente caso queira fazer parte do nosso time! Estamos sempre de braços
+        abertos para novos colaboradores.</string>
+
 </resources>
