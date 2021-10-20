@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">justgeek-base-app</string>
-    <string name="subtitle_personal_data">Personal Data</string>
     <string name="button_next_sing_up">Continue</string>
     <string name="button_back_sing_up">Come Back</string>
     <string name="title_name">Enter your name:</string>
@@ -101,11 +100,15 @@
     <string name="title_my_order_product_quantity">+%1$d items</string>
     <string name="title_version_app_login">Version %1$d.%2$d.%3$</string>
     <string name="title_justgeek_aboutus">JustGeek - About Us</string>
-
+    <string name="subtitle_aboutus">"What is JustGeek? "</string>
+    <string name="text_aboutus">justGeek is the perfect store for you who are looking for quality products just the way you want them. We offer a variety of clothes from the most popular themes of the present time, in addition to having the option of customization, for you who like to be AUTHENTIC.</string>
+    <string name="subtitle_customization_aboutus">"Customization "</string>
+    <string name="text_customization_aboutus">Our store also has the option to CUSTOMIZE your clothes. It\'s easy, simple, and you leave with your personality externalized. Want to know about the process? See our page explaining the process HERE.</string>
+    <string name="subtitle_team_justgeek">JustGeek Team</string>
+    <string name="text_team_justgeek">Our staff is made up of JustGeek developers themselves, but that doesn\'t mean the team can\'t grow. Get in touch with us if you want to be part of our team! We are always with open arms for new employees.</string>
     <string name="title_account_config_toolbar">Account configuration</string>
     <string name="change_data">"Change personal data "</string>
     <string name="my_addresses">My addresses</string>
-
     <string name="title_sign_in_input_password">Password</string>
 
 </resources>
