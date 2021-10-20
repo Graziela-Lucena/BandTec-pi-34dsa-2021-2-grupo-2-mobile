@@ -1,6 +1,8 @@
 package com.example.justgeek_base_app
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.widget.AppCompatButton
@@ -14,6 +16,7 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val toolbar = view.findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         val name = view.findViewById<EditText>(R.id.name)
         val lastName = view.findViewById<EditText>(R.id.last_name)
         val buttonNext = view.findViewById<AppCompatButton>(R.id.continue_button)
@@ -26,93 +29,96 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
         val errorMessageLastName = view.findViewById<AppCompatTextView>(R.id.error_message_last_name)
         pageIndicator?.text = resources.getString(R.string.page_indicator_text_sign_up, 1)
 
-        fun checkNameValidation(): Boolean {
-            val filteredText = name.text.trim().length
-            errorMessage?.isVisible = false
-            validName?.visibility = View.INVISIBLE
-            invalidName?.visibility = View.GONE
-            when {
-                name.text.isNullOrEmpty() -> {
-                    validName?.visibility = View.INVISIBLE
-                    invalidName?.visibility = View.VISIBLE
-                    errorMessage?.isVisible = true
-                    errorMessage?.text = resources.getString(
-                        R.string.error_message,
-                        "Você precisa inserir um nome válido."
-                    )
-                    return false
-                }
-                filteredText <= 2 -> {
-                    invalidName?.isVisible = true
-                    errorMessage?.isVisible = true
-                    errorMessage?.text = resources.getString(
-                        R.string.error_message,
-                        "Seu nome precisa ter mais de duas letras!"
-                    )
-                    return false
-                }
-                else -> {
-                    validName?.isVisible = true
-                    invalidName?.isVisible = false
-                    errorMessage?.isVisible = false
-                    return true
+        var valid: Boolean = false
+        var validL: Boolean = false
+
+        name.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                val filteredTextName = name.text.trim().length
+                when {
+                    name.text.isNullOrEmpty() -> {
+                        invalidName?.visibility = View.VISIBLE
+                        validName?.visibility = View.INVISIBLE
+                        errorMessage?.isVisible = true
+                        errorMessage?.text = resources.getString(
+                            R.string.error_message,
+                            "Você precisa inserir um nome válido."
+                        )
+                        valid = false
+                    }
+                    filteredTextName <= 2 -> {
+                        invalidName?.visibility = View.VISIBLE
+                        validName?.visibility = View.INVISIBLE
+                        errorMessage?.isVisible = true
+                        errorMessage?.text = resources.getString(
+                            R.string.error_message,
+                            "Seu nome precisa ter mais de duas letras!"
+                        )
+                        valid = false
+                    }
+                    else -> {
+                        validName?.visibility = View.VISIBLE
+                        invalidName?.visibility = View.GONE
+                        errorMessage?.isVisible = false
+                        valid = true
+                    }
                 }
             }
-        }
+            override fun beforeTextChanged(s: CharSequence?, p1: Int, p2: Int, p3: Int) = Unit
 
-        fun checkLastNameValidation(): Boolean {
-            errorMessageLastName?.isVisible = false
-            validLastName?.visibility = View.INVISIBLE
-            invalidLastName?.visibility = View.GONE
-            val filteredText = lastName.text.trim().length
-            when {
-                lastName.text.isNullOrEmpty() -> {
-                    invalidLastName?.visibility = View.VISIBLE
-                    errorMessageLastName?.isVisible = true
-                    errorMessageLastName?.text = resources.getString(
-                        R.string.error_message,
-                        "Você precisa inserir um sobrenome válido."
-                    )
-                    return false
-                }
-                filteredText <= 2 -> {
-                    invalidLastName?.visibility = View.VISIBLE
-                    errorMessageLastName?.isVisible = true
-                    errorMessageLastName?.text = resources.getString(
-                        R.string.error_message,
-                        "Seu sobrenome precisa ter mais de duas letras!"
-                    )
-                    return false
-                }
-                else -> {
-                    validLastName?.visibility = View.VISIBLE
-                    invalidLastName?.visibility = View.GONE
-                    errorMessageLastName?.isVisible = false
-                    return true
+            override fun onTextChanged(s: CharSequence?, p1: Int, p2: Int, p3: Int) = Unit
+
+        })
+
+        lastName.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                val filteredTextLastName = lastName.text.trim().length
+                when {
+                    lastName.text.isNullOrEmpty() -> {
+                        invalidLastName?.visibility = View.VISIBLE
+                        validLastName?.visibility = View.INVISIBLE
+                        errorMessageLastName?.isVisible = true
+                        errorMessageLastName?.text = resources.getString(
+                            R.string.error_message,
+                            "Você precisa inserir um sobrenome válido."
+                        )
+                        validL = false
+                    }
+                    filteredTextLastName <= 2 -> {
+                        invalidLastName?.visibility = View.VISIBLE
+                        validLastName?.visibility = View.INVISIBLE
+                        errorMessageLastName?.isVisible = true
+                        errorMessageLastName?.text = resources.getString(
+                            R.string.error_message,
+                            "Seu sobrenome precisa ter mais de duas letras!"
+                        )
+                        validL = false
+                    }
+                    else -> {
+                        validLastName?.visibility = View.VISIBLE
+                        invalidLastName?.visibility = View.GONE
+                        errorMessageLastName?.isVisible = false
+                        validL = true
+                    }
                 }
             }
-        }
+            override fun beforeTextChanged(s: CharSequence?, p1: Int, p2: Int, p3: Int) = Unit
 
+            override fun onTextChanged(s: CharSequence?, p1: Int, p2: Int, p3: Int) = Unit
+
+        })
+
+        toolbar.setNavigationOnClickListener {
+            findNavController().popBackStack()
+        }
 
         buttonNext?.setOnClickListener {
-            val validName: Boolean = checkNameValidation()
-            val validLastName: Boolean = checkLastNameValidation()
-            when {
-                validName && validLastName -> {
-                    findNavController().navigate(
-                        SingUpNameFragmentDirections.actionSingUpNameFragmentToSingUpCpfFragment(
-                            name?.text.toString(), lastName?.text.toString()
-                        )
+            if(valid && validL) {
+                findNavController().navigate(
+                    SingUpNameFragmentDirections.actionSingUpNameFragmentToSingUpCpfFragment(
+                        name?.text.toString(), lastName?.text.toString()
                     )
-                }
-                !validName -> {
-                    name?.text?.clear()
-                    name?.requestFocus()
-                }
-                !validLastName -> {
-                    lastName?.text?.clear()
-                    lastName.requestFocus()
-                }
+                )
             }
         }
     }

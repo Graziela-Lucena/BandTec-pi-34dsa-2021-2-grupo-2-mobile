@@ -22,12 +22,6 @@
             android:name=".TutorialFirstAccessFirstStepActivity"
             android:exported="false" />
         <activity
-            android:name=".MainErrorPasswordLoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainLoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

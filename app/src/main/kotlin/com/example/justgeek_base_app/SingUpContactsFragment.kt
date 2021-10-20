@@ -8,9 +8,12 @@ import androidx.appcompat.widget.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import br.com.concrete.canarinho.watcher.MascaraNumericaTextWatcher
 
 class SingUpContactsFragment: Fragment(R.layout.fragment_sing_up_fourth_step_contacts) {
+
+    val contactArgs: SingUpContactsFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -91,6 +94,17 @@ class SingUpContactsFragment: Fragment(R.layout.fragment_sing_up_fourth_step_con
             goBack()
         }
         buttonNext.setOnClickListener {
+            findNavController().navigate(
+                SingUpContactsFragmentDirections.actionSingUpContactsFragmentToSingUpPasswordFragment(
+                    email.text.toString(),
+                    cellphone.text.toString(),
+                    contactArgs.nameUser,
+                    contactArgs.lastNameUser,
+                    contactArgs.cpfUser,
+                    contactArgs.birthdateUser
+                )
+            )
+
         }
     }
 

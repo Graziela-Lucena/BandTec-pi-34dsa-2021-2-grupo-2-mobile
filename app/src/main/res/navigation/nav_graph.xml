@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/singUpNameFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/singUpNameFragment"
@@ -70,8 +70,54 @@
             app:argType="string"
             app:nullable="false"/>
         <argument
+            android:name="birthdate_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_singUpContactsFragment_to_singUpPasswordFragment"
+            app:destination="@id/singUpPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpPasswordFragment"
+        android:name="com.example.justgeek_base_app.SingUpPasswordFragment"
+        android:label="SingUpPasswordFragment"
+        tools:layout="@layout/fragment_sing_up_fifth_step_password">
+        <argument
+            android:name="name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="last_name_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="cpf_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="birthdate_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="phone_user"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
             android:name="email_user"
             app:argType="string"
             app:nullable="false"/>
+        <action
+            android:id="@+id/action_singUpPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.justgeek_base_app.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/activity_main_login">
+        <action
+            android:id="@+id/action_loginFragment_to_singUpNameFragment"
+            app:destination="@id/singUpNameFragment" />
+    </fragment>
+
 </navigation>

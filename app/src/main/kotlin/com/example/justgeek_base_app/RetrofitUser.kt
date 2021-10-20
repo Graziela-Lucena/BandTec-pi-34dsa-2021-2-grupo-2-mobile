@@ -12,7 +12,7 @@ object RetrofitUser {
                 level = HttpLoggingInterceptor.Level.BODY
             })
         val retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("http://3.220.18.44:8081")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofit

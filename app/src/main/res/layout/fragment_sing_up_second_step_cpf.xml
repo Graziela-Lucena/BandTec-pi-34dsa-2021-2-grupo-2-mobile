@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/page_indicator_text_sign_up"
-        style="@style/Exo2_Regular_Subtitle_Highlight"
+        style="@style/Exo2_Bold_Subtitle_Highlight"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="@dimen/spacing_xsl"

@@ -68,7 +68,7 @@
         android:textAppearance="@style/Exo2_Regular_Small_Title"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/continue_button"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/spacing_maximum"
         android:text="@string/button_sing_up_login_text"

@@ -18,7 +18,7 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="169dp"
         android:layout_height="67dp"
-        android:src="@mipmap/just_geek"
+        android:src="@drawable/ic_justgeek_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/spacing_big"
