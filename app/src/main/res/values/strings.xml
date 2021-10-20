@@ -3,13 +3,25 @@
 
     <!--SING UP REGION STRINGS-->
     <string name="page_indicator_text_sign_up" translatable="false">%1$d/5</string>
-    <string name="subtitle_personal_data">Dados Pessoais</string>
+    <string name="title_sing_up" translatable="false">Cadastro</string>
+    <string name="subtitle_personal_data" translatable="false">Dados pessoais</string>
+    <string name="subtitle_contact_data" translatable="false">Dados de contato</string>
     <string name="button_next_sing_up">Continuar</string>
     <string name="button_back_sing_up">Voltar</string>
     <string name="title_name">Insira seu nome:</string>
     <string name="title_last_name">Insira seu sobrenome:</string>
     <string name="title_cpf">Insira seu CPF:</string>
     <string name="title_birthdate">Insira sua data de nascimento:</string>
+    <string name="title_email" translatable="false">Insira seu email:</string>
+    <string name="title_cellphone" translatable="false">Insira seu número de celular:</string>
+    <string name="checkbox_newsletter" translatable="false">Desejo receber novidades e cupons pelo email</string>
+    <string name="error_message" translatable="false">%1$s</string>
+    <string name="subtitle_access_key" translatable="false">Chave de acesso</string>
+    <string name="title_password" translatable="false">Crie uma senha:</string>
+    <string name="title_confirm_password" translatable="false">Confirme a senha:</string>
+    <string name="title_finish" translatable="false">Oba!\nSua conta na</string>
+    <string name="title_finish_2" translatable="false">foi criada com \nsucesso!</string>
+    <string name="button_sing_up_login_text" translatable="false">Fazer Login</string>
 
     <!--TUTORIAL FIRST ACCESS-->
     <string name="title_just_geek_tutorial">Just Geek - Quem somos</string>
@@ -144,6 +156,8 @@
     <string name="title_button_signup">Cadastrar</string>
     <string name="subtitle_error_invalid_email">Email inválido</string>
     <string name="subtitle_error_invalid_password">Senha inválida</string>
+    <string name="title_sign_in_input_email" translatable="false">Email</string>
+    <string name="title_sign_in_input_password">Senha</string>
 
     <!--LOGIN PAGE-->
     <string name="title_my_orders_toolbar">Meus pedidos</string>
@@ -155,7 +169,7 @@
     <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
     <string name="title_my_order_product_quantity">+%1$d itens</string>
     <string name="title_version_app_login">Versão %1$d.%2$d.%3$d</string>
-    
+
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
     <string name="subtitle_aboutus">O que é a JustGeek?</string>
@@ -172,5 +186,31 @@
         JustGeek, mas isso não quer dizer que a equipe não pode aumentar.
         Entre em contato com a gente caso queira fazer parte do nosso time! Estamos sempre de braços
         abertos para novos colaboradores.</string>
+
+
+    <!--ACCOUNT CONFIG -->
+    <string name="title_account_config_toolbar">Configurações da conta</string>
+    <string name="title_client_name" translatable="false">%1$s</string>
+    <string name="cpf_client" translatable="false">%1$s</string>
+    <string name="birth_date_client" translatable="false">%1$s</string>
+    <string name="email_client" translatable="false">%1$s</string>
+    <string name="contact_number_client" translatable="false">%1$s</string>
+    <string name="change_data">Alterar dados pessoais</string>
+    <string name="my_addresses">Meus endereços</string>
+
+    <!--ACCOUNT CONFIG (Addresses 1) -->
+    <string name="adresses_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_one" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_one" translatable="false">CEP %1$s</string>
+    
+    <!--ACCOUNT CONFIG (Addresses 2) -->
+    <string name="adresses_two_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
+    <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
+    
+
 
 </resources>
