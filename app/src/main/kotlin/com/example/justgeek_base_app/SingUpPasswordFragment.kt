@@ -122,7 +122,7 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
 
         buttonNext.setOnClickListener {
             //inserir aqui o endpoint com os args sendo os parametros
-            findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToLoginFragment())
+            findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToLoginActivity())
         }
 
     }
