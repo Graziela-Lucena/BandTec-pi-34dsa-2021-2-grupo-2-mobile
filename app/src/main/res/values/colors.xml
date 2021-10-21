@@ -10,6 +10,7 @@
 
 <!--JustGeek NEUTRAL color pallet-->
     <color name="pattern_light">#E9E9E9</color>
+    <color name="pattern_light_transparent">#8DE9E9E9</color>
     <color name="pattern_dark_transparent">#80000000</color>
     <color name="hot_gray">#8B80A5</color>
     <color name="dark_gray">#5E5769</color>
