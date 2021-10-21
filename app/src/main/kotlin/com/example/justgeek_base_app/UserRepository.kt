@@ -2,27 +2,23 @@ package com.example.justgeek_base_app
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import br.com.arch.toolkit.livedata.response.MutableResponseLiveData
+import br.com.arch.toolkit.livedata.response.ResponseLiveData
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import retrofit2.await
 
 
-class UserRepository(private val user: UserApi, val userEmpty: DataUser) {
-
-    fun singUpUser(
-        name: String,
-        lastName: String,
-        cpf: String,
-        birthDate: String,
-        cellphone: String,
-        emailUser: String,
-        password: String  ): LiveData<DataUser> {
-        val liveData: MutableLiveData<DataUser> = MutableLiveData<DataUser>()
+class UserRepository(private val userApi: UserApi) {
+    fun singUpUser(userData: DataUser): ResponseLiveData<Unit> {
+        val liveData:  MutableResponseLiveData<Unit> = MutableResponseLiveData<Unit>()
         GlobalScope.launch {
             try {
-                val user = user.singUpUser(name, lastName, cpf, birthDate, cellphone, emailUser, password)
-                liveData.postValue(user)
+                liveData.postLoading()
+                val userLivedata = userApi.singUpUser(userData)
+                liveData.postData(userLivedata)
             } catch (e: Exception) {
-                liveData.postValue(userEmpty)
+                liveData.postError(e)
             }
         }
         return liveData

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 
 class ShowcaseFragment: Fragment(R.layout.fragment_showcase) {
@@ -42,6 +43,8 @@ class ShowcaseFragment: Fragment(R.layout.fragment_showcase) {
         val showcase = view.findViewById<RecyclerView>(R.id.showcase)
         showcase.adapter = adapterShowcase
         showcase.layoutManager = layoutManagerShowcase
+
+        PagerSnapHelper().attachToRecyclerView(showcase)
 
     }
 }

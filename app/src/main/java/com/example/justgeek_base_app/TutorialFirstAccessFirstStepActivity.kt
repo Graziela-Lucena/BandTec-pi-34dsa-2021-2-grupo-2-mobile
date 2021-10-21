@@ -3,6 +3,7 @@ package com.example.justgeek_base_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
@@ -11,6 +12,7 @@ class TutorialFirstAccessFirstStepActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutorial_first_access_first_step)
+        Log.i("grazi", "create-tuto")
 
         val closeButton : AppCompatImageView = findViewById(R.id.icon_refuse_first_step_tutorial)
 

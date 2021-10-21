@@ -10,10 +10,10 @@ data class DataUser (
     val cpf: String,
     @SerializedName("dataNascimento")
     val birthDate: String,
-    @SerializedName("celular")
-    val cellphone: String,
     @SerializedName("email")
     val userEmail: String,
+    @SerializedName("celular")
+    val cellphone: String,
     @SerializedName("senha")
     val password: String
 )

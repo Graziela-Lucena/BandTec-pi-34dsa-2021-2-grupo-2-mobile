@@ -3,10 +3,7 @@ package com.example.justgeek_base_app
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 
 class CommentAdapter(private val commentList: List<CommentItem>):  RecyclerView.Adapter<CommentViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentViewHolder {
@@ -15,17 +12,17 @@ class CommentAdapter(private val commentList: List<CommentItem>):  RecyclerView.
     }
 
     override fun onBindViewHolder(holder: CommentViewHolder, position: Int) {
-        val currentItem = commentList[position]
-        holder.name.text = currentItem.name
-        holder.comment.text = currentItem.comment
-        holder.rate.text = currentItem.rate.toString()
+//        val currentItem = commentList[position]
+//        holder.name.text = currentItem.name
+//        holder.comment.text = currentItem.comment
+//        holder.rate.text = currentItem.rate.toString()
     }
 
     override fun getItemCount(): Int = commentList.size
 }
 
 class CommentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val name: TextView = itemView.findViewById()
-    val comment: TextView = itemView.findViewById()
-    val rate: TextView = itemView.findViewById()
+//    val name: TextView = itemView.findViewById()
+//    val comment: TextView = itemView.findViewById()
+//    val rate: TextView = itemView.findViewById()
 }

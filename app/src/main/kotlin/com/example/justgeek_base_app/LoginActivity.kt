@@ -3,28 +3,29 @@ package com.example.justgeek_base_app
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.text.TextWatcher
 import android.util.Log
-import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.appcompat.widget.AppCompatTextView
 
 class LoginActivity: AppCompatActivity(R.layout.activity_main_login) {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         val singUpButton = findViewById<AppCompatButton>(R.id.button_sign_up)
         val singInButton = findViewById<AppCompatButton>(R.id.button_sign_in)
+        val version = findViewById<AppCompatTextView>(R.id.version)
+        version.text = resources.getString(R.string.title_version_app_login, "1.0.0")
 
         singUpButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
-            Log.i("grazi", "REQUEST")
         }
 
         singInButton.setOnClickListener {
-
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent)
         }
     }
 }

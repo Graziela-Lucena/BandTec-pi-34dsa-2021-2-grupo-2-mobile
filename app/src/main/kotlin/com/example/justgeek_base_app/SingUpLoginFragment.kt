@@ -12,7 +12,7 @@ class SingUpLoginFragment: Fragment(R.layout.fragment_sing_up_login) {
         val loginButton = view.findViewById<AppCompatButton>(R.id.login_button)
 
         loginButton.setOnClickListener {
-            findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToLoginActivity())
+           requireActivity().finish()
         }
 
     }

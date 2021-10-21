@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.os.PatternMatcher
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
@@ -14,15 +16,18 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import br.com.concrete.canarinho.validator.Validador
+import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_password) {
 
     val passwordArgs: SingUpPasswordFragmentArgs by navArgs()
+    val userViewModel: UserViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.i("grazi", "create-psw")
         val password = view.findViewById<EditText>(R.id.password)
         val confirmPassword = view.findViewById<EditText>(R.id.confirm_password)
         val errorMessage = view.findViewById<AppCompatTextView>(R.id.error_message_password)
@@ -34,7 +39,6 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
         val validConfirm = view.findViewById<AppCompatImageView>(R.id.check_confirm_password)
         val invalidPassword = view.findViewById<AppCompatImageView>(R.id.check_invalid_password)
         val invalidConfirm = view.findViewById<AppCompatImageView>(R.id.check_invalid_confirm_password)
-
 
         var passwordResult: String? = null
 
@@ -121,8 +125,25 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
         })
 
         buttonNext.setOnClickListener {
-            //inserir aqui o endpoint com os args sendo os parametros
-            findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToLoginActivity())
+            userViewModel.singUpUser(DataUser(
+                passwordArgs.nameUser,
+                passwordArgs.lastNameUser,
+                passwordArgs.cpfUser,
+                passwordArgs.birthdateUser,
+                passwordArgs.emailUser,
+                passwordArgs.phoneUser,
+                password.text.toString()
+            )).observe(viewLifecycleOwner) {
+                data {
+                    Log.i("grazi", "data")
+                    findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToSingUpLoginFragment())
+                }
+                error { e ->
+                    Log.i("grazi", e.toString())
+                    Toast.makeText(requireContext(), "Erro ao fazer o cadastro", Toast.LENGTH_SHORT)
+                }
+
+            }
         }
 
     }

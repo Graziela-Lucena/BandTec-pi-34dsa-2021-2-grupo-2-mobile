@@ -96,15 +96,14 @@ class SingUpContactsFragment: Fragment(R.layout.fragment_sing_up_fourth_step_con
         buttonNext.setOnClickListener {
             findNavController().navigate(
                 SingUpContactsFragmentDirections.actionSingUpContactsFragmentToSingUpPasswordFragment(
-                    email.text.toString(),
-                    cellphone.text.toString(),
                     contactArgs.nameUser,
                     contactArgs.lastNameUser,
                     contactArgs.cpfUser,
-                    contactArgs.birthdateUser
+                    contactArgs.birthdateUser,
+                    email.text.toString(),
+                    cellphone.text.toString()
                 )
             )
-
         }
     }
 

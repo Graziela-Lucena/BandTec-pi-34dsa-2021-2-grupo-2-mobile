@@ -57,4 +57,24 @@
         <item name="android:textSize">@dimen/font_size_extreme</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
+    <style name="Exo2_Medium_Title_Product">
+        <item name="android:fontFamily">@font/medium_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Bold_Price_Highlight">
+        <item name="android:fontFamily">@font/bold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/hot_blue</item>
+    </style>
+    <style name="Exo2_Thin_Price">
+        <item name="android:fontFamily">@font/thin_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Bold_Price_Highlight_Pink">
+        <item name="android:fontFamily">@font/bold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/hot_pink</item>
+    </style>
 </resources>

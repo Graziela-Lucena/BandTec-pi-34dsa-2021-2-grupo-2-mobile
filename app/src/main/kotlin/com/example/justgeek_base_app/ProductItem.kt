@@ -1,9 +1,11 @@
 package com.example.justgeek_base_app
 
+import androidx.annotation.DrawableRes
+
 class ProductItem (
-    val discount: Double,
+    val discount: String,
     val name: String,
-    val price: Double,
-    val oldPrice: Double,
-    val productImage: String
+    val price: String,
+    val oldPrice: String,
+    @DrawableRes val productImage: Int
 )

@@ -67,7 +67,7 @@ class SingUpCpfFragment: Fragment(R.layout.fragment_sing_up_second_step_cpf) {
         buttonNext.setOnClickListener {
             findNavController().navigate(
                 SingUpCpfFragmentDirections.actionSingUpCpfFragmentToSingUpBirthDateFragment(
-                    cpf.text.toString(), cpfArgs.nameUser, cpfArgs.lastNameUser
+                    cpfArgs.nameUser, cpfArgs.lastNameUser, cpf.text.toString()
                 )
             )
         }
