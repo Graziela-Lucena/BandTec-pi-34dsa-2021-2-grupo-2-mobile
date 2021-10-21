@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/singUpNameFragment">
 
     <fragment
         android:id="@+id/singUpNameFragment"
@@ -107,17 +107,14 @@
             app:argType="string"
             app:nullable="false"/>
         <action
-            android:id="@+id/action_singUpPasswordFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_singUpPasswordFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.justgeek_base_app.LoginFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/activity_main_login">
-        <action
-            android:id="@+id/action_loginFragment_to_singUpNameFragment"
-            app:destination="@id/singUpNameFragment" />
-    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.justgeek_base_app.LoginActivity"
+        android:label="LoginActivity"
+        tools:layout="@layout/activity_main_login"/>
+
 
 </navigation>
