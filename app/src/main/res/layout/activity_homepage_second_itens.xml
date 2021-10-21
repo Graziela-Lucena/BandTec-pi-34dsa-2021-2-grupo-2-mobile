@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_homepage_second_item"
+    android:padding="14dp">
+
+    <ImageView
+        android:id="@+id/shirt_second_item"
+        android:layout_width="250dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/img_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/divider_second_product"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:src="@drawable/bg_divider_product"
+        app:layout_constraintTop_toBottomOf="@+id/shirt_second_item"
+        app:layout_constraintStart_toStartOf="@+id/shirt_second_item"
+        app:layout_constraintEnd_toEndOf="@+id/shirt_second_item"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/title_second_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/divider_second_product"
+        app:layout_constraintStart_toStartOf="@+id/divider_second_product"
+        app:layout_constraintEnd_toEndOf="@+id/divider_second_product"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/title_product_name"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text"
+        android:textSize="@dimen/spacing_bs"
+        />
+
+
+
+    <TextView
+        android:id="@+id/price_second_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_new_price"
+        app:layout_constraintTop_toBottomOf="@+id/title_second_product"
+        app:layout_constraintStart_toStartOf="@+id/title_second_product"
+        app:layout_constraintEnd_toEndOf="@+id/title_second_product"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:textColor="@color/hot_pink"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text"
+        android:textSize="@dimen/spacing_bs"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
