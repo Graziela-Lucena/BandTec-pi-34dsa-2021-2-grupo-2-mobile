@@ -8,7 +8,6 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
-import com.example.justgeek_base_app.SingUpNameFragment
 
 class MainLoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

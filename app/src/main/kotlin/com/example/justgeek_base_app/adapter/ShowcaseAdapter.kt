@@ -19,7 +19,7 @@ class ShowcaseAdapter(private val showcaseNews: List<ShowcaseItem>) : RecyclerVi
     override fun getItemCount(): Int = showcaseNews.size
 
     override fun onBindViewHolder(holder: ShowcaseViewHolder, position: Int) {
-        val currentItem = showcaseNews[position] as ShowcaseItem
+        val currentItem = showcaseNews[position]
 
         Picasso.get().load(currentItem.background).into(holder.background)
         holder.title.text = currentItem.title

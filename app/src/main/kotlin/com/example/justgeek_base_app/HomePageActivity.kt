@@ -1,9 +1,7 @@
 package com.example.justgeek_base_app
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 
 class HomePageActivity: AppCompatActivity(R.layout.homepage_activity) {
     override fun onCreate(savedInstanceState: Bundle?) {

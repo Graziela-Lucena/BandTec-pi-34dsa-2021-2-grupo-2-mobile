@@ -7,7 +7,6 @@ import com.example.justgeek_base_app.data.DataUser
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-
 class UserRepository(private val userApi: UserApi) {
     fun singUpUser(userData: DataUser): ResponseLiveData<Unit> {
         val liveData:  MutableResponseLiveData<Unit> = MutableResponseLiveData<Unit>()

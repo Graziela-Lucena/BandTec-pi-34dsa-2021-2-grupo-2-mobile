@@ -33,7 +33,7 @@ class LoginActivity: AppCompatActivity(R.layout.activity_main_login) {
 
     }
 
-    fun logged(v: View){
+    private fun logged(v: View){
         val inputEmail: AppCompatEditText = findViewById(R.id.input_email)
         val inputSenha: AppCompatEditText = findViewById(R.id.input_password)
 

@@ -5,15 +5,12 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.CalendarView
-import android.widget.ImageView
 import androidx.appcompat.widget.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import br.com.arch.toolkit.delegate.viewProvider
 import br.com.concrete.canarinho.watcher.MascaraNumericaTextWatcher
-import java.util.*
 
 class SingUpBirthDateFragment: Fragment(R.layout.fragment_sign_up_third_step_birthdate) {
 
