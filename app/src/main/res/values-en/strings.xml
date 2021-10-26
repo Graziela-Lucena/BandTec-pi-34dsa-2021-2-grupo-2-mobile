@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">justgeek-base-app</string>
+    <string name="app_name">JustGeek</string>
     <string name="button_next_sing_up">Continue</string>
     <string name="button_back_sing_up">Come Back</string>
     <string name="title_name">Enter your name:</string>

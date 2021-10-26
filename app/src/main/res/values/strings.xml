@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">justgeek-base-app</string>
+    <string name="app_name">JustGeek</string>
 
     <!--SING UP REGION STRINGS-->
     <string name="page_indicator_text_sign_up" translatable="false">%1$d/5</string>
