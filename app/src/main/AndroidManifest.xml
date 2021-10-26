@@ -8,24 +8,12 @@
     <application
         android:name=".JustGeekApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".TutorialFirstAccestEndedPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessThirdStepActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessSecondStepActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessFirstStepActivity"
-            android:exported="false" />
         <activity
             android:name=".HomePageActivity"
             android:exported="true"/>
@@ -41,6 +29,18 @@
         <activity
             android:name=".OnboardingActivity"
             android:exported="false"/>
+        <activity
+            android:name=".TutorialFirstFour"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialFirstThree"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialAccessTwo"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialAccessFirst"
+            android:exported="false" />
     </application>
 
 
