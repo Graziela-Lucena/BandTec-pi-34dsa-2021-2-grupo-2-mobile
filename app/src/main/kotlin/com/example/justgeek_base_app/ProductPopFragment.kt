@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.justgeek_base_app.adapter.ProductPopAdapter
 import com.example.justgeek_base_app.data.ProductItem
 
 class ProductPopFragment: Fragment(R.layout.fragment_popular) {

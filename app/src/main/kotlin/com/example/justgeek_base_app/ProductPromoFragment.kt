@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.justgeek_base_app.adapter.ProductAdapter
 import com.example.justgeek_base_app.data.ProductItem
 
 class ProductPromoFragment: Fragment(R.layout.fragment_promotions) {
