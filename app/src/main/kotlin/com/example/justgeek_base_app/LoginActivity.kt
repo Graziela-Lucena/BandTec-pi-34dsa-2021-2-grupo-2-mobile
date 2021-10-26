@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
-import com.example.justgeek.api.ApiInterface
-import com.example.justgeek.api.RetrofitInstance
-import com.example.justgeek.models.SignInBody
+import com.example.justgeek_base_app.retrofit.ApiInterface
+import com.example.justgeek_base_app.retrofit.RetrofitInstance
+import com.example.justgeek_base_app.data.SignInBody
 import okhttp3.ResponseBody
 import retrofit2.Response
 

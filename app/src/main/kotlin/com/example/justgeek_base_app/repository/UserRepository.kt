@@ -1,12 +1,11 @@
-package com.example.justgeek_base_app
+package com.example.justgeek_base_app.repository
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import br.com.arch.toolkit.livedata.response.MutableResponseLiveData
 import br.com.arch.toolkit.livedata.response.ResponseLiveData
+import com.example.justgeek_base_app.api.UserApi
+import com.example.justgeek_base_app.data.DataUser
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import retrofit2.await
 
 
 class UserRepository(private val userApi: UserApi) {

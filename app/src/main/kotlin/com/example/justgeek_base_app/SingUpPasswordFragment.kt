@@ -1,7 +1,6 @@
 package com.example.justgeek_base_app
 
 import android.os.Bundle
-import android.os.PatternMatcher
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
@@ -15,9 +14,9 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import br.com.concrete.canarinho.validator.Validador
+import com.example.justgeek_base_app.data.DataUser
+import com.example.justgeek_base_app.viewmodel.UserViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
-import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_password) {
@@ -125,7 +124,8 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
         })
 
         buttonNext.setOnClickListener {
-            userViewModel.singUpUser(DataUser(
+            userViewModel.singUpUser(
+                DataUser(
                 passwordArgs.nameUser,
                 passwordArgs.lastNameUser,
                 passwordArgs.cpfUser,
@@ -133,7 +133,8 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
                 passwordArgs.emailUser,
                 passwordArgs.phoneUser,
                 password.text.toString()
-            )).observe(viewLifecycleOwner) {
+            )
+            ).observe(viewLifecycleOwner) {
                 data {
                     Log.i("grazi", "data")
                     findNavController().navigate(SingUpPasswordFragmentDirections.actionSingUpPasswordFragmentToSingUpLoginFragment())

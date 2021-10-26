@@ -1,8 +1,7 @@
-package com.example.justgeek_base_app
+package com.example.justgeek_base_app.api
 
-import retrofit2.Call
+import com.example.justgeek_base_app.data.DataUser
 import retrofit2.http.Body
-import retrofit2.http.Field
 import retrofit2.http.POST
 
 interface UserApi {

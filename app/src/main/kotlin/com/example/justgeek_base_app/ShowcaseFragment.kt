@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.justgeek_base_app.data.ShowcaseItem
 
 class ShowcaseFragment: Fragment(R.layout.fragment_showcase) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

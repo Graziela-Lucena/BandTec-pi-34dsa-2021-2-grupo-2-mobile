@@ -1,9 +1,11 @@
-package com.example.justgeek_base_app
+package com.example.justgeek_base_app.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.justgeek_base_app.R
+import com.example.justgeek_base_app.data.CommentItem
 
 class CommentAdapter(private val commentList: List<CommentItem>):  RecyclerView.Adapter<CommentViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentViewHolder {

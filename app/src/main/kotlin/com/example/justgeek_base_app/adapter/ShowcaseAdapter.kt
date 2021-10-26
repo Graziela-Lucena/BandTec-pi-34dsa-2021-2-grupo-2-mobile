@@ -1,4 +1,4 @@
-package com.example.justgeek_base_app
+package com.example.justgeek_base_app.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.justgeek_base_app.R
+import com.example.justgeek_base_app.data.ShowcaseItem
 import com.squareup.picasso.Picasso
 
 class ShowcaseAdapter(private val showcaseNews: List<ShowcaseItem>) : RecyclerView.Adapter<ShowcaseViewHolder>() {

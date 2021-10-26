@@ -1,5 +1,6 @@
-package com.example.justgeek_base_app
+package com.example.justgeek_base_app.retrofit
 
+import com.example.justgeek_base_app.api.UserApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.apache.http.conn.ssl.SSLSocketFactory.SSL
@@ -65,7 +66,7 @@ object RetrofitUser {
             .build()
         return retrofit
     }
-    fun user(retrofit: Retrofit): UserApi{
+    fun user(retrofit: Retrofit): UserApi {
         return retrofit.create(UserApi::class.java)
     }
 

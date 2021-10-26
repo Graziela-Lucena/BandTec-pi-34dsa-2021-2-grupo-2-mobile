@@ -1,7 +1,7 @@
-package com.example.justgeek.api
+package com.example.justgeek_base_app.retrofit
 
-import com.example.justgeek.models.SignInBody
-import com.example.justgeek.models.UserBody
+import com.example.justgeek_base_app.data.SignInBody
+import com.example.justgeek_base_app.data.UserBody
 import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
 import okhttp3.logging.HttpLoggingInterceptor
