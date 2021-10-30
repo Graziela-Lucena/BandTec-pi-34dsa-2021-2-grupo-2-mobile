@@ -51,7 +51,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/user_bar_configuration"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_medium"
         android:background="@color/dark_purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
