@@ -203,14 +203,16 @@
     <string name="street_name_adresses_one" translatable="false">%1$s,%2$s</string>
     <string name="district_city_adresses_one" translatable="false">%1$s,%2$s</string>
     <string name="cep_adresses_one" translatable="false">CEP %1$s</string>
-    
+
     <!--ACCOUNT CONFIG (Addresses 2) -->
     <string name="adresses_two_client_name" translatable="false">%1$s</string>
     <string name="street_name_adresses_two" translatable="false">%1$s,%2$s</string>
     <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
     <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
     <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
-    
+
+    <!--FAQ PAGE-->
+    <string name="profile_name">Olá, %1$s</string>
 
 
 </resources>
