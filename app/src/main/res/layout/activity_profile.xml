@@ -51,7 +51,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/user_bar_configuration"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_medium"
         android:background="@color/dark_purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +88,78 @@
             app:layout_constraintBottom_toBottomOf="@id/ic_user"
             app:layout_constraintEnd_toEndOf="@id/user_bar_configuration"
             android:layout_marginEnd="@dimen/spacing_medium"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_content_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_bar_configuration"
+        android:padding="@dimen/spacing_medium">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recent_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium"
+            app:layout_constraintTop_toTopOf="@+id/container_content_profile"
+            app:layout_constraintStart_toStartOf="@id/container_content_profile"
+            app:layout_constraintEnd_toEndOf="@id/container_content_profile"
+            android:background="@drawable/bg_card_dark">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_order_account_configuration"
+                app:layout_constraintStart_toStartOf="@+id/recent_orders"
+                app:layout_constraintTop_toTopOf="@+id/recent_orders"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_recent_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_recent_order"
+                android:layout_marginStart="@dimen/spacing_bs"
+                android:textColor="@color/pattern_light"
+                android:textSize="@dimen/font_size_medium"
+                android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                app:layout_constraintTop_toTopOf="@+id/ic_order"
+                app:layout_constraintStart_toStartOf="@+id/ic_order"
+                app:layout_constraintBottom_toBottomOf="@+id/ic_order"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_divider"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:src="@drawable/bg_hot_blue"
+                android:layout_marginTop="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="@+id/ic_order"
+                app:layout_constraintBottom_toBottomOf="@+id/title_recent_order"
+                app:layout_constraintEnd_toEndOf="@+id/title_recent_order"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/ic_divider"
+                app:layout_constraintStart_toStartOf="@+id/ic_order"
+                app:layout_constraintEnd_toEndOf="@+id/recent_orders">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragment_recent_orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    app:layout_constraintTop_toTopOf="@+id/container_orders"
+                    app:layout_constraintStart_toStartOf="@+id/container_orders"
+                    app:layout_constraintEnd_toEndOf="@+id/container_orders"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
