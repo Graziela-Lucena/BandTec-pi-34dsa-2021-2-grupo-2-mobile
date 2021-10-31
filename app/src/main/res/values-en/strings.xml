@@ -111,5 +111,8 @@
     <string name="my_addresses">My addresses</string>
     <string name="title_sign_in_input_password">Password</string>
     <string name="profile_name">Hello, %1$s</string>
+    <string name="title_recent_order">Most recent order</string>
+    <string name="title_date_recent_order">Accomplished %1$s</string>
+    <string name="title_see_all">See all</string>
 
 </resources>
