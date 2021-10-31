@@ -13,6 +13,7 @@
     <color name="pattern_light_transparent">#8DE9E9E9</color>
     <color name="pattern_dark_transparent">#80000000</color>
     <color name="hot_gray">#8B80A5</color>
+    <color name="hot_lighter_gray">#8D83A7</color>
     <color name="dark_gray">#5E5769</color>
     <color name="light_gray">#34313A</color>
     <color name="medium_gray">#2C2831</color>

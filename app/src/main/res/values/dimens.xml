@@ -25,6 +25,7 @@
     <dimen name="spacing_max_xxxl">46dp</dimen>
     <dimen name="spacing_max_big">48dp</dimen>
 
+    <dimen name="font_size_minimum_nine">9sp</dimen>
     <dimen name="font_size_minimum">10sp</dimen>
     <dimen name="font_size_small">12sp</dimen>
     <dimen name="font_size_medium">14sp</dimen>

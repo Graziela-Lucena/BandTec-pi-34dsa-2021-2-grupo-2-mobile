@@ -13,5 +13,10 @@ class ProfileActivity : AppCompatActivity() {
         val recentOrder = RecentOrderFragment()
         fragmentTransaction.add(R.id.fragment_recent_orders, recentOrder)
         fragmentTransaction.commit()
+
+        val fragmentTransactionFavorites = supportFragmentManager.beginTransaction()
+        val favorites = ProfileFavoriteFragment()
+        fragmentTransactionFavorites.add(R.id.fragment_favorites, favorites)
+        fragmentTransactionFavorites.commit()
     }
 }
