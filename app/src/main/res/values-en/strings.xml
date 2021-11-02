@@ -114,5 +114,6 @@
     <string name="title_recent_order">Most recent order</string>
     <string name="title_date_recent_order">Accomplished %1$s</string>
     <string name="title_see_all">See all</string>
+    <string name="title_buy_from_favorite_page">Buy</string>
 
 </resources>

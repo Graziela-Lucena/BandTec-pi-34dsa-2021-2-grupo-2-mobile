@@ -218,6 +218,9 @@
     <string name="title_recent_order">Pedido mais recente</string>
     <string name="title_date_recent_order">Realizando em %1$s</string>
     <string name="title_see_all">Ver todos ></string>
+    
+    <!--FAVORITE PAGE-->
+    <string name="title_buy_from_favorite_page">Comprar</string>
 
 
 </resources>
