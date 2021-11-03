@@ -100,6 +100,17 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_add_new_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pattern_light"
+                android:text="@string/add_new_address"
+                android:padding="@dimen/spacing_xs"
+                android:background="@drawable/bg_card_order_detail"
+                app:layout_constraintBottom_toBottomOf="@+id/container_my_addresses"
+                app:layout_constraintEnd_toEndOf="@+id/container_my_addresses"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
