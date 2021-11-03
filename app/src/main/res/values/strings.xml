@@ -221,6 +221,7 @@
     
     <!--FAVORITE PAGE-->
     <string name="title_buy_from_favorite_page">Comprar</string>
+    <string name="title_review" translatable="false">%1$s</string>
 
 
 </resources>
