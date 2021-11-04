@@ -101,4 +101,102 @@
     <string name="title_my_order_product_quantity">+%1$d items</string>
     <string name="title_version_app_login">Version %1$d.%2$d.%3$</string>
     <string name="title_justgeek_aboutus">JustGeek - About Us</string>
+
+
+    <!--PRODUCT PAGE-->
+    <string name="product_step">%1$d/3</string>
+    <string name="price">BRL %1$.2f</string>
+    <string name="installments">2x of BRL %1$.2f without interest</string>
+    <string name="amount">Qty:</string>
+    <string name="size_pp">XS</string>
+    <string name="size_p">S</string>
+    <string name="size_m">M</string>
+    <string name="size_g">L</string>
+    <string name="size_gg">XL</string>
+    <string name="title_shipping">Shipping fee</string>
+    <string name="subtitle_shipping">Hi :) is it new around here? register an address</string>
+    <string name="subtitle_invite">Free shipping on purchases over BRL 100.00</string>
+    <string name="subtitle_shipping_price">Estimated delivery price: BRL %1$.2f</string>
+    <string name="title_evaluation">Assessments</string>
+    <string name="title_suggestion">You may also like</string>
+    <string name="title_button_add_cart">Add to cart</string>
+    <string name="pop_up_add_cart">Size: %1$s</string>
+    <string name="pop_up_add_cart_qty">The amount: %1$d</string>
+    <string name="button_go_cart">Go to cart</string>
+    <string name="button_keep_buying">Keep buying</string>
+    <string name="pop_up_favorite_title">Product added to your favorites</string>
+    <string name="button_favorite">View favorites</string>
+
+    <!--CART PAGE-->
+    <string name="title_bag">My bag</string>
+    <string name="subtitle_suggestion_product">You can also take</string>
+    <string name="subtitle_percentage_discount">%1$d%%</string>
+    <string name="subtitle_total_price">R$ %1$.2f</string>
+    <string name="button_proceed_purchase">PROCEED WITH THE PURCHASE</string>
+    <string name="subtilte_coupon_alert">Apply the discount coupon in the next step</string>
+    <string name="subtitle_empty_bag">Your bag is empty!</string>
+    <string name="subtitle_coupon_alert">Do you want to fill it with these products?</string>
+    <string name="button_going_shop">Going shopping</string>
+
+    <!--ORDER CONFIRMATION PAGE-->
+    <string name="title_order_confirmation">Order confirmation</string>
+    <string name="subtitle_method_shipping">Shipping method</string>
+    <string name="title_shipping_fee">Minimum shipping fee</string>
+    <string name="subtitle_shipping_fee">BRL 12.00 - 10 working days of minimum waiting</string>
+    <string name="title_payment_method">Payment method</string>
+    <string name="subtitle_payment_method">Mercado Pago</string>
+    <string name="subtitle_payment_method_info">Includes bank slip, debit/credit</string>
+    <string name="title_apply_coupon">Apply discount coupon</string>
+    <string name="title_bag_products">Shopping bag</string>
+    <string name="title_ratail_price">Retail price:</string>
+    <string name="title_discount_coupon">Discount coupon:</string>
+    <string name="title_shippping_value">Shipping fee:</string>
+    <string name="title_security_payment">Secure payment:</string>
+    <string name="button_make_wish">MAKE A WISH</string>
+    <string name="button_finish_yes">Yes</string>
+    <string name="button_finish_no">No</string>
+    <string name="title_finish">Do you want to complete the order</string>
+
+    <!--COUPON PAGE-->
+    <string name="title_my_coupons">My coupons</string>
+    <string name="subtitle_apply_coupons">Apply discount coupon</string>
+    <string name="button_apply">Apply</string>
+    <string name="title_coupons">Coupons</string>
+    <string name="button_ok">OK</string>
+
+    <!--PROFILE PAGE-->
+    <string name="title_welcome">Hi %1$s</string>
+    <string name="title_recent_request">Latest orders</string>
+    <string name="subtitle_recent_request">Performed in %1%s</string>
+    <string name="subtitle_view">See all</string>
+    <string name="title_favorite">Favorites</string>
+
+    <!--ORDER DETAILS PAGE-->
+    <string name="title_details_product">Order Details</string>
+    <string name="title_request_number">N request %1$d</string>
+    <string name="subtitle_amount_value">Value of products</string>
+    <string name="subtitle_shipping_order">Freight</string>
+    <string name="subtitle_coupon_order">Coupon</string>
+    <string name="subtitle_total">TOTAL</string>
+    <string name="title_request_status">Order status</string>
+    <string name="subtitle_order_placed">Order placed</string>
+    <string name="subtitle_payment_accept">Payment accept</string>
+    <string name="subtitle_NFe">NFe Issuance</string>
+    <string name="subtitle_shipping_company">Sent to carrier</string>
+    <string name="subtitle_in_transport">In transit</string>
+    <string name="title_products">Products</string>
+    <string name="subtitle_size">Size: %1$s</string>
+    <string name="subtitle_color">Color: %1$s</string>
+    <string name="subtitle_amount_unity">%1$d unit</string>
+    <string name="title_pay_sleep">Form of payment</string>
+    <string name="subtitle_mercado_pago">Mercado pago</string>
+    <string name="subtitle_boleto">Ticket</string>
+    <string name="title_address">Address</string>
+    <string name="subtitle_support_order">Was there any doubt? Need help?</string>
+    <string name="subtitle_contact_order">Contact us</string>
+    <string name="subtitle_cancel_request">Cancel order</string>
+    <string name="subtitle_buy_again">Buy again</string>
+
+    <!--FAVORITE PAGE-->
+    <string name="button_purchase">Purchase</string>
 </resources>
