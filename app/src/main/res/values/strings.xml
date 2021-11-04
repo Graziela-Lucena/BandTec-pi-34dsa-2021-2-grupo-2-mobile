@@ -199,10 +199,12 @@
     <string name="my_addresses">Meus endereços</string>
 
     <!--ACCOUNT CONFIG (Addresses 1) -->
-    <string name="adresses_client_name" translatable="false">%1$s</string>
-    <string name="street_name_adresses_one" translatable="false">%1$s,%2$s</string>
-    <string name="district_city_adresses_one" translatable="false">%1$s,%2$s</string>
-    <string name="cep_adresses_one" translatable="false">CEP %1$s</string>
+    <string name="addresses_client_name" translatable="false">%1$s</string>
+    <string name="street_name_addresses_one" translatable="false">%1$s,</string>
+    <string name="number_home_addresses_one" translatable="false">%1$s</string>
+    <string name="neighborhood_addresses_one" translatable="false">%1$s,</string>
+    <string name="city_addresses_one" translatable="false">%1$s</string>
+    <string name="cep_addresses_one" translatable="false">CEP %1$s</string>
 
     <!--ACCOUNT CONFIG (Addresses 2) -->
     <string name="adresses_two_client_name" translatable="false">%1$s</string>

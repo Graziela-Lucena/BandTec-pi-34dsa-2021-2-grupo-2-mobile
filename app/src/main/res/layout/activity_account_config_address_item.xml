@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:padding="@dimen/spacing_medium"
     android:background="@drawable/bg_details_account_config">
 
@@ -14,7 +13,7 @@
         android:textColor="@color/pattern_light"
         android:textSize="@dimen/font_size_small"
         android:textAppearance="@style/Exo2_Regular_Small_Title"
-        android:text="@string/adresses_client_name"
+        android:text="@string/addresses_client_name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -23,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/pattern_light"
-        android:text="@string/street_name_adresses_one"
+        android:text="@string/street_name_addresses_one"
         android:textSize="@dimen/font_size_small"
         android:textAppearance="@style/Exo2_Regular_Small_Title"
         android:layout_marginTop="@dimen/spacing_medium"
@@ -31,10 +30,23 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_number_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_home_addresses_one"
+        android:textColor="@color/pattern_light"
+        android:textSize="@dimen/font_size_small"
+        android:textAppearance="@style/Exo2_Regular_Small_Title"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintTop_toTopOf="@+id/title_street_name"
+        app:layout_constraintBottom_toBottomOf="@+id/title_street_name"
+        app:layout_constraintStart_toEndOf="@+id/title_street_name"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_neighborhood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/district_city_adresses_one"
+        android:text="@string/neighborhood_addresses_one"
         android:textSize="@dimen/font_size_small"
         android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Regular_Small_Title"
@@ -43,10 +55,23 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_addresses_one"
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_Regular_Small_Title"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/title_neighborhood"
+        app:layout_constraintTop_toTopOf="@+id/title_neighborhood"
+        app:layout_constraintStart_toEndOf="@+id/title_neighborhood"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_cep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cep_adresses_one"
+        android:text="@string/cep_addresses_one"
         android:textSize="@dimen/font_size_small"
         android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Regular_Small_Title"
