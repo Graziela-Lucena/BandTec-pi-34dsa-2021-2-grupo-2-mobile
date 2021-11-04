@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_product_favorite_profile_item"
+    android:paddingHorizontal="@dimen/spacing_medium"
+    android:paddingBottom="@dimen/spacing_medium"
+    android:layout_marginHorizontal="@dimen/spacing_xsl">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shirt_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popular1"
+        android:layout_marginTop="@dimen/spacing_xml"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divider_favorite"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:src="@drawable/bg_divider_product"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/shirt_favorite"
+        app:layout_constraintStart_toStartOf="@+id/shirt_favorite"
+        app:layout_constraintEnd_toEndOf="@+id/shirt_favorite"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_name_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_product_name"
+        android:textColor="@color/pattern_light"
+        android:textSize="@dimen/font_size_minimum"
+        android:textAppearance="@style/Exo2_Medium_Title_Product"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/divider_favorite"
+        app:layout_constraintStart_toStartOf="@+id/divider_favorite"
+        app:layout_constraintEnd_toEndOf="@+id/divider_favorite"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_favorite_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_old_price"
+        android:textColor="@color/pattern_light"
+        android:layout_marginTop="@dimen/font_size_minimum"
+        android:textSize="@dimen/font_size_minimum_nine"
+        android:textAppearance="@style/Exo2_Medium_Title_Product"
+        app:layout_constraintStart_toStartOf="@id/divider_favorite"
+        app:layout_constraintTop_toBottomOf="@id/title_name_favorite"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_favorite_new_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_new_price"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/font_size_small"
+        android:textAppearance="@style/Exo2_Bold_Price_Highlight"
+        android:layout_marginStart="@dimen/spacing_s"
+        app:layout_constraintStart_toEndOf="@id/title_favorite_old_price"
+        app:layout_constraintTop_toTopOf="@id/title_favorite_old_price"
+        app:layout_constraintBottom_toBottomOf="@+id/title_favorite_old_price"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

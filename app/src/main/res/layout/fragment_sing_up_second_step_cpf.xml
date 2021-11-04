@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/page_indicator_text_sign_up"
-        style="@style/Exo2_Regular_Subtitle_Highlight"
+        style="@style/Exo2_Bold_Subtitle_Highlight"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="@dimen/spacing_xsl"
@@ -39,6 +39,15 @@
         app:layout_constraintStart_toEndOf="@id/page_indicator"
         android:layout_marginStart="@dimen/spacing_xs" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="@dimen/spacing_minimum"
+        android:src="@drawable/bg_hot_blue"
+        app:layout_constraintStart_toStartOf="@id/page_indicator"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/page_indicator"
+        android:layout_marginTop="@dimen/spacing_s" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/cpf_title"
         android:layout_width="wrap_content"
@@ -52,23 +61,46 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/cpf"
         android:layout_width="@dimen/spacing_zero"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/spacing_big"
         app:layout_constraintTop_toBottomOf="@id/cpf_title"
         app:layout_constraintStart_toStartOf="@id/cpf_title"
         android:layout_marginEnd="@dimen/spacing_sm"
         android:layout_marginTop="@dimen/spacing_sm"
-        app:layout_constraintEnd_toStartOf="@id/check_name"
+        app:layout_constraintEnd_toStartOf="@id/check_valid"
         android:background="@drawable/bg_light_rounded"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_message_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/cpf"
+        app:layout_constraintTop_toBottomOf="@id/cpf"
+        android:text="@string/error_message"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_minimum"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
+
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/check_name"
+        android:id="@+id/check_valid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/cpf"
         app:layout_constraintBottom_toBottomOf="@id/cpf"
         android:layout_marginEnd="@dimen/spacing_xsl"
-        android:src="@drawable/ic_approve_transparent"/>
+        android:src="@drawable/ic_approve_transparent"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/check_invalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cpf"
+        app:layout_constraintBottom_toBottomOf="@id/cpf"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_refuse_transparent"
+        android:visibility="gone"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/continue_button"

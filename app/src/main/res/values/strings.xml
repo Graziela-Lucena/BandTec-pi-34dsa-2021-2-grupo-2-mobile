@@ -154,107 +154,62 @@
     <string name="title_my_order_order_detail">Detalhes do pedido</string>
     <string name="title_my_order_released">Realizado em %1$d/%2$d/%3$d</string>
     <string name="title_my_order_product_quantity">+%1$d itens</string>
-    <string name="title_version_app_login">Versão %1$d.%2$d.%3$d</string>
-    
+    <string name="title_version_app_login">Versão %1$s</string>
+
     <!--ABOUT US PAGE -->
     <string name="title_justgeek_aboutus">JustGeek - Sobre Nós</string>
+    <string name="subtitle_aboutus">O que é a JustGeek?</string>
+    <string name="text_aboutus">A justGeek é a loja perfeita para você que procura produtos de
+        qualidade do jeito que você quer. Nós eferecemos uma variedade de roupas dos temas mais
+        populares dos tempos atuais, além de termos a opção de customização, para você que gosta de
+        ser AUTÊNTICO.</string>
+    <string name="subtitle_customization_aboutus">Customização</string>
+    <string name="text_customization_aboutus">A nossa loja também tem a opção de CUSTOMIZAR suas
+        roupas. É fácil, simples e você sai com sua personalidade externelizada.
+        Quer saber sobre o processo? Veja nossa página explicando o processo AQUI.</string>
+    <string name="subtitle_team_justgeek">Equipe JustGeek</string>
+    <string name="text_team_justgeek">A nossa staff é composta pelos próprios desenvolvedores da
+        JustGeek, mas isso não quer dizer que a equipe não pode aumentar.
+        Entre em contato com a gente caso queira fazer parte do nosso time! Estamos sempre de braços
+        abertos para novos colaboradores.</string>
 
-    <!--PRODUCT PAGE-->
-    <string name="product_step">%1$d/3</string>
-    <string name="price">R$ %1$.2f</string>
-    <string name="installments">2x  de R$ %1$.2f sem juros</string>
-    <string name="amount">Qtd:</string>
-    <string name="size_pp">PP</string>
-    <string name="size_p">P</string>
-    <string name="size_m">M</string>
-    <string name="size_g">G</string>
-    <string name="size_gg">GG</string>
-    <string name="title_shipping">Taxa de envio</string>
-    <string name="subtitle_shipping">Oi :) é novo por aqui ? Cadastre um endereço
-         novo por aqui</string>
-    <string name="subtitle_invite">Frete  grátis em compras acima de R$100,00</string>
-    <string name="subtitle_shipping_price">Preço de entrega estimado: R$ %1$.2f</string>
-    <string name="title_evaluation">Avaliações</string>
-    <string name="title_suggestion">Você também pode gostar</string>
-    <string name="title_button_add_cart">Adicionar ao carrinho</string>
-    <string name="pop_up_add_cart">Tamanho: %1$s</string>
-    <string name="pop_up_add_cart_qty">Quantidade: %1$d</string>
-    <string name="button_go_cart">Ir ao carrinho</string>
-    <string name="button_keep_buying">Continuar comprando</string>
-    <string name="pop_up_favorite_title">Produto adicionado aos seus favoritos</string>
-    <string name="button_favorite">Ver favoritos</string>
 
-    <!--CART PAGE-->
-    <string name="title_bag">Minha Sacola</string>
-    <string name="subtitle_suggestion_product">Você também pode levar</string>
-    <string name="subtitle_percentage_discount">%1$d%%</string>
-    <string name="subtitle_total_price">R$ %1$.2f</string>
-    <string name="button_proceed_purchase">PROSSEGUIR COM A COMPRA</string>
-    <string name="subtilte_coupon_alert">Aplique o cupom de desconto na proxima etapa</string>
-    <string name="subtitle_empty_bag">Sua sacola está vazia!</string>
-    <string name="subtitle_coupon_alert">Deseja preenchê-la  com esses produtos?</string>
-    <string name="button_going_shop">Ir ás compras</string>
+    <!--ACCOUNT CONFIG -->
+    <string name="title_account_config_toolbar">Configurações da conta</string>
+    <string name="title_client_name" translatable="false">%1$s</string>
+    <string name="cpf_client" translatable="false">%1$s</string>
+    <string name="birth_date_client" translatable="false">%1$s</string>
+    <string name="email_client" translatable="false">%1$s</string>
+    <string name="contact_number_client" translatable="false">%1$s</string>
+    <string name="change_data">Alterar dados pessoais</string>
+    <string name="my_addresses">Meus endereços</string>
 
-    <!--ORDER CONFIRMATION PAGE-->
-    <string name="title_order_confirmation">Confirmação do pedido</string>
-    <string name="subtitle_method_shipping">Método de envio</string>
-    <string name="title_shipping_fee">Taxa mínima de envio</string>
-    <string name="subtitle_shipping_fee">R$ 12,00 - 10 dias úteis de espera mínima</string>
-    <string name="title_payment_method">Método de pagamento</string>
-    <string name="subtitle_payment_method">Mercado Pago</string>
-    <string name="subtitle_payment_method_info">Inclui boleto, débito/crédito</string>
-    <string name="title_apply_coupon">Aplicar cupomde desconto</string>
-    <string name="title_bag_products">Sacola de compras</string>
-    <string name="title_ratail_price">Preço de varejo:</string>
-    <string name="title_discount_coupon">Cupom de desconto:</string>
-    <string name="title_shippping_value">Taxa de envio:</string>
-    <string name="title_security_payment">Pagamento seguro:</string>
-    <string name="button_make_wish">FAZER PEDIDO</string>
-    <string name="button_finish_yes">Sim</string>
-    <string name="button_finish_no">Não</string>
-    <string name="title_finish">Deseja finalizar o pedido</string>
+    <!--ACCOUNT CONFIG (Addresses 1) -->
+    <string name="addresses_client_name" translatable="false">%1$s</string>
+    <string name="street_name_addresses_one" translatable="false">%1$s,</string>
+    <string name="number_home_addresses_one" translatable="false">%1$s</string>
+    <string name="neighborhood_addresses_one" translatable="false">%1$s,</string>
+    <string name="city_addresses_one" translatable="false">%1$s</string>
+    <string name="cep_addresses_one" translatable="false">CEP %1$s</string>
 
-    <!--COUPON PAGE-->
-    <string name="title_my_coupons">Meus cupons</string>
-    <string name="subtitle_apply_coupons">Aplicar cupom de desconto</string>
-    <string name="button_apply">Aplicar</string>
-    <string name="title_coupons">Cupons</string>
-    <string name="button_ok">OK</string>
+    <!--ACCOUNT CONFIG (Addresses 2) -->
+    <string name="adresses_two_client_name" translatable="false">%1$s</string>
+    <string name="street_name_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
+    <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
+    <string name="add_new_address" translatable="false">Adicionar novo endereço</string>
+
+    <!--FAQ PAGE-->
+    <string name="profile_name">Olá, %1$s</string>
 
     <!--PROFILE PAGE-->
-    <string name="title_welcome">Olá %1$s</string>
-    <string name="title_recent_request">Pedidos mais recentes</string>
-    <string name="subtitle_recent_request">Realizado em %1%s</string>
-    <string name="subtitle_view">Ver todos</string>
-    <string name="title_favorite">Favoritos</string>
-
-    <!--ORDER DETAILS PAGE-->
-    <string name="title_details_product">Detalhes  do pedido</string>
-    <string name="title_request_number">N pedido %1$d</string>
-    <string name="subtitle_amount_value">Valor dos produtos</string>
-    <string name="subtitle_shipping_order">Frete</string>
-    <string name="subtitle_coupon_order">Cupom</string>
-    <string name="subtitle_total">TOTAL</string>
-    <string name="title_request_status">Status do pedido</string>
-    <string name="subtitle_order_placed">Pedido realizado</string>
-    <string name="subtitle_payment_accept">Pagamento aprovado</string>
-    <string name="subtitle_NFe">Emissão NFe</string>
-    <string name="subtitle_shipping_company">Enviado para a transportadora</string>
-    <string name="subtitle_in_transport">Em trânsito</string>
-    <string name="title_products">Produtos</string>
-    <string name="subtitle_size">Tam: %1$s</string>
-    <string name="subtitle_color">Cor: %1$s</string>
-    <string name="subtitle_amount_unity">%1$d unidade</string>
-    <string name="title_pay_sleep">Forma de pagamento</string>
-    <string name="subtitle_mercado_pago">Mercado pago</string>
-    <string name="subtitle_boleto">Boleto</string>
-    <string name="title_address">Endereço</string>
-    <string name="subtitle_support_order">Ficou alguma duvida? Precisa de Ajuda?</string>
-    <string name="subtitle_contact_order">Contate-nos</string>
-    <string name="subtitle_cancel_request">Cancelar pedido</string>
-    <string name="subtitle_buy_again">Comprar de novo</string>
+    <string name="title_recent_order">Pedido mais recente</string>
+    <string name="title_date_recent_order">Realizando em %1$s</string>
+    <string name="title_see_all">Ver todos ></string>
 
     <!--FAVORITE PAGE-->
-    <string name="button_purchase">Comprar</string>
-    
+    <string name="title_buy_from_favorite_page">Comprar</string>
+    <string name="title_review" translatable="false">%1$s</string>
+
+
 </resources>
