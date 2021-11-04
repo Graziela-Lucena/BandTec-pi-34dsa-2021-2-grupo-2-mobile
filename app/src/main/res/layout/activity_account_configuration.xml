@@ -34,7 +34,73 @@
             android:background="@drawable/bg_card_dark"
             app:layout_constraintTop_toTopOf="@id/container_account_config_page">
 
-            <!--First box-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_name_client"
+                android:textSize="@dimen/font_size_medium"
+                android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                android:textColor="@color/pattern_light"
+                app:layout_constraintStart_toStartOf="@+id/container_user_data"
+                app:layout_constraintTop_toTopOf="@+id/container_user_data"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_user_cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpf_client"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:textColor="@color/pattern_light"
+                android:layout_marginTop="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_user_name"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pattern_light"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:text="@string/birth_date_client"
+                android:textSize="@dimen/font_size_small"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_user_cpf"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_client"
+                android:textColor="@color/pattern_light"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_birthdate"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_number_cellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_number_client"
+                android:textColor="@color/pattern_light"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_email"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_change_personal_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_data"
+                android:textColor="@color/pattern_light"
+                android:padding="@dimen/spacing_xs"
+                android:background="@drawable/bg_card_order_detail"
+                app:layout_constraintBottom_toBottomOf="@id/container_user_data"
+                app:layout_constraintEnd_toEndOf="@id/container_user_data"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
