@@ -97,4 +97,9 @@
         <item name="android:textSize">@dimen/font_size_small</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
+    <style name="Exo2_SemiBold_Title_Product">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
 </resources>

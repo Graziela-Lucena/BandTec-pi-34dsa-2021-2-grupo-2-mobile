@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_container_light"
+    android:padding="@dimen/spacing_medium">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_item_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popular1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_name_item_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_product_name"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Product"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@+id/image_item_bag"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_price_item_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_new_price"
+        android:textAppearance="@style/Exo2_Bold_Subtitle_Highlight"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@id/image_item_bag"
+        app:layout_constraintTop_toBottomOf="@id/title_name_item_bag"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

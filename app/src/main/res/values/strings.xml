@@ -44,7 +44,7 @@
     <!--HOMEPAGE-->
     <string name="custom_how_you_want">Customize suas roupas como quiser</string>
     <string name="title_promotion">PROMOÇÕES</string>
-    <string name="title_product_name">Camiseta Naruto</string>
+    <string name="title_product_name">%1$2</string>
     <string name="subtitle_old_price" translatable="false">R$ %1$.2f</string>
     <string name="subtitle_new_price" translatable="false">R$ %1$.2f</string>
     <string name="tag_promotion" translatable="false">%1$d%</string>
