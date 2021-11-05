@@ -225,5 +225,13 @@
     <string name="title_buy_from_favorite_page">Comprar</string>
     <string name="title_review" translatable="false">%1$s</string>
 
+    <!--CART PAGE-->
+    <string name="toolbar_title_cart">Minha sacola</string>
+    <string name="title_you_can_also_buy">Você também pode levar</string>
+    <string name="title_total_price_cart" translatable="false">Total:</string>
+    <string name="title_total_price_number" translatable="false">%1$s</string>
+    <string name="title_button_proceed_with_purchase">Prosseguir com a compra (%1$s)</string>
+    <string name="title_discount_apply_next_step">Aplique o cupom de desconto na próxima etapa</string>
+
 
 </resources>

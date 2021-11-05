@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCartActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        app:titleTextColor="@color/pattern_light"
+        app:titleTextAppearance="@style/Exo2_SemiBold_Title_Toolbar"
+        app:title="@string/toolbar_title_cart"
+        app:navigationIcon="@drawable/ic_refuse_transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_cart_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <!--Cart Items-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divisor_cart"
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_hot_blue"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_cart_items"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_you_can_also_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_you_can_also_buy"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/divisor_cart"
+        app:layout_constraintEnd_toEndOf="@id/divisor_cart"
+        app:layout_constraintTop_toBottomOf="@+id/divisor_cart"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divisor_promotion_cart"
+        android:layout_width="98dp"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_hot_blue"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintEnd_toEndOf="@+id/title_you_can_also_buy"
+        app:layout_constraintStart_toStartOf="@+id/title_you_can_also_buy"
+        app:layout_constraintTop_toBottomOf="@+id/title_you_can_also_buy"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_items_products_bag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor_promotion_cart">
+
+        <!--ITEMS PRODUCTS HERE-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_details_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_product_favorite_profile_item"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+            android:text="@string/title_total_price_cart"
+            app:layout_constraintTop_toTopOf="@+id/container_details_next_step"
+            app:layout_constraintStart_toStartOf="@id/container_details_next_step"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:text="@string/title_total_price_number"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Price"
+            app:layout_constraintBottom_toBottomOf="@+id/title_total"
+            app:layout_constraintTop_toTopOf="@id/container_details_next_step"
+            app:layout_constraintStart_toEndOf="@+id/title_total"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_proceed_with_purchase"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:text="@string/title_button_proceed_with_purchase"
+            android:textAppearance="@style/Exo2_Semibold_Button_Text"
+            android:background="@drawable/bg_button_next"
+            android:layout_marginTop="@dimen/spacing_sl"
+            app:layout_constraintEnd_toEndOf="@id/container_details_next_step"
+            app:layout_constraintStart_toStartOf="@+id/title_total"
+            app:layout_constraintTop_toBottomOf="@+id/title_total"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_coupon_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sl"
+            android:text="@string/title_discount_apply_next_step"
+            android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+            app:layout_constraintStart_toStartOf="@+id/button_proceed_with_purchase"
+            app:layout_constraintEnd_toEndOf="@+id/button_proceed_with_purchase"
+            app:layout_constraintTop_toBottomOf="@+id/button_proceed_with_purchase"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

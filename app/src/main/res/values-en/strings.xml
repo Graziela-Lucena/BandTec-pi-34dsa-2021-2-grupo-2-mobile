@@ -115,5 +115,9 @@
     <string name="title_date_recent_order">Accomplished %1$s</string>
     <string name="title_see_all">See all</string>
     <string name="title_buy_from_favorite_page">Buy</string>
+    <string name="toolbar_title_cart">My bag</string>
+    <string name="title_you_can_also_buy">You can also take</string>
+    <string name="title_button_proceed_with_purchase">Proceed with the purchase (%1$s)</string>
+    <string name="title_discount_apply_next_step">Apply the discount coupon in the next step</string>
 
 </resources>
