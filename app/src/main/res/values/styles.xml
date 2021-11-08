@@ -102,4 +102,8 @@
         <item name="android:textSize">@dimen/font_size_medium</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
+    <style name="Exo2_Medium_Title_Size">
+        <item name="android:fontFamily">@font/medium_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum_nine</item>
+    </style>
 </resources>

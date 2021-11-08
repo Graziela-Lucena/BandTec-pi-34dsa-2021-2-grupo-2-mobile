@@ -37,4 +37,113 @@
         app:layout_constraintStart_toEndOf="@id/image_item_bag"
         app:layout_constraintTop_toBottomOf="@id/title_name_item_bag"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_pp_size"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dark_size_choose"
+        android:padding="@dimen/spacing_xs"
+        android:text="@string/subtitle_filter_tam_pp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Exo2_Medium_Title_Size"
+        android:textColor="@color/pattern_light"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/title_price_item_bag"
+        app:layout_constraintTop_toBottomOf="@+id/title_price_item_bag"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_p_size"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_filter_tam_p"
+        android:textColor="@color/pattern_light"
+        android:textAlignment="center"
+        android:textAppearance="@style/Exo2_Medium_Title_Size"
+        android:padding="@dimen/spacing_xs"
+        android:background="@drawable/bg_dark_size_choose"
+        android:layout_marginStart="@dimen/spacing_xsl"
+        app:layout_constraintBottom_toBottomOf="@id/button_pp_size"
+        app:layout_constraintTop_toTopOf="@id/button_pp_size"
+        app:layout_constraintStart_toEndOf="@+id/button_pp_size"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_m_size"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_Medium_Title_Size"
+        android:text="@string/subtitle_filter_tam_m"
+        android:padding="@dimen/spacing_xs"
+        android:layout_marginStart="@dimen/spacing_xsl"
+        android:background="@drawable/bg_dark_size_choose"
+        app:layout_constraintBottom_toBottomOf="@id/button_p_size"
+        app:layout_constraintTop_toTopOf="@id/button_p_size"
+        app:layout_constraintStart_toEndOf="@id/button_p_size"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_g_size"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pattern_light"
+        android:textAlignment="center"
+        android:text="@string/subtitle_filter_tam_g"
+        android:textAppearance="@style/Exo2_Medium_Title_Size"
+        android:padding="@dimen/spacing_xs"
+        android:background="@drawable/bg_dark_size_choose"
+        android:layout_marginStart="@dimen/spacing_xsl"
+        app:layout_constraintBottom_toBottomOf="@+id/button_m_size"
+        app:layout_constraintTop_toTopOf="@+id/button_m_size"
+        app:layout_constraintStart_toEndOf="@+id/button_m_size"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_gg_size"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pattern_light"
+        android:textAlignment="center"
+        android:padding="@dimen/spacing_xs"
+        android:textAppearance="@style/Exo2_Medium_Title_Size"
+        android:text="@string/subtitle_filter_tam_gg"
+        android:background="@drawable/bg_dark_size_choose"
+        android:layout_marginStart="@dimen/spacing_xsl"
+        app:layout_constraintBottom_toBottomOf="@+id/button_g_size"
+        app:layout_constraintTop_toTopOf="@+id/button_g_size"
+        app:layout_constraintStart_toEndOf="@+id/button_g_size"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_less"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_less_button"
+        android:textColor="@color/pattern_light"
+        android:text="@string/title_less_button"
+        android:textAlignment="center"
+        android:layout_marginEnd="@dimen/spacing_xs"
+        app:layout_constraintBottom_toBottomOf="@+id/result_quantity"
+        app:layout_constraintTop_toTopOf="@+id/result_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/result_quantity"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/result_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_result_quantity"
+        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:layout_marginEnd="@dimen/spacing_xs"
+        app:layout_constraintBottom_toBottomOf="@+id/button_plus"
+        app:layout_constraintTop_toTopOf="@+id/button_plus"
+        app:layout_constraintEnd_toStartOf="@+id/button_plus"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_plus"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pattern_dark"
+        android:text="@string/title_plus_button"
+        android:textAlignment="center"
+        android:background="@drawable/bg_plus_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button_gg_size"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
