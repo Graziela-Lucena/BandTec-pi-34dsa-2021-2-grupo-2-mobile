@@ -99,7 +99,6 @@
     <string name="subtitle_filter_tam_m" translatable="false">M</string>
     <string name="subtitle_filter_tam_g" translatable="false">G</string>
     <string name="subtitle_filter_tam_gg" translatable="false">GG</string>
-    <string name="subtitle_filter_tam_xgg" translatable="false">XGG</string>
     <string name="title_filter_title_category_page">Título</string>
     <string name="subtitle_filter_title_category_page">Hora de Aventura</string>
 
@@ -232,6 +231,8 @@
     <string name="title_total_price_number" translatable="false">%1$s</string>
     <string name="title_button_proceed_with_purchase">Prosseguir com a compra (%1$s)</string>
     <string name="title_discount_apply_next_step">Aplique o cupom de desconto na próxima etapa</string>
-
+    <string name="title_plus_button" translatable="false">+</string>
+    <string name="title_less_button" translatable="false">-</string>
+    <string name="title_result_quantity" translatable="false">%1$s</string>
 
 </resources>
