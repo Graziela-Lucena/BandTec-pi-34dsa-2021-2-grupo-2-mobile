@@ -17,30 +17,14 @@ class MyCartActivity : AppCompatActivity() {
         val buttonG = findViewById<AppCompatTextView>(R.id.button_g_size)
         val buttonGG = findViewById<AppCompatTextView>(R.id.button_gg_size)
         val fragmentTransaction = supportFragmentManager.beginTransaction()
+        val fragmentTransactionPromotion = supportFragmentManager.beginTransaction()
         val itemsCart = MyCartFragment()
+        val itemsPromo = MyCartPromotionFragment()
 
         fragmentTransaction.add(R.id.fragment_item_cart, itemsCart)
+        fragmentTransactionPromotion.add(R.id.fragment_promotion_cart, itemsPromo)
         fragmentTransaction.commit()
-
-        buttonPP.setOnClickListener {
-            v -> setBackgroundPP(v)
-        }
-
-        buttonP.setOnClickListener {
-            v -> setBackgroundP(v)
-        }
-
-        buttonM.setOnClickListener {
-                v -> setBackgroundM(v)
-        }
-
-        buttonG.setOnClickListener {
-            v -> setBackgroundG(v)
-        }
-
-        buttonGG.setOnClickListener {
-            v -> setBackgroundGG(v)
-        }
+        fragmentTransactionPromotion.commit()
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")

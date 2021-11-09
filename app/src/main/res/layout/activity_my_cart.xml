@@ -88,7 +88,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divisor_promotion_cart">
 
-        <!--ITEMS PRODUCTS HERE-->
+        <ScrollView
+            android:id="@+id/scroll_promotion_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/container_items_products_bag">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_promotion_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
