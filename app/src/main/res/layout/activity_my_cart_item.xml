@@ -61,7 +61,7 @@
         android:textAppearance="@style/Exo2_Medium_Title_Size"
         android:padding="@dimen/spacing_xs"
         android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_xsl"
+        android:layout_marginStart="@dimen/spacing_sm"
         app:layout_constraintBottom_toBottomOf="@id/button_pp_size"
         app:layout_constraintTop_toTopOf="@id/button_pp_size"
         app:layout_constraintStart_toEndOf="@+id/button_pp_size"/>
@@ -75,7 +75,7 @@
         android:textAppearance="@style/Exo2_Medium_Title_Size"
         android:text="@string/subtitle_filter_tam_m"
         android:padding="@dimen/spacing_xs"
-        android:layout_marginStart="@dimen/spacing_xsl"
+        android:layout_marginStart="@dimen/spacing_sm"
         android:background="@drawable/bg_dark_size_choose"
         app:layout_constraintBottom_toBottomOf="@id/button_p_size"
         app:layout_constraintTop_toTopOf="@id/button_p_size"
@@ -91,7 +91,7 @@
         android:textAppearance="@style/Exo2_Medium_Title_Size"
         android:padding="@dimen/spacing_xs"
         android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_xsl"
+        android:layout_marginStart="@dimen/spacing_sm"
         app:layout_constraintBottom_toBottomOf="@+id/button_m_size"
         app:layout_constraintTop_toTopOf="@+id/button_m_size"
         app:layout_constraintStart_toEndOf="@+id/button_m_size"/>
@@ -106,7 +106,7 @@
         android:textAppearance="@style/Exo2_Medium_Title_Size"
         android:text="@string/subtitle_filter_tam_gg"
         android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_xsl"
+        android:layout_marginStart="@dimen/spacing_sm"
         app:layout_constraintBottom_toBottomOf="@+id/button_g_size"
         app:layout_constraintTop_toTopOf="@+id/button_g_size"
         app:layout_constraintStart_toEndOf="@+id/button_g_size"/>
