@@ -235,4 +235,91 @@
     <string name="title_less_button" translatable="false">-</string>
     <string name="title_result_quantity" translatable="false">%1$s</string>
 
+    <!--PRODUCT PAGE-->
+    <string name="product_step">%1$d/3</string>
+    <string name="price">R$ %1$.2f</string>
+    <string name="installments">2x  de R$ %1$.2f sem juros</string>
+    <string name="amount">Qtd:</string>
+    <string name="size_pp">PP</string>
+    <string name="size_p">P</string>
+    <string name="size_m">M</string>
+    <string name="size_g">G</string>
+    <string name="size_gg">GG</string>
+    <string name="title_shipping">Taxa de envio</string>
+    <string name="subtitle_shipping">Oi :) é novo por aqui ? Cadastre um endereço
+         novo por aqui</string>
+    <string name="subtitle_invite">Frete  grátis em compras acima de R$100,00</string>
+    <string name="subtitle_shipping_price">Preço de entrega estimado: R$ %1$.2f</string>
+    <string name="title_evaluation">Avaliações</string>
+    <string name="title_suggestion">Você também pode gostar</string>
+    <string name="title_button_add_cart">Adicionar ao carrinho</string>
+    <string name="pop_up_add_cart">Tamanho: %1$s</string>
+    <string name="pop_up_add_cart_qty">Quantidade: %1$d</string>
+    <string name="button_go_cart">Ir ao carrinho</string>
+    <string name="button_keep_buying">Continuar comprando</string>
+    <string name="pop_up_favorite_title">Produto adicionado aos seus favoritos</string>
+    <string name="button_favorite">Ver favoritos</string>
+
+    <!--ORDER CONFIRMATION PAGE-->
+    <string name="title_order_confirmation">Confirmação do pedido</string>
+    <string name="subtitle_method_shipping">Método de envio</string>
+    <string name="title_shipping_fee">Taxa mínima de envio</string>
+    <string name="subtitle_shipping_fee">R$ 12,00 - 10 dias úteis de espera mínima</string>
+    <string name="title_payment_method">Método de pagamento</string>
+    <string name="subtitle_payment_method">Mercado Pago</string>
+    <string name="subtitle_payment_method_info">Inclui boleto, débito/crédito</string>
+    <string name="title_apply_coupon">Aplicar cupomde desconto</string>
+    <string name="title_bag_products">Sacola de compras</string>
+    <string name="title_ratail_price">Preço de varejo:</string>
+    <string name="title_discount_coupon">Cupom de desconto:</string>
+    <string name="title_shippping_value">Taxa de envio:</string>
+    <string name="title_security_payment">Pagamento seguro:</string>
+    <string name="button_make_wish">FAZER PEDIDO</string>
+    <string name="button_finish_yes">Sim</string>
+    <string name="button_finish_no">Não</string>
+    <string name="title_finish_purchase">Deseja finalizar o pedido</string>
+
+    <!--COUPON PAGE-->
+    <string name="title_my_coupons">Meus cupons</string>
+    <string name="subtitle_apply_coupons">Aplicar cupom de desconto</string>
+    <string name="button_apply">Aplicar</string>
+    <string name="title_coupons">Cupons</string>
+    <string name="button_ok">OK</string>
+
+    <!--PROFILE PAGE-->
+    <string name="title_welcome">Olá %1$s</string>
+    <string name="title_recent_request">Pedidos mais recentes</string>
+    <string name="subtitle_recent_request">Realizado em %1%s</string>
+    <string name="subtitle_view">Ver todos</string>
+    <string name="title_favorite">Favoritos</string>
+
+    <!--ORDER DETAILS PAGE-->
+    <string name="title_details_product">Detalhes  do pedido</string>
+    <string name="title_request_number">N pedido %1$d</string>
+    <string name="subtitle_amount_value">Valor dos produtos</string>
+    <string name="subtitle_shipping_order">Frete</string>
+    <string name="subtitle_coupon_order">Cupom</string>
+    <string name="subtitle_total">TOTAL</string>
+    <string name="title_request_status">Status do pedido</string>
+    <string name="subtitle_order_placed">Pedido realizado</string>
+    <string name="subtitle_payment_accept">Pagamento aprovado</string>
+    <string name="subtitle_NFe">Emissão NFe</string>
+    <string name="subtitle_shipping_company">Enviado para a transportadora</string>
+    <string name="subtitle_in_transport">Em trânsito</string>
+    <string name="title_products">Produtos</string>
+    <string name="subtitle_size">Tam: %1$s</string>
+    <string name="subtitle_color">Cor: %1$s</string>
+    <string name="subtitle_amount_unity">%1$d unidade</string>
+    <string name="title_pay_sleep">Forma de pagamento</string>
+    <string name="subtitle_mercado_pago">Mercado pago</string>
+    <string name="subtitle_boleto">Boleto</string>
+    <string name="title_address">Endereço</string>
+    <string name="subtitle_support_order">Ficou alguma duvida? Precisa de Ajuda?</string>
+    <string name="subtitle_contact_order">Contate-nos</string>
+    <string name="subtitle_cancel_request">Cancelar pedido</string>
+    <string name="subtitle_buy_again">Comprar de novo</string>
+
+    <!--FAVORITE PAGE-->
+    <string name="button_purchase">Comprar</string>
+
 </resources>
