@@ -119,6 +119,10 @@
     <string name="title_you_can_also_buy">You can also take</string>
     <string name="title_button_proceed_with_purchase">Proceed with the purchase (%1$s)</string>
     <string name="title_discount_apply_next_step">Apply the discount coupon in the next step</string>
+    <string name="title_category">Category</string>
+    <string name="title_notifications">Notificações</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_profile">Profile</string>
 
     <!--PRODUCT PAGE-->
     <string name="product_step">%1$d/3</string>
