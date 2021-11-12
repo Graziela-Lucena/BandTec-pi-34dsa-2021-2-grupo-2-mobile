@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_comment"
+    android:padding="@dimen/spacing_s"
+    android:layout_marginStart="@dimen/spacing_xs"
+    android:layout_marginEnd="@dimen/spacing_xs">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Graziela Batista de Lucena Lima"
+        android:lines="1"
+        app:layout_constraintEnd_toStartOf="@id/rating_stars"
+        style="@style/Exo2_SemiBold_Title_Promotion_Bag"
+        android:textColor="@color/pattern_dark"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:layout_marginStart="@dimen/spacing_xs"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <TextView
+        android:id="@+id/comment"
+        style="@style/Exo2_Regular_Subtitle"
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:layout_marginBottom="@dimen/spacing_xsl"
+        android:lines="3"
+        android:textColor="@color/pattern_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/user_name"
+        app:layout_constraintEnd_toStartOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        tools:text="comentário lorem ipsum dolor sit amet é isso ai daora demais" />
+
+    <ImageView
+        android:id="@+id/rating_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rate_star"
+        app:layout_constraintTop_toTopOf="@id/user_name"
+        app:layout_constraintBottom_toBottomOf="@id/user_name"
+        app:layout_constraintEnd_toStartOf="@id/rate"
+        android:layout_marginEnd="@dimen/spacing_xs"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5.0"
+        app:layout_constraintEnd_toEndOf="@id/guide"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        app:layout_constraintTop_toTopOf="@id/rating_stars"
+        app:layout_constraintBottom_toBottomOf="@id/rating_stars"
+        style="@style/Exo2_SemiBold_Title_Promotion_Bag"
+        android:textColor="@color/pattern_dark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

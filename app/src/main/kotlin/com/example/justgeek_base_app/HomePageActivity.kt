@@ -21,5 +21,15 @@ class HomePageActivity: AppCompatActivity(R.layout.homepage_activity) {
         val fragmentPop = ProductPopFragment()
         fragmentTransactionPop.add(R.id.fragment_container_pop, fragmentPop)
         fragmentTransactionPop.commit()
+
+        val fragmentTransactionComment = supportFragmentManager.beginTransaction()
+        val fragmentComment = CommentFragment()
+        fragmentTransactionComment.add(R.id.fragment_container_comment, fragmentComment)
+        fragmentTransactionComment.commit()
+
+        val fragmentTransactionCoupon = supportFragmentManager.beginTransaction()
+        val fragmentCoupon = FirstPurchaseCouponFragment()
+        fragmentTransactionComment.add(R.id.fragment_coupon_container, fragmentCoupon)
+        fragmentTransactionCoupon.commit()
     }
 }

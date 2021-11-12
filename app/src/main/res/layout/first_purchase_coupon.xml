@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/spacing_xsl"
+    android:background="@drawable/bg_coupon_home">
+
+        <TextView
+            android:id="@+id/title_coupon"
+            style="@style/Exo2_Semibold_Button_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xsl"
+            android:layout_marginTop="@dimen/spacing_xsl"
+            android:text="Oi, você vem sempre aqui?"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/Exo2_Medium_Small_Subtitle"
+            android:layout_width="@dimen/spacing_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsl"
+            android:layout_marginEnd="@dimen/spacing_ms"
+            android:text="Caso você esteja dando “só uma olhadinha”, que tal um cumpom para impulsinar sua primeira compra?"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/divisor"
+            app:layout_constraintStart_toStartOf="@+id/title_coupon"
+            app:layout_constraintTop_toBottomOf="@+id/title_coupon" />
+
+        <TextView
+            android:id="@+id/off20"
+            style="@style/Exo2_Semibold_Button_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xsl"
+            android:text="OFF20"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text"
+            android:layout_marginBottom="@dimen/spacing_medium"/>
+
+        <ImageView
+            android:id="@+id/divisor"
+            android:layout_width="@dimen/spacing_xs"
+            android:layout_height="@dimen/spacing_zero"
+            android:layout_marginVertical="@dimen/spacing_xsl"
+            android:layout_marginEnd="@dimen/spacing_sl"
+            android:src="@drawable/divisor_dash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_xml"
+            android:src="@drawable/logo_zoom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

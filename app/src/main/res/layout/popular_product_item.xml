@@ -4,19 +4,21 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_homepage_item"
-    android:paddingHorizontal="@dimen/spacing_medium"
-    android:layout_marginHorizontal="@dimen/spacing_xsl">
+    android:background="@drawable/bg_homepage_second_item"
+    android:paddingHorizontal="@dimen/spacing_16"
+    android:layout_marginHorizontal="@dimen/spacing_s"
+    android:layout_marginVertical="@dimen/spacing_s">
 
     <ImageView
         android:id="@+id/shirt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="@dimen/spacing_xml"
         tools:src="@drawable/popular1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/divider_product"/>
 
     <ImageView
         android:id="@+id/divider_product"
@@ -37,50 +39,22 @@
         app:layout_constraintEnd_toEndOf="@+id/divider_product"
         android:layout_marginTop="@dimen/spacing_s"
         tools:text="@string/title_product_name"
+        android:lines="1"
         android:textColor="@color/pattern_light"
-        android:textAppearance="@style/Exo2_Medium_Title_Product"
+        android:textAppearance="@style/Exo2_Regular_Subtitle"
         />
 
-    <TextView
-        android:id="@+id/old_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="@string/subtitle_old_price"
-        app:layout_constraintTop_toBottomOf="@+id/title_product"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/new_price"
-        android:layout_marginEnd="@dimen/spacing_minimum"
-        android:layout_marginTop="@dimen/spacing_s"
-        android:textColor="@color/pattern_light"
-        android:textAppearance="@style/Exo2_Thin_Price"
-        />
     <TextView
         android:id="@+id/new_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@string/subtitle_new_price"
         app:layout_constraintTop_toBottomOf="@+id/title_product"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/divider_product"
         android:layout_marginTop="@dimen/spacing_s"
-        android:textColor="@color/price_blue"
-        android:textAppearance="@style/Exo2_Bold_Price_Highlight"
+        style="@style/Exo2_Bold_Price_Highlight_Pink"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/divider_product"
         android:layout_marginBottom="@dimen/spacing_xsl"/>
-
-
-    <TextView
-        android:id="@+id/text_promotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_card_promotion"
-        tools:text="@string/tag_promotion"
-        android:textColor="@color/white"
-        android:padding="@dimen/spacing_xs"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/spacing_s"
-        android:layout_marginEnd="@dimen/spacing_minimum"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="@dimen/spacing_xml"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

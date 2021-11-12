@@ -14,35 +14,35 @@ class ProductPromoFragment: Fragment(R.layout.fragment_promotions) {
         super.onViewCreated(view, savedInstanceState)
         val listItems: List<ProductItem> = mutableListOf(
             ProductItem(
-                "20%",
+                "20.00%",
                 "Camiseta Naruto",
                 "R$ 65.00",
                 "RS 80.00",
                 R.drawable.popular1
             ),
             ProductItem(
-                "20%",
+                "20.00%",
                 "Camiseta Naruto",
                 "R$ 65.00",
                 "RS 80.00",
                 R.drawable.popular1
             ),
             ProductItem(
-                "20%",
+                "20.00%",
                 "Camiseta Naruto",
                 "R$ 65.00",
                 "RS 80.00",
                 R.drawable.popular1
             ),
             ProductItem(
-                "20%",
+                "20.00%",
                 "Camiseta Naruto",
                 "R$ 65.00",
                 "RS 80.00",
                 R.drawable.popular1
             ),
             ProductItem(
-                "20%",
+                "20.00%",
                 "Camiseta Naruto",
                 "R$ 65.00",
                 "RS 80.00",

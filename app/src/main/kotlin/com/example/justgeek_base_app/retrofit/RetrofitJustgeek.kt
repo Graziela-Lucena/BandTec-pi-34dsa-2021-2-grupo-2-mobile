@@ -1,5 +1,6 @@
 package com.example.justgeek_base_app.retrofit
 
+import com.example.justgeek_base_app.api.ProductApi
 import com.example.justgeek_base_app.api.UserApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -12,7 +13,7 @@ import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
 import javax.net.ssl.*
 
-object RetrofitUser {
+object RetrofitJustgeek {
     private fun getUnsafeOkHttpClient(): OkHttpClient? {
         return try {
             val trustAllCerts: Array<TrustManager> = arrayOf<TrustManager>(
@@ -70,5 +71,8 @@ object RetrofitUser {
         return retrofit.create(UserApi::class.java)
     }
 
+    fun product(retrofit: Retrofit): ProductApi {
+        return retrofit.create(ProductApi::class.java)
+    }
 
 }

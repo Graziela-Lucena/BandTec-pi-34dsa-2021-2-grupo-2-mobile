@@ -129,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_result_quantity"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:layout_marginEnd="@dimen/spacing_xs"
         app:layout_constraintBottom_toBottomOf="@+id/button_plus"
         app:layout_constraintTop_toTopOf="@+id/button_plus"

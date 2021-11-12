@@ -31,6 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/divisor"
-        android:layout_marginTop="@dimen/spacing_xsl" />
+        android:layout_marginTop="@dimen/spacing_xsl"
+        tools:listitem="@layout/promotion_product_item"
+        android:overScrollMode="never"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
