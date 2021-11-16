@@ -13,7 +13,7 @@ import br.com.concrete.canarinho.watcher.MascaraNumericaTextWatcher
 
 class SingUpContactsFragment: Fragment(R.layout.fragment_sing_up_fourth_step_contacts) {
 
-    val contactArgs: SingUpContactsFragmentArgs by navArgs()
+    private val contactArgs: SingUpContactsFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -96,15 +96,14 @@ class SingUpContactsFragment: Fragment(R.layout.fragment_sing_up_fourth_step_con
         buttonNext.setOnClickListener {
             findNavController().navigate(
                 SingUpContactsFragmentDirections.actionSingUpContactsFragmentToSingUpPasswordFragment(
-                    email.text.toString(),
-                    cellphone.text.toString(),
                     contactArgs.nameUser,
                     contactArgs.lastNameUser,
                     contactArgs.cpfUser,
-                    contactArgs.birthdateUser
+                    contactArgs.birthdateUser,
+                    email.text.toString(),
+                    cellphone.text.toString()
                 )
             )
-
         }
     }
 

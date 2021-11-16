@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/dark_purple"
+        app:title="JustGEEK"
+        app:navigationIcon="@drawable/ic_menu_homepage"
+        app:titleTextAppearance="@style/Logo_Text"
+        app:titleTextColor="@color/pattern_light"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toStartOf="@id/shop"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        android:layout_marginEnd="@dimen/spacing_xsl"/>
+
+    <ImageView
+        android:layout_width="@dimen/spacing_minimum"
+        android:layout_height="@dimen/spacing_zero"
+        android:src="@drawable/bg_light_rounded"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_zero"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_showcase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_promo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_ml"
+                app:layout_constraintTop_toBottomOf="@id/fragment_container_showcase" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_ml"
+                app:layout_constraintTop_toBottomOf="@id/fragment_container_promo" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/spacing_zero"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_xsl"
+                android:background="@drawable/bg_coupon_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_container_pop"
+                android:padding="@dimen/spacing_xs"
+                android:layout_marginTop="@dimen/spacing_medium">
+
+                <TextView
+                    android:id="@+id/title_coupon"
+                    style="@style/Exo2_Semibold_Button_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_xsl"
+                    android:layout_marginTop="@dimen/spacing_xsl"
+                    android:text="Oi, você vem sempre aqui?"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/Exo2_Regular_Small_Subtitle"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xsl"
+                    android:layout_marginEnd="@dimen/spacing_ms"
+                    android:text="Caso você esteja dando “só uma olhadinha”, que tal um cumpom para impulsinar sua primeira compra?"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@+id/divisor"
+                    app:layout_constraintStart_toStartOf="@+id/title_coupon"
+                    app:layout_constraintTop_toBottomOf="@+id/title_coupon" />
+
+                <TextView
+                    android:id="@+id/off20"
+                    style="@style/Exo2_Semibold_Button_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xsl"
+                    android:text="OFF20"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/text"
+                    android:layout_marginBottom="@dimen/spacing_medium"/>
+
+                <ImageView
+                    android:id="@+id/divisor"
+                    android:layout_width="@dimen/spacing_xs"
+                    android:layout_height="@dimen/spacing_zero"
+                    android:layout_marginVertical="@dimen/spacing_xsl"
+                    android:layout_marginEnd="@dimen/spacing_sl"
+                    android:src="@drawable/divisor_dash"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_xml"
+                    android:src="@drawable/logo_zoom"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/dark_purple"
+        app:itemTextColor="@drawable/selector_bottom_navigation"
+        app:itemIconTint="@drawable/selector_bottom_navigation"
+        app:menu="@menu/menu_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.example.justgeek_base_app
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.widget.AppCompatButton
@@ -16,6 +17,7 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.i("grazi", "create")
         val toolbar = view.findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         val name = view.findViewById<EditText>(R.id.name)
         val lastName = view.findViewById<EditText>(R.id.last_name)
@@ -29,11 +31,13 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
         val errorMessageLastName = view.findViewById<AppCompatTextView>(R.id.error_message_last_name)
         pageIndicator?.text = resources.getString(R.string.page_indicator_text_sign_up, 1)
 
-        var valid: Boolean = false
-        var validL: Boolean = false
+        var valid = false
+        var validL = false
 
         name.addTextChangedListener(object: TextWatcher {
             override fun afterTextChanged(s: Editable?) {
+                if(s == null) return
+                Log.i("grazi", name.text.toString())
                 val filteredTextName = name.text.trim().length
                 when {
                     name.text.isNullOrEmpty() -> {
@@ -72,6 +76,8 @@ class SingUpNameFragment : Fragment(R.layout.fragment_sing_up_first_step_name) {
 
         lastName.addTextChangedListener(object: TextWatcher {
             override fun afterTextChanged(s: Editable?) {
+                if(s == null) return
+                Log.i("grazi", s.toString())
                 val filteredTextLastName = lastName.text.trim().length
                 when {
                     lastName.text.isNullOrEmpty() -> {

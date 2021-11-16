@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/singUpNameFragment">
 
     <fragment
         android:id="@+id/singUpNameFragment"
@@ -12,7 +12,16 @@
         tools:layout="@layout/fragment_sing_up_first_step_name">
         <action
             android:id="@+id/action_singUpNameFragment_to_singUpCpfFragment"
-            app:destination="@id/singUpCpfFragment" />
+            app:destination="@id/singUpCpfFragment" >
+            <argument
+                android:name="name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="last_name_user"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
     </fragment>
     <fragment
         android:id="@+id/singUpCpfFragment"
@@ -29,7 +38,20 @@
             app:nullable="false"/>
         <action
             android:id="@+id/action_singUpCpfFragment_to_singUpBirthDateFragment"
-            app:destination="@id/singUpBirthDateFragment" />
+            app:destination="@id/singUpBirthDateFragment" >
+            <argument
+                android:name="name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="last_name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="cpf_user"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
     </fragment>
     <fragment
         android:id="@+id/singUpBirthDateFragment"
@@ -50,7 +72,24 @@
             app:nullable="false"/>
         <action
             android:id="@+id/action_singUpBirthDateFragment_to_singUpContactsFragment"
-            app:destination="@id/singUpContactsFragment" />
+            app:destination="@id/singUpContactsFragment" >
+            <argument
+                android:name="name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="last_name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="cpf_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="birthdate_user"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
     </fragment>
     <fragment
         android:id="@+id/singUpContactsFragment"
@@ -75,7 +114,32 @@
             app:nullable="false"/>
         <action
             android:id="@+id/action_singUpContactsFragment_to_singUpPasswordFragment"
-            app:destination="@id/singUpPasswordFragment" />
+            app:destination="@id/singUpPasswordFragment" >
+            <argument
+                android:name="name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="last_name_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="cpf_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="birthdate_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="email_user"
+                app:argType="string"
+                app:nullable="false"/>
+            <argument
+                android:name="phone_user"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
     </fragment>
     <fragment
         android:id="@+id/singUpPasswordFragment"
@@ -99,25 +163,22 @@
             app:argType="string"
             app:nullable="false"/>
         <argument
-            android:name="phone_user"
-            app:argType="string"
-            app:nullable="false"/>
-        <argument
             android:name="email_user"
             app:argType="string"
             app:nullable="false"/>
+        <argument
+            android:name="phone_user"
+            app:argType="string"
+            app:nullable="false"/>
         <action
-            android:id="@+id/action_singUpPasswordFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_singUpPasswordFragment_to_singUpLoginFragment"
+            app:destination="@id/singUpLoginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.justgeek_base_app.LoginFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/activity_main_login">
-        <action
-            android:id="@+id/action_loginFragment_to_singUpNameFragment"
-            app:destination="@id/singUpNameFragment" />
-    </fragment>
+        android:id="@+id/singUpLoginFragment"
+        android:name="com.example.justgeek_base_app.SingUpLoginFragment"
+        android:label="SingUpLoginFragment"
+        tools:layout="@layout/fragment_sing_up_login"/>
+
 
 </navigation>

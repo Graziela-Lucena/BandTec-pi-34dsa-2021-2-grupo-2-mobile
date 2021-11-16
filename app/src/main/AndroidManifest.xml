@@ -2,27 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.justgeek_base_app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".JustGeekApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Justgeekbaseapp">
+        android:theme="@style/Theme.Justgeekbaseapp"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".TutorialFirstAccestEndedPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessThirdStepActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessSecondStepActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TutorialFirstAccessFirstStepActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".HomePageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +23,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialFirstFour"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialFirstThree"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialAccessTwo"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialAccessFirst"
+            android:exported="false" />
+        <activity
+            android:name=".MyCartActivity"
+            android:exported="true"></activity>
+        <activity android:name=".FavoritesActivity"
+            android:exported="false"/>
+        <activity android:name=".ProfileActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

@@ -42,4 +42,68 @@
         <item name="android:textSize">@dimen/font_size_extreme</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
+    <style name="Exo2_Semibold_Title_Showcase">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Regular_Subtitle_Showcase">
+        <item name="android:fontFamily">@font/regular_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Logo_Text">
+        <item name="android:fontFamily">@font/extrabold_epilogue</item>
+        <item name="android:textSize">@dimen/font_size_extreme</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Medium_Title_Product">
+        <item name="android:fontFamily">@font/medium_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Bold_Price_Highlight">
+        <item name="android:fontFamily">@font/bold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/hot_blue</item>
+    </style>
+    <style name="Exo2_Thin_Price">
+        <item name="android:fontFamily">@font/thin_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Bold_Price_Highlight_Pink">
+        <item name="android:fontFamily">@font/bold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/hot_pink</item>
+    </style>
+    <style name="Exo2_SemiBold_Title_Toolbar">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_SemiBold_Title_Promotion_Bag">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_SemiBold_Title_Price">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/pattern_dark</item>
+    </style>
+    <style name="Exo2_Regular_Title_Discount_Coupon">
+        <item name="android:fontFamily">@font/regular_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_SemiBold_Title_Product">
+        <item name="android:fontFamily">@font/semibold_exo2</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/pattern_light</item>
+    </style>
+    <style name="Exo2_Medium_Title_Size">
+        <item name="android:fontFamily">@font/medium_exo2</item>
+        <item name="android:textSize">@dimen/font_size_minimum_nine</item>
+    </style>
 </resources>

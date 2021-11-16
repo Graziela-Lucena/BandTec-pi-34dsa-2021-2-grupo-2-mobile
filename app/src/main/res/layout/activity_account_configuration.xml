@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountConfigurationActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        app:title="@string/title_account_config_toolbar"
+        app:titleTextColor="@color/pattern_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_account_config_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_user_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium"
+            android:background="@drawable/bg_card_dark"
+            app:layout_constraintTop_toTopOf="@id/container_account_config_page">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_name_client"
+                android:textSize="@dimen/font_size_medium"
+                android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                android:textColor="@color/pattern_light"
+                app:layout_constraintStart_toStartOf="@+id/container_user_data"
+                app:layout_constraintTop_toTopOf="@+id/container_user_data"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_user_cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpf_client"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:textColor="@color/pattern_light"
+                android:layout_marginTop="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_user_name"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pattern_light"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:text="@string/birth_date_client"
+                android:textSize="@dimen/font_size_small"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_user_cpf"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_client"
+                android:textColor="@color/pattern_light"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_birthdate"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_number_cellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_number_client"
+                android:textColor="@color/pattern_light"
+                android:textSize="@dimen/font_size_small"
+                android:textAppearance="@style/Exo2_Regular_Small_Title"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="@id/container_user_data"
+                app:layout_constraintTop_toBottomOf="@+id/title_email"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_change_personal_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_data"
+                android:textColor="@color/pattern_light"
+                android:padding="@dimen/spacing_xs"
+                android:background="@drawable/bg_card_order_detail"
+                app:layout_constraintBottom_toBottomOf="@id/container_user_data"
+                app:layout_constraintEnd_toEndOf="@id/container_user_data"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_my_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:background="@drawable/bg_card_dark"
+            app:layout_constraintTop_toBottomOf="@id/container_user_data">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_account_config"
+                app:layout_constraintTop_toTopOf="@id/container_my_addresses"
+                app:layout_constraintStart_toStartOf="@id/container_my_addresses"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_my_addresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_addresses"
+                android:textSize="@dimen/font_size_medium"
+                android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                android:textColor="@color/pattern_light"
+                android:layout_marginStart="@dimen/spacing_medium"
+                app:layout_constraintTop_toTopOf="@+id/ic_address"
+                app:layout_constraintBottom_toBottomOf="@+id/ic_address"
+                app:layout_constraintStart_toEndOf="@+id/ic_address"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/divisor_address"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_hot_blue"
+                android:layout_marginTop="@dimen/spacing_xs"
+                app:layout_constraintEnd_toEndOf="@+id/title_my_addresses"
+                app:layout_constraintBottom_toBottomOf="@+id/ic_address"
+                app:layout_constraintStart_toStartOf="@+id/ic_address"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_box_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/divisor_address"
+                android:layout_marginTop="@dimen/spacing_medium">
+
+                <ScrollView
+                    android:id="@+id/address_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@+id/container_box_address">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_add_new_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pattern_light"
+                android:text="@string/add_new_address"
+                android:padding="@dimen/spacing_xs"
+                android:background="@drawable/bg_card_order_detail"
+                app:layout_constraintBottom_toBottomOf="@+id/container_my_addresses"
+                app:layout_constraintEnd_toEndOf="@+id/container_my_addresses"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
