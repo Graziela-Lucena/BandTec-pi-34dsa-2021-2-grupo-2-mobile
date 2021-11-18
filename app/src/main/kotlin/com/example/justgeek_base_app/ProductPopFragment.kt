@@ -7,50 +7,16 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.justgeek_base_app.adapter.ProductPopAdapter
-import com.example.justgeek_base_app.data.ProductItem
+import com.example.justgeek_base_app.viewmodel.ProductViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductPopFragment: Fragment(R.layout.fragment_popular) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val listItems: List<ProductItem> = mutableListOf(
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-        )
+        val productViewModel: ProductViewModel by viewModel()
+        val listItems = productViewModel.getPromotionalProduct()
         val adapterPromo = ProductPopAdapter(listItems)
-        val layoutManagerPromo = GridLayoutManager(requireContext(), 3)
+        val layoutManagerPromo = GridLayoutManager(requireContext(), 2)
 
         val showcase = view.findViewById<RecyclerView>(R.id.recycler_promo)
         showcase.adapter = adapterPromo
