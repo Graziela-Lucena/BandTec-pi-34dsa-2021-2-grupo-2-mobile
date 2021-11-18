@@ -3,7 +3,7 @@
     package="com.example.justgeek_base_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".JustGeekApplication"
@@ -15,10 +15,7 @@
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".HomePageActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".LoginActivity"
+            android:name=".ClientChangeDataActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +24,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".HomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".OnboardingActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".TutorialFirstFour"
             android:exported="false" />
@@ -42,6 +47,5 @@
             android:name=".TutorialAccessFirst"
             android:exported="false" />
     </application>
-
 
 </manifest>
