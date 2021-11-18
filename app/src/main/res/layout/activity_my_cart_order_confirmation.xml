@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCartOrderConfirmationActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/confirmation_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        app:title="@string/title_order_confirmation"
+        app:titleTextColor="@color/pattern_light"
+        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_contact_support"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmation_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/confirmation_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/confirmation_toolbar" />
+
+    <ScrollView
+        android:id="@+id/container_screen_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_zero"
+        android:fillViewport="true"
+        android:paddingBottom="95dp"
+        app:layout_constraintTop_toBottomOf="@+id/confirmation_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_order_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_client_specs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_container_light"
+                android:padding="@dimen/spacing_medium"
+                app:layout_constraintTop_toTopOf="@+id/container_order_confirmation">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/spec_client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_client_name"
+                    android:padding="@dimen/spacing_sm"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    app:layout_constraintStart_toStartOf="@+id/container_client_specs"
+                    app:layout_constraintTop_toTopOf="@+id/container_client_specs"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/spec_client_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addresses_client_name"
+                    android:textColor="@color/pattern_light"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    app:layout_constraintStart_toStartOf="@+id/spec_client_name"
+                    app:layout_constraintTop_toBottomOf="@+id/spec_client_name"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/spec_client_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city_addresses_one"
+                    android:textColor="@color/pattern_light"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/spec_client_address"
+                    app:layout_constraintTop_toBottomOf="@+id/spec_client_address"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_rigth_account_configuration"
+                    app:layout_constraintTop_toBottomOf="@+id/spec_client_name"
+                    app:layout_constraintEnd_toEndOf="@+id/container_client_specs"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_shipped_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:padding="@dimen/spacing_medium"
+                android:background="@drawable/bg_container_light"
+                app:layout_constraintTop_toBottomOf="@+id/container_client_specs">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_shipped_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_method_shipping"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    app:layout_constraintStart_toStartOf="@+id/container_shipped_method"
+                    app:layout_constraintTop_toTopOf="@+id/container_shipped_method"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_approve_filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_approve_filled"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    app:layout_constraintStart_toStartOf="@+id/title_shipped_method"
+                    app:layout_constraintTop_toBottomOf="@+id/title_shipped_method"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_shipped_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    android:text="@string/title_shipping_fee"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    app:layout_constraintBottom_toBottomOf="@+id/ic_approve_filled"
+                    app:layout_constraintTop_toTopOf="@+id/ic_approve_filled"
+                    app:layout_constraintStart_toEndOf="@+id/ic_approve_filled"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_tax_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_shipping_fee"
+                    android:layout_marginTop="@dimen/spacing_sl"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/title_shipped_tax"
+                    app:layout_constraintTop_toBottomOf="@+id/title_shipped_tax"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:padding="@dimen/spacing_medium"
+                android:background="@drawable/bg_container_light"
+                app:layout_constraintTop_toBottomOf="@+id/container_shipped_method">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_payment_method"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    app:layout_constraintStart_toStartOf="@+id/container_payment_method"
+                    app:layout_constraintTop_toTopOf="@+id/container_payment_method"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@id/ic_payment_approve_filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:src="@drawable/ic_approve_filled"
+                    app:layout_constraintStart_toStartOf="@+id/title_payment_method"
+                    app:layout_constraintTop_toBottomOf="@+id/title_payment_method"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_mercado_pago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mercado_pago"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    app:layout_constraintBottom_toBottomOf="@+id/ic_payment_approve_filled"
+                    app:layout_constraintStart_toEndOf="@+id/ic_payment_approve_filled"
+                    app:layout_constraintTop_toTopOf="@+id/ic_payment_approve_filled"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_mercado_pago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_payment_method"
+                    android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+                    android:layout_marginStart="@dimen/spacing_sl"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_mercado_pago"
+                    app:layout_constraintStart_toEndOf="@+id/image_mercado_pago"
+                    app:layout_constraintTop_toTopOf="@+id/image_mercado_pago"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_methods_include"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_payment_method_info"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/image_mercado_pago"
+                    app:layout_constraintTop_toBottomOf="@+id/image_mercado_pago"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_apply_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:padding="@dimen/spacing_medium"
+                android:background="@drawable/bg_container_light"
+                app:layout_constraintTop_toBottomOf="@+id/container_payment_method">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_apply_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_apply_coupon"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    app:layout_constraintStart_toStartOf="@+id/container_apply_discount"
+                    app:layout_constraintTop_toTopOf="@+id/container_apply_discount"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_rigth_account_configuration"
+                    app:layout_constraintBottom_toBottomOf="@+id/container_apply_discount"
+                    app:layout_constraintEnd_toEndOf="@+id/container_apply_discount"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:padding="@dimen/spacing_medium"
+                android:background="@drawable/bg_container_light"
+                app:layout_constraintTop_toBottomOf="@+id/container_apply_discount">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_bag_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_bag_products"
+                    android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                    app:layout_constraintStart_toStartOf="@+id/container_items"
+                    app:layout_constraintTop_toTopOf="@+id/container_items"/>
+
+                <ScrollView
+                    android:id="@+id/items_bag_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    app:layout_constraintTop_toBottomOf="@+id/title_bag_items">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_bag_items_cart_confirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_prices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_medium"
+                android:background="@drawable/bg_container_light"
+                android:layout_marginTop="@dimen/spacing_medium"
+                app:layout_constraintTop_toBottomOf="@+id/container_items">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_retail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_ratail_price"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/container_prices"
+                    app:layout_constraintTop_toTopOf="@+id/container_prices"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_price_retail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitle_new_price"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintTop_toTopOf="@+id/title_retail_price"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_retail_price"
+                    app:layout_constraintEnd_toEndOf="@+id/container_prices"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_discount_coupon"
+                    android:layout_marginTop="@dimen/spacing_sl"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/title_retail_price"
+                    app:layout_constraintTop_toBottomOf="@+id/title_retail_price"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_price_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_price_from_coupon"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintEnd_toEndOf="@+id/title_price_retail"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_discount"
+                    app:layout_constraintTop_toTopOf="@+id/title_discount"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_shippping_value"
+                    android:layout_marginTop="@dimen/spacing_sl"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintStart_toStartOf="@+id/title_discount"
+                    app:layout_constraintTop_toBottomOf="@+id/title_discount"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_price_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_price_tax"
+                    android:textAppearance="@style/Exo2_Regular_Title_Discount_Coupon"
+                    app:layout_constraintEnd_toEndOf="@+id/container_prices"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_tax"
+                    app:layout_constraintTop_toTopOf="@+id/title_tax"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_make_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_product_favorite_profile_item"
+        app:layout_constraintBottom_toBottomOf="@+id/container_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_total_price_cart"
+            android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+            app:layout_constraintStart_toStartOf="@+id/container_make_order"
+            app:layout_constraintTop_toTopOf="@+id/container_make_order"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_total_price_number"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Price"
+            android:layout_marginStart="@dimen/spacing_medium"
+            app:layout_constraintStart_toEndOf="@+id/title_price_total"
+            app:layout_constraintBottom_toBottomOf="@+id/title_price_total"
+            app:layout_constraintTop_toTopOf="@+id/title_price_total"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_proceed_order"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_button_next"
+            android:text="@string/button_make_wish"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:textAppearance="@style/Exo2_Semibold_Button_Text"
+            app:layout_constraintTop_toBottomOf="@+id/title_price_total"
+            app:layout_constraintStart_toStartOf="@+id/title_price_total"
+            app:layout_constraintEnd_toEndOf="@+id/container_make_order"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
