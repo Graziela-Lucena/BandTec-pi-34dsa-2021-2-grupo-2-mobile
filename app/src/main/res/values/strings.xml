@@ -199,9 +199,9 @@
 
     <!--ACCOUNT CONFIG (Addresses 1) -->
     <string name="addresses_client_name" translatable="false">%1$s</string>
-    <string name="street_name_addresses_one" translatable="false">%1$s,</string>
+    <string name="street_name_addresses_one" translatable="false">%1$s</string>
     <string name="number_home_addresses_one" translatable="false">%1$s</string>
-    <string name="neighborhood_addresses_one" translatable="false">%1$s,</string>
+    <string name="neighborhood_addresses_one" translatable="false">%1$s</string>
     <string name="city_addresses_one" translatable="false">%1$s</string>
     <string name="cep_addresses_one" translatable="false">CEP %1$s</string>
 
@@ -269,11 +269,11 @@
     <string name="title_order_confirmation">Confirmação do pedido</string>
     <string name="subtitle_method_shipping">Método de envio</string>
     <string name="title_shipping_fee">Taxa mínima de envio</string>
-    <string name="subtitle_shipping_fee">R$ 12,00 - 10 dias úteis de espera mínima</string>
+    <string name="subtitle_shipping_fee">R$ %1$s - %2$s dias úteis de espera mínima</string>
     <string name="title_payment_method">Método de pagamento</string>
     <string name="subtitle_payment_method">Mercado Pago</string>
     <string name="subtitle_payment_method_info">Inclui boleto, débito/crédito</string>
-    <string name="title_apply_coupon">Aplicar cupomde desconto</string>
+    <string name="title_apply_coupon">Aplicar cupom de desconto</string>
     <string name="title_bag_products">Sacola de compras</string>
     <string name="title_ratail_price">Preço de varejo:</string>
     <string name="title_discount_coupon">Cupom de desconto:</string>
@@ -283,6 +283,9 @@
     <string name="button_finish_yes">Sim</string>
     <string name="button_finish_no">Não</string>
     <string name="title_finish_purchase">Deseja finalizar o pedido</string>
+    <string name="title_price_from_coupon" translatable="false">R$ %1$.2f</string>
+    <string name="title_price_tax" translatable="false">R$ %1$.2f</string>
+    <string name="title_quantity_product_chosen" translatable="false">%1$d</string>
 
     <!--COUPON PAGE-->
     <string name="title_my_coupons">Meus cupons</string>
