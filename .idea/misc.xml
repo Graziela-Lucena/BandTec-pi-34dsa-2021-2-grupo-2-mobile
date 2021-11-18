@@ -25,6 +25,18 @@
         <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/drawable/ic_toolbar_nav_icon.xml" value="0.2078125" />
         <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/layout/activity_main.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/taiza/Documents/Projects/faculdade/BandTec-pi-34dsa-2021-2-grupo-2-mobile/app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/drawable/bg_light_rounded.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_arrow_down.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_arrow_down_filter.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_arrow_left_title_promotion.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right_title_promotion.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_arrow_rigth_account_configuration.xml" value="0.1984375" />
+        <entry key="app/src/main/res/drawable/ic_arrow_showcase.xml" value="0.1984375" />
+        <entry key="app/src/main/res/layout/activity_account_configuration.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_client_change_data.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_sing_up_login.xml" value="0.14947916666666666" />
       </map>
     </option>
   </component>

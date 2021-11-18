@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientChangeDataActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        app:title="@string/change_data"
+        app:titleTextColor="@color/pattern_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_zero"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_account_config_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_medium"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_user_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_big"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:background="@drawable/bg_card_dark"
+                    app:layout_constraintTop_toTopOf="@id/container_account_config_page">
+
+
+                    <TextView
+                        android:id="@+id/label_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_name"
+                        android:textColor="@color/pattern_light"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_name"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:autofillHints="emailAddress"
+                        android:background="@drawable/bg_light_rounded"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_name" />
+
+                    <TextView
+                        android:id="@+id/label_cpf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_cpf"
+                        android:textColor="@color/pattern_light"
+                        app:layout_constraintTop_toBottomOf="@+id/input_name"
+                        android:paddingTop="15dp" />
+
+                    <EditText
+                        android:id="@+id/input_cpf"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:inputType="text"
+                        android:background="@drawable/bg_light_rounded"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_cpf" />
+
+                    <TextView
+                        android:id="@+id/label_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_birthday"
+                        android:textColor="@color/pattern_light"
+                        app:layout_constraintTop_toBottomOf="@+id/input_cpf"
+                        android:paddingTop="15dp" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_birthday"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:background="@drawable/bg_light_rounded"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_birthday" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_contact_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_big"
+                    android:padding="@dimen/spacing_big"
+                    android:background="@drawable/bg_card_dark"
+                    app:layout_constraintTop_toBottomOf="@id/container_user_data">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_home_account_config"
+                        app:layout_constraintTop_toTopOf="@id/container_contact_data"
+                        app:layout_constraintStart_toStartOf="@id/container_contact_data"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/title_my_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_config_contact"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                        android:textColor="@color/pattern_light"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        app:layout_constraintTop_toTopOf="@+id/ic_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/ic_data"
+                        app:layout_constraintStart_toEndOf="@+id/ic_data"/>
+
+                    <TextView
+                        android:id="@+id/label_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_phone"
+                        android:textColor="@color/pattern_light"
+                        android:paddingTop="@dimen/spacing_medium"
+                        app:layout_constraintTop_toBottomOf="@+id/title_my_data" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_phone"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:autofillHints="emailAddress"
+                        android:background="@drawable/bg_light_rounded"
+                        android:inputType="phone"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_phone" />
+
+                    <TextView
+                        android:id="@+id/label_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_email"
+                        android:textColor="@color/pattern_light"
+                        app:layout_constraintTop_toBottomOf="@+id/input_phone"
+                        android:paddingTop="15dp" />
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:background="@drawable/bg_light_rounded"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.333"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_email" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_password_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_big"
+                    android:padding="@dimen/spacing_big"
+                    android:background="@drawable/bg_card_dark"
+                    app:layout_constraintTop_toBottomOf="@id/container_contact_data">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_home_account_config"
+                        app:layout_constraintTop_toTopOf="@id/container_password_data"
+                        app:layout_constraintStart_toStartOf="@id/container_password_data"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/title_my_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_config_password"
+                        android:textSize="@dimen/font_size_medium"
+                        android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+                        android:textColor="@color/pattern_light"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        app:layout_constraintTop_toTopOf="@+id/ic_password"
+                        app:layout_constraintBottom_toBottomOf="@+id/ic_password"
+                        app:layout_constraintStart_toEndOf="@+id/ic_password"/>
+
+                    <TextView
+                        android:id="@+id/label_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_password"
+                        android:textColor="@color/pattern_light"
+                        android:paddingTop="@dimen/spacing_medium"
+                        app:layout_constraintTop_toBottomOf="@+id/title_my_password"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:autofillHints="emailAddress"
+                        android:background="@drawable/bg_light_rounded"
+                        android:inputType="phone"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_password" />
+
+                    <TextView
+                        android:id="@+id/label_password_confirmation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_config_email"
+                        android:textColor="@color/pattern_light"
+                        app:layout_constraintTop_toBottomOf="@+id/input_password"
+                        android:paddingTop="15dp" />
+
+                    <EditText
+                        android:id="@+id/input_password_confirmation"
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:inputType="text"
+                        android:background="@drawable/bg_light_rounded"
+                        android:paddingStart="@dimen/spacing_medium"
+                        android:paddingBottom="@dimen/spacing_big"
+                        android:textAppearance="@style/Exo2_Regular_Subtitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_password_confirmation" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
