@@ -207,6 +207,7 @@
     <string name="title_config_password" translatable="false">Minha senha de acesso</string>
     <string name="label_config_password" translatable="false">Senha</string>
     <string name="label_config_password_confirmation" translatable="false">Confirmar senha</string>
+    <string name="btn_save" translatable="false">Salvar</string>
 
 
     <!--ACCOUNT CONFIG (Addresses 1) -->
