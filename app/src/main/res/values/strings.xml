@@ -305,6 +305,9 @@
     <string name="button_apply">Aplicar</string>
     <string name="title_coupons">Cupons</string>
     <string name="button_ok">OK</string>
+    <string name="title_less_price" translatable="false">-R$ %1$.2f</string>
+    <string name="title_code_coupon" translatable="false">%1$s</string>
+    <string name="divisor" translatable="false">|</string>
 
     <!--PROFILE PAGE-->
     <string name="title_welcome">Olá %1$s</string>
