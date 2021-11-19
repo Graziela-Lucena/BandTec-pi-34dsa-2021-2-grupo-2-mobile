@@ -87,7 +87,7 @@
         <item name="android:textSize">@dimen/font_size_medium</item>
         <item name="android:textColor">@color/pattern_light</item>
     </style>
-    <style name="Exo2_SemiBold_Title_Price">
+    <style name="Exo2_SemiBold_Title_Price">font_size_small
         <item name="android:fontFamily">@font/semibold_exo2</item>
         <item name="android:textSize">@dimen/font_size_medium</item>
         <item name="android:textColor">@color/pattern_dark</item>
@@ -105,5 +105,10 @@
     <style name="Exo2_Medium_Title_Size">
         <item name="android:fontFamily">@font/medium_exo2</item>
         <item name="android:textSize">@dimen/font_size_minimum_nine</item>
+    </style>
+    <style name="Exo2_Light_Title_Coupon_Field">
+        <item name="android:fontFamily">@font/light_exo2</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/pattern_dark</item>
     </style>
 </resources>
