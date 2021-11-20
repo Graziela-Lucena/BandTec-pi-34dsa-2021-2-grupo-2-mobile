@@ -26,12 +26,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/spacing_big">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_account_config_page"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/spacing_medium"
+                android:layout_marginBottom="80dp"
                 app:layout_constraintTop_toBottomOf="@id/toolbar">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,7 +58,6 @@
                         android:layout_width="@dimen/spacing_zero"
                         android:layout_height="30dp"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:autofillHints="emailAddress"
                         android:background="@drawable/bg_light_rounded"
                         android:inputType="text"
                         android:paddingStart="@dimen/spacing_medium"
@@ -101,7 +102,7 @@
                         android:layout_height="30dp"
                         android:layout_marginTop="@dimen/spacing_medium"
                         android:background="@drawable/bg_light_rounded"
-                        android:inputType="text"
+                        android:inputType="date"
                         android:paddingStart="@dimen/spacing_medium"
                         android:textAppearance="@style/Exo2_Regular_Subtitle"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -115,14 +116,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_big"
-                    android:padding="@dimen/spacing_big"
+                    android:paddingTop="@dimen/spacing_big"
+                    android:paddingLeft="@dimen/spacing_big"
+                    android:paddingRight="@dimen/spacing_big"
+                    android:paddingBottom="@dimen/spacing_medium"
                     android:background="@drawable/bg_card_dark"
                     app:layout_constraintTop_toBottomOf="@id/container_user_data">
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/ic_data"
                         android:layout_width="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_s"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_home_account_config"
+                        android:src="@drawable/ic_account_config_contact"
                         app:layout_constraintTop_toTopOf="@id/container_contact_data"
                         app:layout_constraintStart_toStartOf="@id/container_contact_data"/>
 
@@ -132,12 +137,23 @@
                         android:layout_height="wrap_content"
                         android:text="@string/title_config_contact"
                         android:textSize="@dimen/font_size_medium"
+                        android:layout_marginBottom="@dimen/spacing_s"
                         android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
                         android:textColor="@color/pattern_light"
                         android:layout_marginStart="@dimen/spacing_medium"
                         app:layout_constraintTop_toTopOf="@+id/ic_data"
                         app:layout_constraintBottom_toBottomOf="@+id/ic_data"
                         app:layout_constraintStart_toEndOf="@+id/ic_data"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/divisor_data"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/bg_hot_blue"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_data"
+                        app:layout_constraintEnd_toEndOf="@+id/title_my_data"
+                        app:layout_constraintBottom_toBottomOf="@+id/ic_data"
+                        app:layout_constraintStart_toStartOf="@+id/ic_data"/>
 
                     <TextView
                         android:id="@+id/label_phone"
@@ -153,7 +169,6 @@
                         android:layout_width="@dimen/spacing_zero"
                         android:layout_height="30dp"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:autofillHints="emailAddress"
                         android:background="@drawable/bg_light_rounded"
                         android:inputType="phone"
                         android:paddingStart="@dimen/spacing_medium"
@@ -184,6 +199,15 @@
                         app:layout_constraintHorizontal_bias="0.333"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/label_email" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        app:layout_constraintTop_toBottomOf="@+id/input_email"
+                        android:text="@string/checkbox_newsletter"
+                        android:textColor="@color/pattern_light"
+                        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+                        android:button="@drawable/ic_custom_checkbox" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -200,7 +224,8 @@
                         android:id="@+id/ic_password"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_home_account_config"
+                        android:src="@drawable/ic_account_config_pass"
+                        android:paddingBottom="@dimen/spacing_s"
                         app:layout_constraintTop_toTopOf="@id/container_password_data"
                         app:layout_constraintStart_toStartOf="@id/container_password_data"/>
 
@@ -210,12 +235,22 @@
                         android:layout_height="wrap_content"
                         android:text="@string/title_config_password"
                         android:textSize="@dimen/font_size_medium"
+                        android:paddingBottom="@dimen/spacing_s"
                         android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
                         android:textColor="@color/pattern_light"
                         android:layout_marginStart="@dimen/spacing_medium"
                         app:layout_constraintTop_toTopOf="@+id/ic_password"
                         app:layout_constraintBottom_toBottomOf="@+id/ic_password"
                         app:layout_constraintStart_toEndOf="@+id/ic_password"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/divisor_password"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/bg_hot_blue"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        app:layout_constraintEnd_toEndOf="@+id/title_my_password"
+                        app:layout_constraintBottom_toBottomOf="@+id/ic_password"
+                        app:layout_constraintStart_toStartOf="@+id/ic_password"/>
 
                     <TextView
                         android:id="@+id/label_password"
@@ -231,9 +266,8 @@
                         android:layout_width="@dimen/spacing_zero"
                         android:layout_height="30dp"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:autofillHints="emailAddress"
                         android:background="@drawable/bg_light_rounded"
-                        android:inputType="phone"
+                        android:inputType="textPassword"
                         android:paddingStart="@dimen/spacing_medium"
                         android:textAppearance="@style/Exo2_Regular_Subtitle"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -254,7 +288,7 @@
                         android:layout_width="@dimen/spacing_zero"
                         android:layout_height="30dp"
                         android:layout_marginTop="@dimen/spacing_medium"
-                        android:inputType="text"
+                        android:inputType="textPassword"
                         android:background="@drawable/bg_light_rounded"
                         android:paddingStart="@dimen/spacing_medium"
                         android:paddingBottom="@dimen/spacing_big"
@@ -262,8 +296,22 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/label_password_confirmation" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/continue_button"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/container_password_data"
+                    app:layout_constraintStart_toStartOf="@+id/container_password_data"
+                    app:layout_constraintTop_toBottomOf="@+id/container_password_data"
+                    android:text="@string/btn_save"
+                    android:paddingVertical="@dimen/spacing_sm"
+                    android:textAppearance="@style/Exo2_Semibold_Button_Text"
+                    android:background="@drawable/bg_button_green"
+                    android:layout_marginTop="@dimen/spacing_big"
+                    app:layout_goneMarginBottom="@dimen/spacing_big"
+                    android:layout_marginBottom="@dimen/spacing_ml"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

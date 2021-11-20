@@ -197,18 +197,6 @@
     <string name="change_data">Alterar dados pessoais </string>
     <string name="my_addresses">Meus endereços</string>
 
-    <!--ACCONT CONFIG (DATA) -->
-    <string name="label_config_name" translatable="false">Nome completo</string>
-    <string name="label_config_cpf" translatable="false">CPF</string>
-    <string name="label_config_birthday" translatable="false">Data de nascimento</string>
-    <string name="title_config_contact" translatable="false">Meus dados de contato</string>
-    <string name="label_config_phone" translatable="false">Telefone</string>
-    <string name="label_config_email" translatable="false">Email</string>
-    <string name="title_config_password" translatable="false">Minha senha de acesso</string>
-    <string name="label_config_password" translatable="false">Senha</string>
-    <string name="label_config_password_confirmation" translatable="false">Confirmar senha</string>
-
-
     <!--ACCOUNT CONFIG (Addresses 1) -->
     <string name="addresses_client_name" translatable="false">%1$s</string>
     <string name="street_name_addresses_one" translatable="false">%1$s</string>
@@ -223,6 +211,32 @@
     <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
     <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
     <string name="add_new_address" translatable="false">Adicionar novo endereço ></string>
+
+    <!--ACCONT CONFIG (EDIT DATA) -->
+    <string name="label_config_name" translatable="false">Nome completo</string>
+    <string name="label_config_cpf" translatable="false">CPF</string>
+    <string name="label_config_birthday" translatable="false">Data de nascimento</string>
+    <string name="title_config_contact" translatable="false">Meus dados de contato</string>
+    <string name="label_config_phone" translatable="false">Telefone</string>
+    <string name="label_config_email" translatable="false">Email</string>
+    <string name="title_config_password" translatable="false">Minha senha de acesso</string>
+    <string name="label_config_password" translatable="false">Senha</string>
+    <string name="label_config_password_confirmation" translatable="false">Confirmar senha</string>
+    <string name="btn_save" translatable="false">Salvar</string>
+
+    <!-- ACCOUNT CONFIG (EDIT/ADD ADDRESS) -->
+    <string name="toolbar_config_address_add" translatable="false">Adicionar endereço</string>
+    <string name="toolbar_config_address_edit" translatable="false">Editar endereço</string>
+    <string name="label_config_recipient" translatable="false">Nome do destinatário</string>
+    <string name="label_config_cep" translatable="false">CEP</string>
+    <string name="label_config_address" translatable="false">Endereço</string>
+    <string name="label_config_number" translatable="false">Número</string>
+    <string name="label_config_complement" translatable="false">Complemento</string>
+    <string name="label_config_reference" translatable="false">Referência</string>
+    <string name="label_config_neighborhood" translatable="false">Bairro</string>
+    <string name="label_config_city" translatable="false">Cidade</string>
+    <string name="label_config_uf" translatable="false">UF</string>
+    <string name="btn_remove_address" translatable="false">Remover endereço</string>
 
     <!--FAQ PAGE-->
     <string name="profile_name">Olá, %1$s</string>
