@@ -210,4 +210,8 @@
     <!--FAVORITE PAGE-->
     <string name="button_purchase">Purchase</string>
 
+    <!--CART PAGE-->
+    <string name="title_empty_cart">Your bag is empty!</string>
+    <string name="title_add_products">Do you want to fill it with these products?</string>
+
 </resources>

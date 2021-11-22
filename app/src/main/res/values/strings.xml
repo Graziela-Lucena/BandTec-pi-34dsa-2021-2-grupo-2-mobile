@@ -265,6 +265,8 @@
     <string name="title_favorites">Favoritos</string>
     <string name="title_profile">Perfil</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_empty_cart">Sua sacola está vazia!</string>
+    <string name="title_add_products">Deseja preenchê - la com esses produtos?</string>
 
     <!--PRODUCT PAGE-->
     <string name="product_step">%1$d/3</string>
