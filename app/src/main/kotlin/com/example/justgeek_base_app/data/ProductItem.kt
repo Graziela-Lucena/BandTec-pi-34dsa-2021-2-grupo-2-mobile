@@ -7,5 +7,6 @@ class ProductItem (
     val name: String,
     val price: String,
     val oldPrice: String,
-    @DrawableRes val productImage: Int
+//    @DrawableRes val productImage: Int
+    val productImage: String
 )
