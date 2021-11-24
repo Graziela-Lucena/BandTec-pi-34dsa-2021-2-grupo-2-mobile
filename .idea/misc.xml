@@ -49,18 +49,37 @@
         <entry key="app/src/main/res/drawable/ic_gg_unchecked.xml" value="0.21458333333333332" />
         <entry key="app/src/main/res/drawable/ic_home_account_config.xml" value="0.21458333333333332" />
         <entry key="app/src/main/res/drawable/ic_instagram_social_media.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/activity_account_config_address_item.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_account_configuration.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_artists.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_client_add_address.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_client_change_address.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_client_change_data.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_faq.xml" value="0.1671195652173913" />
+        <entry key="app/src/main/res/layout/activity_favorites.xml" value="0.12537993920972645" />
+        <entry key="app/src/main/res/layout/activity_favorites_item.xml" value="0.12537993920972645" />
+        <entry key="app/src/main/res/layout/activity_homepage_itens.xml" value="0.12537993920972645" />
+        <entry key="app/src/main/res/layout/activity_homepage_second_itens.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_my_cart_item.xml" value="0.13496376811594202" />
         <entry key="app/src/main/res/layout/activity_my_coupons.xml" value="0.12537993920972645" />
+        <entry key="app/src/main/res/layout/activity_profile_item.xml" value="0.13496376811594202" />
+        <entry key="app/src/main/res/layout/bottom_navigation.xml" value="0.13496376811594202" />
+        <entry key="app/src/main/res/layout/dialog_order_confirmation.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_artists.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_artists_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_my_cart.xml" value="0.13496376811594202" />
+        <entry key="app/src/main/res/layout/fragment_my_cart_order_confirmation.xml" value="0.13496376811594202" />
+        <entry key="app/src/main/res/layout/fragment_my_cart_promotion.xml" value="0.13496376811594202" />
+        <entry key="app/src/main/res/layout/fragment_promotions.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_showcase.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_sign_up_third_step_birthdate.xml" value="0.17798913043478262" />
         <entry key="app/src/main/res/layout/fragment_sing_up_fifth_step_password.xml" value="0.17798913043478262" />
         <entry key="app/src/main/res/layout/fragment_sing_up_first_step_name.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_sing_up_fourth_step_contacts.xml" value="0.17798913043478262" />
         <entry key="app/src/main/res/layout/fragment_sing_up_login.xml" value="0.14947916666666666" />
         <entry key="app/src/main/res/layout/homepage_activity.xml" value="0.12537993920972645" />
+        <entry key="app/src/main/res/layout/showcase_item.xml" value="0.13496376811594202" />
       </map>
     </option>
   </component>

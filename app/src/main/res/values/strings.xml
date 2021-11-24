@@ -359,4 +359,9 @@
     <!--FAVORITE PAGE-->
     <string name="button_purchase">Comprar</string>
 
+    <!-- ARTISTS PAGE -->
+    <string name="title_showcase_artists" translatable="false">Suas ideias, nosso traço.</string>
+    <string name="subtitle_showcase_artists" translatable="false">Customize suas roupas como quiser</string>
+    <string name="title_artists" translatable="false">ARTISTAS POPULARES</string>
+
 </resources>
