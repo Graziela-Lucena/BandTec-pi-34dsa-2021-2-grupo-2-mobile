@@ -67,6 +67,9 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
+
+        <activity android:name=".ArtistFormActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

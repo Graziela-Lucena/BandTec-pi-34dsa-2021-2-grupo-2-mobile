@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/dark_purple"
+        app:title="JustGEEK"
+        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        app:titleTextAppearance="@style/Logo_Text"
+        app:titleTextColor="@color/pattern_light"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toStartOf="@id/shop"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        android:layout_marginEnd="@dimen/spacing_xsl"/>
+
+    <ImageView
+        android:layout_width="@dimen/spacing_minimum"
+        android:layout_height="@dimen/spacing_zero"
+        android:src="@drawable/bg_light_rounded"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_size_artist_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_ms"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:background="@drawable/bg_container_light"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_size_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_choose_tam"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+            app:layout_constraintStart_toStartOf="@+id/container_size_artist_page"
+            app:layout_constraintTop_toTopOf="@+id/container_size_artist_page"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/size_pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:background="@drawable/ic_pp_unchecked"
+            app:layout_constraintStart_toStartOf="@+id/container_size_artist_page"
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/size_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginLeft="@dimen/spacing_xs"
+            android:background="@drawable/ic_p_unchecked"
+            app:layout_constraintStart_toEndOf="@+id/size_pp"
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/size_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginLeft="@dimen/spacing_xs"
+            android:background="@drawable/ic_m_checked"
+            app:layout_constraintStart_toEndOf="@+id/size_p"
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/size_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginLeft="@dimen/spacing_xs"
+            android:background="@drawable/ic_g_unchecked"
+            app:layout_constraintStart_toEndOf="@+id/size_m"
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/size_gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginLeft="@dimen/spacing_xs"
+            android:background="@drawable/ic_gg_unchecked"
+            app:layout_constraintStart_toEndOf="@+id/size_g"
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_color_artist_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_ms"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:background="@drawable/bg_container_light"
+        app:layout_constraintTop_toBottomOf="@+id/container_size_artist_page"
+        app:layout_constraintStart_toStartOf="@+id/container_size_artist_page"
+        app:layout_constraintEnd_toEndOf="@+id/container_size_artist_page">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_color_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_choose_color"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+            app:layout_constraintStart_toStartOf="@+id/container_color_artist_page"
+            app:layout_constraintTop_toTopOf="@+id/container_color_artist_page"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/color_black_artist_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:background="@drawable/ic_color_artist_request"
+            app:layout_constraintStart_toStartOf="@+id/title_color_product"
+            app:layout_constraintTop_toBottomOf="@+id/title_color_product"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/color_white_artist_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginLeft="@dimen/spacing_xs"
+            android:background="@drawable/ic_color_artist_request_white"
+            app:layout_constraintStart_toEndOf="@+id/color_black_artist_request"
+            app:layout_constraintTop_toBottomOf="@+id/title_color_product"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_revision_request_artist_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_ms"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:background="@drawable/bg_container_light"
+        app:layout_constraintTop_toBottomOf="@+id/container_color_artist_page"
+        app:layout_constraintStart_toStartOf="@+id/container_color_artist_page"
+        app:layout_constraintEnd_toEndOf="@+id/container_size_artist_page">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_revision_request_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_request_revision"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+            app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
+            app:layout_constraintTop_toTopOf="@+id/container_revision_request_artist_page"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/revision_size_request_artist_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:background="@drawable/bg_card_dark"
+            app:layout_constraintTop_toBottomOf="@+id/title_revision_request_product"
+            app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
+            app:layout_constraintEnd_toEndOf="@+id/container_revision_request_artist_page">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_revision_request_size_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_tam_choosed"
+                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                android:paddingBottom="@dimen/spacing_xs"
+                app:layout_constraintTop_toTopOf="@+id/revision_size_request_artist_page"
+                app:layout_constraintStart_toStartOf="@+id/revision_size_request_artist_page"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_revision_request_color_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_color_choosed"
+                android:paddingBottom="@dimen/spacing_xs"
+                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                app:layout_constraintTop_toBottomOf="@+id/title_revision_request_size_product"
+                app:layout_constraintStart_toStartOf="@+id/title_revision_request_size_product"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/revision_art_request_artist_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:padding="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:background="@drawable/bg_card_dark"
+            app:layout_constraintTop_toBottomOf="@+id/revision_size_request_artist_page"
+            app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
+            app:layout_constraintEnd_toEndOf="@+id/container_revision_request_artist_page">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/revision_request_art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_art_choosed"
+                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                android:paddingBottom="@dimen/spacing_xs"
+                app:layout_constraintTop_toTopOf="@+id/revision_art_request_artist_page"
+                app:layout_constraintStart_toStartOf="@+id/revision_art_request_artist_page"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/art_camiseta"
+                app:layout_constraintStart_toStartOf="@+id/revision_request_art"
+                app:layout_constraintTop_toBottomOf="@+id/revision_request_art"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/revision_request_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_artist_choosed"
+                android:layout_marginStart="@dimen/spacing_xml"
+                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+                android:paddingBottom="@dimen/spacing_xs"
+                app:layout_constraintTop_toTopOf="@+id/revision_art_request_artist_page"
+                app:layout_constraintStart_toEndOf="@+id/image_art"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artist_image"
+                app:layout_constraintStart_toStartOf="@+id/revision_request_artist"
+                app:layout_constraintTop_toBottomOf="@+id/revision_request_artist"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_button_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_button_next"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_finish_request_artist"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_button_request_artist"
+            android:textAppearance="@style/Exo2_Semibold_Button_Text_Spaced"
+            android:text="@string/title_button_finish_request"
+            app:layout_constraintTop_toTopOf="@+id/container_button_request"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
