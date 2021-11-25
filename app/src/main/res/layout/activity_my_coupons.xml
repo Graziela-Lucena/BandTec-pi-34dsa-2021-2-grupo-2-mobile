@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCouponsActivity"
+    android:background="@color/pattern_dark">
+
+    <Toolbar
+        android:id="@+id/my_coupons_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@color/pattern_light"
+        android:title="@string/title_my_coupons"
+        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        android:background="@color/dark_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/apply_coupon_field"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_light_rounded"
+        android:text="@string/subtitle_apply_coupons"
+        android:padding="@dimen/spacing_s"
+        android:textAppearance="@style/Exo2_Light_Title_Coupon_Field"
+        android:layout_marginStart="@dimen/spacing_big"
+        android:layout_marginTop="@dimen/spacing_big"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/spacing_s"
+        app:layout_constraintEnd_toStartOf="@+id/button_apply_coupon"
+        app:layout_constraintTop_toBottomOf="@id/my_coupons_toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_apply_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_button_next"
+        android:text="@string/button_apply"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text"
+        android:layout_marginEnd="@dimen/spacing_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/apply_coupon_field"
+        app:layout_constraintTop_toTopOf="@+id/apply_coupon_field"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_coupons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="@id/button_apply_coupon"
+        android:background="@drawable/bg_card_dark"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/apply_coupon_field"
+        app:layout_constraintTop_toBottomOf="@id/apply_coupon_field">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_coupons"
+            android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
+            android:padding="@dimen/spacing_sm"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginStart="@dimen/spacing_s"
+            android:background="@drawable/bg_card_order_detail"
+            app:layout_constraintStart_toStartOf="@+id/container_coupons"
+            app:layout_constraintTop_toTopOf="@+id/container_coupons"/>
+
+        <ScrollView
+            android:id="@+id/coupons_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            app:layout_constraintTop_toBottomOf="@+id/title_coupons">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_product_favorite_profile_item"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_button_next"
+            android:textAppearance="@style/Exo2_Semibold_Button_Text"
+            android:text="@string/button_ok"
+            app:layout_constraintTop_toTopOf="@+id/container_button_ok"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
