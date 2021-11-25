@@ -209,5 +209,19 @@
 
     <!--FAVORITE PAGE-->
     <string name="button_purchase">Purchase</string>
+    <string name="title_step_one_customization">CUSTOMIZATION</string>
+    <string name="subtitle_step_one_customization">Oops! How about putting all your creativity to fry and fill your clothes with personality and uniqueness? Have something that is yours and no one can have it!</string>
+    <string name="title_step_two_customization">FIND THE ARTIST</string>
+    <string name="subtitle_step_two_customization">"Enter the artists page and choose what you like best to make your print! Then just get in touch with him if the status of the orders is open. "</string>
+    <string name="title_step_three_customization">"FORM "</string>
+    <string name="subtilte_step_three_customization">"Once you find the perfect artist for you, you will need to fill out a form with your ideals, references and specifications. After that, just wait for the artist to get in touch. "</string>
+    <string name="tilte_step_four_customization">"CONTACT "</string>
+    <string name="subtitle_step_four_customization">"After the artist receives your application, they will decide whether or not to accept the offer. If everything goes well, we will send you an email with all the contact information for you to discuss the idea. "</string>
+    <string name="title_step_five_customization">PROCESSING</string>
+    <string name="subtitle_step_five_customization">When everything is decided, the production process will begin. This status can be followed on your profile, in the section of your orders. When everything is finished, you will receive a notification via the app.</string>
+    <string name="title_step_six_customization">PAPERWORK</string>
+    <string name="subtitle_step_six_customization">"Now that you know the process, you'll need to know about the legal issues and our terms of use regarding customization. Make sure you read and understand all topics well! "</string>
+    <string name="subtitle_step_three_customization">"Once you find the perfect artist for you, you will need to fill out a form with your ideals, references and specifications. After that, just wait for the artist to get in touch. "</string>
+    <string name="title_step_four_customization">"CONTACT "</string>
 
 </resources>
