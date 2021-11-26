@@ -169,12 +169,24 @@
                     app:layout_constraintTop_toBottomOf="@+id/divider_product_two"
                     app:layout_constraintStart_toStartOf="@+id/divider_product_two"/>
 
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_text_less"
                     android:layout_width="@dimen/spacing_big"
                     android:layout_height="@dimen/spacing_big"
                     android:background="@drawable/bg_less_button"
                     android:text="@string/title_less_button"
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/button_text_less"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_less_button"
+                    android:paddingHorizontal="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_minimum"
+                    android:text="@string/title_less_button"
+                    android:textAlignment="center"
+
                     android:textColor="@color/pattern_light"
                     android:layout_marginTop="@dimen/spacing_sl"
                     app:layout_constraintStart_toStartOf="@+id/quantity_selector"
@@ -193,17 +205,30 @@
                     app:layout_constraintBottom_toBottomOf="@+id/button_text_less"
                     app:layout_constraintTop_toTopOf="@+id/button_text_less"/>
 
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_text_plus"
                     android:layout_width="@dimen/spacing_big"
                     android:layout_height="@dimen/spacing_big"
                     android:background="@drawable/bg_plus_button"
                     android:text="@string/title_plus_button"
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/button_text_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_plus_button"
+                    android:paddingHorizontal="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_minimum"
+                    android:text="@string/title_plus_button"
+                    android:textAlignment="center"
+
                     android:textColor="@color/pattern_dark"
                     android:layout_marginStart="@dimen/spacing_sl"
                     app:layout_constraintStart_toEndOf="@+id/text_quantity_variable"
                     app:layout_constraintBottom_toBottomOf="@+id/text_quantity_variable"
                     app:layout_constraintTop_toTopOf="@+id/text_quantity_variable"/>
+
 
                 <com.google.android.material.chip.ChipGroup
                     android:id="@+id/chip_group_size_product"
@@ -247,6 +272,7 @@
                         style="@style/CustomChipStyle"/>
 
                 </com.google.android.material.chip.ChipGroup>
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
