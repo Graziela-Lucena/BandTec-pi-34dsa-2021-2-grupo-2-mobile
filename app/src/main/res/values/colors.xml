@@ -43,6 +43,9 @@
     <color name="medium_blue">#4B59C5</color>
     <color name="dark_blue">#46359C</color>
     <color name="price_blue">#53B6C2</color>
+
+<!--JustGeek GRAY TEXT color pallet-->
+    <color name="gray_text">#D5D4D8</color>
 <!-- END JustGeek BLUE color pallet-->
 
 </resources>

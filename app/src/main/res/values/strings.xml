@@ -278,10 +278,11 @@
     <string name="size_gg">GG</string>
     <string name="title_shipping">Taxa de envio</string>
     <string name="subtitle_shipping">Oi :) é novo por aqui ? Cadastre um endereço
-         novo por aqui</string>
+         novo por</string>
+    <string name="link_shipping_add_address">aqui</string>
     <string name="subtitle_invite">Frete  grátis em compras acima de R$100,00</string>
     <string name="subtitle_shipping_price">Preço de entrega estimado: R$ %1$.2f</string>
-    <string name="title_evaluation">Avaliações</string>
+    <string name="title_evaluation">Avaliações:</string>
     <string name="title_suggestion">Você também pode gostar</string>
     <string name="title_button_add_cart">Adicionar ao carrinho</string>
     <string name="pop_up_add_cart">Tamanho: %1$s</string>
@@ -290,6 +291,9 @@
     <string name="button_keep_buying">Continuar comprando</string>
     <string name="pop_up_favorite_title">Produto adicionado aos seus favoritos</string>
     <string name="button_favorite">Ver favoritos</string>
+    <string name="title_name_product" translatable="false">%1$s</string>
+    <string name="quantity_selector">Quantidade:</string>
+    <string name="text_average" translatable="false">%1$.2f</string>
 
     <!--ORDER CONFIRMATION PAGE-->
     <string name="title_order_confirmation">Confirmação do pedido</string>
