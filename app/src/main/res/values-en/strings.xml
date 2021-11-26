@@ -136,9 +136,10 @@
     <string name="size_gg">XL</string>
     <string name="title_shipping">Shipping fee</string>
     <string name="subtitle_shipping">Hi :) is it new around here? register an address</string>
+    <string name="link_shipping_add_address">here</string>
     <string name="subtitle_invite">Free shipping on purchases over BRL 100.00</string>
     <string name="subtitle_shipping_price">Estimated delivery price: BRL %1$.2f</string>
-    <string name="title_evaluation">Assessments</string>
+    <string name="title_evaluation">Assessments:</string>
     <string name="title_suggestion">You may also like</string>
     <string name="title_button_add_cart">Add to cart</string>
     <string name="pop_up_add_cart">Size: %1$s</string>
@@ -223,5 +224,8 @@
     <string name="subtitle_step_six_customization">"Now that you know the process, you'll need to know about the legal issues and our terms of use regarding customization. Make sure you read and understand all topics well! "</string>
     <string name="subtitle_step_three_customization">"Once you find the perfect artist for you, you will need to fill out a form with your ideals, references and specifications. After that, just wait for the artist to get in touch. "</string>
     <string name="title_step_four_customization">"CONTACT "</string>
+
+    <!--PRODUCT PAGE-->
+    <string name="quantity_selector">Quantity:</string>
 
 </resources>

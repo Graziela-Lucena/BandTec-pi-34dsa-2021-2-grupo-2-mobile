@@ -15,12 +15,8 @@
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ClientAddAddressActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".ClientChangeAddressActivity"
-            android:exported="true">
+            android:name=".ProductActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,12 +24,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ClientAddAddressActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ClientChangeAddressActivity"
+            android:exported="true"/>
+        <activity
             android:name=".MyCouponsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ClientChangeDataActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MyCartOrderConfirmationActivity"
             android:exported="true" />
