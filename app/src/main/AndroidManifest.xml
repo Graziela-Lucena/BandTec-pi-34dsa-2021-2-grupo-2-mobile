@@ -15,8 +15,8 @@
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ArtistProfileActivity"
-            android:exported="true">
+            android:name=".ProductActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +24,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ArtistProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".ArtistsActivity"
             android:exported="true" />
         <activity
-            android:name=".ClientAddAddressActivity"
-            android:exported="true" />
-        <activity
             android:name=".ClientChangeAddressActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".MyCouponsActivity"
             android:exported="true" />

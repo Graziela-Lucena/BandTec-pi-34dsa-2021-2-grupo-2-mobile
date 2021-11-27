@@ -278,10 +278,11 @@
     <string name="size_gg">GG</string>
     <string name="title_shipping">Taxa de envio</string>
     <string name="subtitle_shipping">Oi :) é novo por aqui ? Cadastre um endereço
-         novo por aqui</string>
+         novo por</string>
+    <string name="link_shipping_add_address">aqui</string>
     <string name="subtitle_invite">Frete  grátis em compras acima de R$100,00</string>
     <string name="subtitle_shipping_price">Preço de entrega estimado: R$ %1$.2f</string>
-    <string name="title_evaluation">Avaliações</string>
+    <string name="title_evaluation">Avaliações:</string>
     <string name="title_suggestion">Você também pode gostar</string>
     <string name="title_button_add_cart">Adicionar ao carrinho</string>
     <string name="pop_up_add_cart">Tamanho: %1$s</string>
@@ -290,6 +291,9 @@
     <string name="button_keep_buying">Continuar comprando</string>
     <string name="pop_up_favorite_title">Produto adicionado aos seus favoritos</string>
     <string name="button_favorite">Ver favoritos</string>
+    <string name="title_name_product" translatable="false">%1$s</string>
+    <string name="quantity_selector">Quantidade:</string>
+    <string name="text_average" translatable="false">%1$.2f</string>
 
     <!--ORDER CONFIRMATION PAGE-->
     <string name="title_order_confirmation">Confirmação do pedido</string>
@@ -363,5 +367,33 @@
     <string name="title_showcase_artists" translatable="false">Suas ideias, nosso traço.</string>
     <string name="subtitle_showcase_artists" translatable="false">Customize suas roupas como quiser</string>
     <string name="title_artists" translatable="false">ARTISTAS POPULARES</string>
+
+    <!-- CUSTOMIZATION -->
+    <string name="title_step_one_customization">CUSTOMIZAÇÃO</string>
+    <string name="subtitle_step_one_customization">Opa! Que tal colocar toda sua criatividade para
+        fritar e encher suas roupas de personalidade e unicidade? Tenha algo que é só seu e ninguém
+        vai poder ter igual!</string>
+    <string name="title_step_two_customization">ACHAR O ARTISTA</string>
+    <string name="subtitle_step_two_customization">Entre na página de artistas e escolha o que mais
+        gostar para fazer sua estampa! Depois, é só entrar em contato com ele se o status
+        dos pedidos estiverem abertos.</string>
+    <string name="title_step_three_customization">FORMULÁRIO</string>
+    <string name="subtitle_step_three_customization">Depois de achar o artista perfeito para você,
+        é preciso preencher um formulário com suas ideais, referências e especificações. Depois
+        disso, é só esperar o artista entrar em contato.</string>
+    <string name="title_step_four_customization">CONTATO</string>
+    <string name="subtitle_step_four_customization">Depois que o artista receber seu formulário,
+        ele decidirá se irá aceitar ou não a oferta. Caso dê tudo certo, enviaremos um email com
+        todas as informações de contato para vocês discutirem a ideia.</string>
+    <string name="title_step_five_customization">PROCESSAMENTO</string>
+    <string name="subtitle_step_five_customization">Quando tudo for decidido, iniciará o processo de
+        produção. Esse status vai poder ser acompanhado no seu perfil, na seção dos seus pedidos.
+        Quando tudo for finalizado, você vai receber uma notificação via app.</string>
+    <string name="title_step_six_customization">PAPELADA</string>
+    <string name="subtitle_step_six_customization">Agora que você sabe do processo, vai precisar
+        saber das questões legais e nossos termos de uso referentes a customização. Tenha certeza
+        de ler e entender bem todos os tópicos!</string>
+
+>>>>>>> 2e67615cc3ca9f48af2dd760489c02d697a7e865
 
 </resources>
