@@ -54,6 +54,7 @@
         <entry key="app/src/main/res/drawable/ic_instagram_social_media.xml" value="0.21458333333333332" />
         <entry key="app/src/main/res/layout/activity_account_config_address_item.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_account_configuration.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_artist_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_artists.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_client_add_address.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_client_change_address.xml" value="0.33" />
@@ -75,6 +76,8 @@
         <entry key="app/src/main/res/layout/dialog_order_confirmation.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_artists.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_artists_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_arts.xml" value="0.11854103343465046" />
+        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/fragment_my_cart.xml" value="0.13496376811594202" />
         <entry key="app/src/main/res/layout/fragment_my_cart_order_confirmation.xml" value="0.13496376811594202" />
         <entry key="app/src/main/res/layout/fragment_my_cart_promotion.xml" value="0.13496376811594202" />

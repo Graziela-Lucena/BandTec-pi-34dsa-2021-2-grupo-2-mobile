@@ -34,6 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider_artist"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/spacing_s"
+        android:text="artist name"
         android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Bold_Price_Highlight_Pink"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,6 +49,7 @@
         app:layout_constraintStart_toStartOf="@+id/name_artist"
         app:layout_constraintEnd_toEndOf="@+id/name_artist"
         android:paddingTop="@dimen/spacing_xs"
+        android:text="bio artist"
         android:textColor="@color/pattern_light"
         android:textAppearance="@style/Exo2_Medium_Title_Product"
         />
