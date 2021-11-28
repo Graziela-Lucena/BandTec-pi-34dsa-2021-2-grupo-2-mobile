@@ -7,17 +7,16 @@
     tools:context=".ArtistProfileActivity"
     android:background="@color/pattern_dark">
 
-    <androidx.appcompat.widget.Toolbar
+    <Toolbar
         android:id="@+id/artist_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/dark_purple"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_menu_homepage"
-        app:title="JustGEEK"
+        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        android:title="JustGEEK"
         app:titleTextAppearance="@style/Logo_Text"
-        app:titleTextColor="@color/pattern_light"
-        tools:layout_editor_absoluteX="0dp" />
+        android:titleTextColor="@color/pattern_light"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/search"
@@ -46,5 +45,144 @@
         app:layout_constraintBottom_toBottomOf="@id/artist_toolbar"
         android:layout_marginVertical="@dimen/spacing_medium"
         android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ImageView
+        android:id="@+id/photo_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_artist"
+        android:layout_marginTop="@dimen/spacing_big"
+        app:layout_constraintStart_toStartOf="@id/artist_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/artist_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/artist_toolbar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_artist_info"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        app:layout_constraintStart_toStartOf="@id/artist_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/artist_toolbar"
+        app:layout_constraintTop_toBottomOf="@id/photo_artist">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name artist"
+            android:textAllCaps="true"
+            android:textColor="@color/pattern_light"
+            android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+            app:layout_constraintStart_toStartOf="@id/container_artist_info"
+            app:layout_constraintEnd_toEndOf="@id/container_artist_info"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/divisor_name_artist"
+            android:layout_width="98dp"
+            android:layout_height="2dp"
+            android:background="@drawable/bg_hot_blue"
+            android:layout_marginTop="@dimen/spacing_xs"
+            app:layout_constraintEnd_toEndOf="@+id/name_artist"
+            app:layout_constraintStart_toStartOf="@+id/name_artist"
+            app:layout_constraintTop_toBottomOf="@+id/name_artist"/>
+
+        <TextView
+            android:id="@+id/bio_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_name_artist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="biography"
+            android:textColor="@color/pattern_light"
+            android:textAppearance="@style/Exo2_Bold_Price_Highlight_Pink"
+            />
+
+        <ImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_marginTop="@dimen/spacing_medium"
+            app:layout_constraintStart_toStartOf="@+id/divisor_name_artist"
+            app:layout_constraintTop_toBottomOf="@+id/bio_artist"/>
+
+        <ImageView
+            android:id="@+id/icon_instagram"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginLeft="@dimen/spacing_s"
+            app:layout_constraintStart_toEndOf="@+id/icon_twitter"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_twitter"
+            app:layout_constraintTop_toTopOf="@+id/icon_twitter"/>
+
+        <ImageView
+            android:id="@+id/icon_facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginLeft="@dimen/spacing_s"
+            app:layout_constraintStart_toEndOf="@+id/icon_instagram"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_instagram"
+            app:layout_constraintTop_toTopOf="@+id/icon_instagram"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_arts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/container_artist_info">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_others_artists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/others_artists"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
+        android:layout_marginTop="@dimen/spacing_big"
+        app:layout_constraintStart_toStartOf="@id/container_arts"
+        app:layout_constraintEnd_toEndOf="@id/container_arts"
+        app:layout_constraintTop_toBottomOf="@+id/container_arts"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divisor_others_artists"
+        android:layout_width="98dp"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_hot_blue"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintEnd_toEndOf="@+id/title_others_artists"
+        app:layout_constraintStart_toStartOf="@+id/title_others_artists"
+        app:layout_constraintTop_toBottomOf="@+id/title_others_artists"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_others_artists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor_others_artists">
+
+        <ScrollView
+            android:id="@+id/scroll_others_artists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/container_others_artists">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_others_artists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

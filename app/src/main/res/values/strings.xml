@@ -367,6 +367,7 @@
     <string name="title_showcase_artists" translatable="false">Suas ideias, nosso traço.</string>
     <string name="subtitle_showcase_artists" translatable="false">Customize suas roupas como quiser</string>
     <string name="title_artists" translatable="false">ARTISTAS POPULARES</string>
+    <string name="others_artists" translatable="false">ARTISTAS SIMILARES</string>
 
     <!-- CUSTOMIZATION -->
     <string name="title_step_one_customization">CUSTOMIZAÇÃO</string>
@@ -394,6 +395,6 @@
         saber das questões legais e nossos termos de uso referentes a customização. Tenha certeza
         de ler e entender bem todos os tópicos!</string>
 
->>>>>>> 2e67615cc3ca9f48af2dd760489c02d697a7e865
+    >>>>>>> 2e67615cc3ca9f48af2dd760489c02d697a7e865
 
 </resources>
