@@ -62,6 +62,7 @@
         <entry key="app/src/main/res/layout/activity_client_add_address.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_client_change_address.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_client_change_data.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_custom_about.xml" value="0.16942148760330578" />
         <entry key="app/src/main/res/layout/activity_faq.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/activity_favorites.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_favorites_item.xml" value="0.12537993920972645" />
