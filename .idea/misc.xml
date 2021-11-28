@@ -34,7 +34,13 @@
         <entry key="app/src/main/res/drawable/bg_button_sign_up.xml" value="0.2657407407407407" />
         <entry key="app/src/main/res/drawable/bg_card_dark.xml" value="0.19722222222222222" />
         <entry key="app/src/main/res/drawable/bg_card_order.xml" value="0.19722222222222222" />
+        <entry key="app/src/main/res/drawable/bg_first_step.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/drawable/bg_fourth_step.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/drawable/bg_homepage_item.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/drawable/bg_homepage_second_item.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/drawable/bg_hot_blue.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/drawable/bg_hot_blue_size_choose.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/drawable/bg_light_blue.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/drawable/bg_light_rounded.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_account_config_contact.xml" value="0.27395833333333336" />
         <entry key="app/src/main/res/drawable/ic_account_config_pass.xml" value="0.27395833333333336" />
@@ -62,7 +68,7 @@
         <entry key="app/src/main/res/layout/activity_client_add_address.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_client_change_address.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_client_change_data.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_custom_about.xml" value="0.16942148760330578" />
+        <entry key="app/src/main/res/layout/activity_custom_about.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_faq.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/activity_favorites.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_favorites_item.xml" value="0.12537993920972645" />
