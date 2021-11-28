@@ -176,17 +176,6 @@
                     android:layout_height="@dimen/spacing_big"
                     android:background="@drawable/bg_less_button"
                     android:text="@string/title_less_button"
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/button_text_less"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_less_button"
-                    android:paddingHorizontal="@dimen/spacing_s"
-                    android:paddingVertical="@dimen/spacing_minimum"
-                    android:text="@string/title_less_button"
-                    android:textAlignment="center"
-
                     android:textColor="@color/pattern_light"
                     android:layout_marginTop="@dimen/spacing_sl"
                     app:layout_constraintStart_toStartOf="@+id/quantity_selector"
@@ -212,17 +201,6 @@
                     android:layout_height="@dimen/spacing_big"
                     android:background="@drawable/bg_plus_button"
                     android:text="@string/title_plus_button"
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/button_text_plus"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_plus_button"
-                    android:paddingHorizontal="@dimen/spacing_s"
-                    android:paddingVertical="@dimen/spacing_minimum"
-                    android:text="@string/title_plus_button"
-                    android:textAlignment="center"
-
                     android:textColor="@color/pattern_dark"
                     android:layout_marginStart="@dimen/spacing_sl"
                     app:layout_constraintStart_toEndOf="@+id/text_quantity_variable"

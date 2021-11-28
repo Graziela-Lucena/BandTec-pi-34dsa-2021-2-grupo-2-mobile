@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomAboutActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/dark_purple"
+        app:title="JustGEEK"
+        app:navigationIcon="@drawable/ic_menu_homepage"
+        app:titleTextAppearance="@style/Logo_Text"
+        app:titleTextColor="@color/pattern_light"/>
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="@id/custom_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/custom_toolbar"
+        app:layout_constraintEnd_toStartOf="@id/shop"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintTop_toTopOf="@id/custom_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/custom_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/custom_toolbar"
+        android:layout_marginEnd="@dimen/spacing_xsl"/>
+    <ImageView
+        android:layout_width="@dimen/spacing_minimum"
+        android:layout_height="@dimen/spacing_zero"
+        android:src="@drawable/bg_light_rounded"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/custom_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/custom_toolbar"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/spacing_max_big">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_artist_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_max_big"
+                app:layout_constraintTop_toBottomOf="@id/custom_toolbar">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/bg_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_custom" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="@string/title_custom"
+                    style="@style/Exo2_Regular_Subtitle"
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bg_custom"/>
+                <TextView
+                    android:id="@+id/text_custom_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_one"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom"/>
+
+                <TextView
+                    android:id="@+id/title_custom_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_two"
+                    app:layout_constraintTop_toBottomOf="@+id/text_custom_one"/>
+
+                <TextView
+                    android:id="@+id/text_custom_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_two"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/divisor_one"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="@dimen/spacing_minimum"
+                    android:src="@drawable/bg_light_blue"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginHorizontal="@dimen/spacing_big"
+                    app:layout_constraintStart_toStartOf="@id/text_custom_two"
+                    app:layout_constraintEnd_toEndOf="@id/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_two"/>
+
+                <TextView
+                    android:id="@+id/title_custom_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_three"
+                    app:layout_constraintTop_toBottomOf="@+id/divisor_one"/>
+
+                <TextView
+                    android:id="@+id/text_custom_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_three"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_three"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/divisor_two"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="@dimen/spacing_minimum"
+                    android:src="@drawable/bg_light_blue"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginHorizontal="@dimen/spacing_big"
+                    app:layout_constraintStart_toStartOf="@id/text_custom_two"
+                    app:layout_constraintEnd_toEndOf="@id/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_three"/>
+
+                <TextView
+                    android:id="@+id/title_custom_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_four"
+                    app:layout_constraintTop_toBottomOf="@+id/divisor_two"/>
+
+                <TextView
+                    android:id="@+id/text_custom_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_four"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_four"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/divisor_three"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="@dimen/spacing_minimum"
+                    android:src="@drawable/bg_light_blue"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginHorizontal="@dimen/spacing_big"
+                    app:layout_constraintStart_toStartOf="@id/text_custom_two"
+                    app:layout_constraintEnd_toEndOf="@id/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_four"/>
+
+                <TextView
+                    android:id="@+id/title_custom_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_five"
+                    app:layout_constraintTop_toBottomOf="@+id/divisor_three"/>
+
+                <TextView
+                    android:id="@+id/text_custom_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_five"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_five"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/divisor_four"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="@dimen/spacing_minimum"
+                    android:src="@drawable/bg_light_blue"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginHorizontal="@dimen/spacing_big"
+                    app:layout_constraintStart_toStartOf="@id/text_custom_two"
+                    app:layout_constraintEnd_toEndOf="@id/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_five"/>
+
+                <TextView
+                    android:id="@+id/title_custom_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_three"
+                    app:layout_constraintTop_toBottomOf="@+id/divisor_four"/>
+
+                <TextView
+                    android:id="@+id/text_custom_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_six"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_six"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/divisor_five"
+                    android:layout_width="@dimen/spacing_zero"
+                    android:layout_height="@dimen/spacing_minimum"
+                    android:src="@drawable/bg_light_blue"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginHorizontal="@dimen/spacing_big"
+                    app:layout_constraintStart_toStartOf="@id/text_custom_two"
+                    app:layout_constraintEnd_toEndOf="@id/text_custom_two"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_six"/>
+
+                <TextView
+                    android:id="@+id/title_custom_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/title_custom_seven"
+                    app:layout_constraintTop_toBottomOf="@+id/divisor_five"/>
+
+                <TextView
+                    android:id="@+id/text_custom_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular_exo2"
+                    android:textColor="@color/pattern_light"
+                    android:textSize="14sp"
+                    android:paddingVertical="@dimen/spacing_s"
+                    android:paddingHorizontal="@dimen/spacing_big"
+                    android:text="@string/text_custom_seven"
+                    app:layout_constraintTop_toBottomOf="@+id/title_custom_seven"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="@string/text_final"
+                    style="@style/Exo2_Regular_Subtitle"
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_custom_seven"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/title_final">
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_container_showcase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_container_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_container_showcase" />
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_container_pop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_container_promo" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/spacing_zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/spacing_xsl"
+                        android:background="@drawable/bg_coupon_home"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/fragment_container_pop"
+                        android:padding="@dimen/spacing_xs"
+                        android:layout_marginTop="@dimen/spacing_medium">
+
+                        <TextView
+                            android:id="@+id/title_coupon"
+                            style="@style/Exo2_Semibold_Button_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_xsl"
+                            android:layout_marginTop="@dimen/spacing_xsl"
+                            android:text="Oi, você vem sempre aqui?"
+                            android:textAllCaps="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/text"
+                            style="@style/Exo2_Regular_Small_Subtitle"
+                            android:layout_width="@dimen/spacing_zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xsl"
+                            android:layout_marginEnd="@dimen/spacing_ms"
+                            android:text="Caso você esteja dando “só uma olhadinha”, que tal um cumpom para impulsinar sua primeira compra?"
+                            android:textAllCaps="false"
+                            app:layout_constraintEnd_toEndOf="@+id/divisor"
+                            app:layout_constraintStart_toStartOf="@+id/title_coupon"
+                            app:layout_constraintTop_toBottomOf="@+id/title_coupon" />
+
+                        <TextView
+                            android:id="@+id/off20"
+                            style="@style/Exo2_Semibold_Button_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xsl"
+                            android:text="OFF20"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/text"
+                            android:layout_marginBottom="@dimen/spacing_medium"/>
+
+                        <ImageView
+                            android:id="@+id/divisor"
+                            android:layout_width="@dimen/spacing_xs"
+                            android:layout_height="@dimen/spacing_zero"
+                            android:layout_marginVertical="@dimen/spacing_xsl"
+                            android:layout_marginEnd="@dimen/spacing_sl"
+                            android:src="@drawable/divisor_dash"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/image"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_xml"
+                            android:src="@drawable/logo_zoom"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

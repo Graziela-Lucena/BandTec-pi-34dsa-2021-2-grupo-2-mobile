@@ -363,6 +363,12 @@
     <!--FAVORITE PAGE-->
     <string name="button_purchase">Comprar</string>
 
+    <!-- ARTISTS PAGE -->
+    <string name="title_showcase_artists" translatable="false">Suas ideias, nosso traço.</string>
+    <string name="subtitle_showcase_artists" translatable="false">Customize suas roupas como quiser</string>
+    <string name="title_artists" translatable="false">ARTISTAS POPULARES</string>
+    <string name="others_artists" translatable="false">ARTISTAS SIMILARES</string>
+
     <!-- CUSTOMIZATION -->
     <string name="title_step_one_customization">CUSTOMIZAÇÃO</string>
     <string name="subtitle_step_one_customization">Opa! Que tal colocar toda sua criatividade para
@@ -389,5 +395,33 @@
         saber das questões legais e nossos termos de uso referentes a customização. Tenha certeza
         de ler e entender bem todos os tópicos!</string>
 
-
+    <string name="title_custom" translatable="false">---- CUSTOMIZAÇÃO ----</string>
+    <string name="title_custom_two" translatable="false">Os artistas tem uma agenda</string>
+    <string name="title_custom_three" translatable="false">Arrumadinhas para lá e para cá</string>
+    <string name="title_custom_four" translatable="false">Bola de Cristal?</string>
+    <string name="title_custom_five" translatable="false">Reembolso</string>
+    <string name="title_custom_six" translatable="false">Termos de uso</string>
+    <string name="title_custom_seven" translatable="false">Respeito</string>
+    <string name="text_custom_one" translatable="false">Quando você pede um produto customizado, é
+        de suma importância ter certeza do que deseja. Vide:</string>
+    <string name="text_custom_two" translatable="false">Nas galerias existe um status de encomendas
+        fechadas/abertas. Pedir muitos ajustes fará com que o prazo da sua encomenda aumente e
+        congestionará a agenda do artista escolhido. É importante também ter paciência e compreensão
+        quando os pedidos do artista estiverem indisponíveis. Existem muitas opções!</string>
+    <string name="text_custom_three" translatable="false">Depois do passo de CONTATO terminar e
+        começar o processo de PRODUÇÃO, sua encomenda não poderá mais ser alterada.
+        Isso inclui o preço do produto.</string>
+    <string name="text_custom_four" translatable="false">Seja CLARO com suas ideias. Cite exemplos,
+        mostre referências e converse o máximo possível com o artista para que o produto final
+        esteja de acordo com o que você imaginava.</string>
+    <string name="text_custom_five" translatable="false">Reembolsos e trocas serão possiveis dentro
+        do prazo de 7 dias úteis após o recebimento do produto.
+Para mais informações, acesse DÚVIDAS/REEMBOLSO E TROCAS no FAQ, disponível no menu lateral do app.</string>
+    <string name="text_custom_six" translatable="false">Caso precise de mais informações, você
+        sempre poderá ler os nossos termos de uso, política de privade ou nossa documentação.
+        Tudo presente no menu lateral do app.</string>
+    <string name="text_custom_seven" translatable="false">A regra principal é NUNCA desrespeitar
+        os nossos colaboradores, sejam eles quais forem. Caso ocorra essa infração, seu pedido não
+        será efetuado. Leia os termos de uso, citados acima.</string>
+    <string name="text_final" translatable="false">A JustGeek Agradece!</string>
 </resources>
