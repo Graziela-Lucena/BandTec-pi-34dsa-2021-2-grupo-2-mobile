@@ -15,6 +15,31 @@ class ProductActivity : AppCompatActivity() {
 
         val btn_add_to_cart = findViewById<AppCompatButton>(R.id.button_add_to_cart)
 
+        val btn_add_to_favorites = findViewById<AppCompatImageView>(R.id.button_add_to_favorites)
+
+        btn_add_to_favorites.setOnClickListener {
+            val view = View.inflate(this@ProductActivity,
+            R.layout.dialog_product_added_to_favorites, null)
+
+            val builder = AlertDialog.Builder(this@ProductActivity)
+            builder.setView(view)
+
+            val dialog = builder.create()
+            dialog.show()
+
+            dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+            view.findViewById<AppCompatImageView>(R.id.ic_close_dialog_added_to_favorites)
+                .setOnClickListener {
+                    dialog.dismiss()
+                }
+
+            view.findViewById<AppCompatButton>(R.id.button_see_my_favorites)
+                .setOnClickListener {
+                    startActivity(Intent(this, FavoritesActivity::class.java))
+                }
+        }
+
         btn_add_to_cart.setOnClickListener {
             val view = View.inflate(this@ProductActivity,
                 R.layout.dialog_add_product_to_cart, null)
