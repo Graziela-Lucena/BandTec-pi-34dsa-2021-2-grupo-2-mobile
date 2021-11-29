@@ -45,8 +45,12 @@ class ProductActivity : AppCompatActivity() {
 
         val fragmentTransactionWithoutAddress = supportFragmentManager.beginTransaction()
         val withoutAddressItem = WithoutAddressFragment()
+        val fragmentTransactionReview = supportFragmentManager.beginTransaction()
+        val reviewFragment = ProductReviewFragment()
 
         fragmentTransactionWithoutAddress.add(R.id.fragment_address_request, withoutAddressItem)
         fragmentTransactionWithoutAddress.commit()
+        fragmentTransactionReview.add(R.id.fragment_comments_reviews, reviewFragment)
+        fragmentTransactionReview.commit()
     }
 }
