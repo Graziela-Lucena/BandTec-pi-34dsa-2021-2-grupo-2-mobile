@@ -51,7 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_medium"
-        android:padding="@dimen/spacing_ms"
+        android:paddingTop="@dimen/spacing_ms"
+        android:paddingLeft="@dimen/spacing_ms"
+        android:paddingRight="@dimen/spacing_ms"
         android:layout_marginStart="@dimen/spacing_medium"
         android:layout_marginEnd="@dimen/spacing_medium"
         android:background="@drawable/bg_container_light"
@@ -68,54 +70,46 @@
             app:layout_constraintStart_toStartOf="@+id/container_size_artist_page"
             app:layout_constraintTop_toTopOf="@+id/container_size_artist_page"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/size_pp"
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_size_product_artist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:background="@drawable/ic_pp_unchecked"
+            android:layout_marginTop="6dp"
+            app:singleSelection="true"
             app:layout_constraintStart_toStartOf="@+id/container_size_artist_page"
-            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+            app:layout_constraintTop_toBottomOf="@+id/title_size_product">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/size_p"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:layout_marginLeft="@dimen/spacing_xs"
-            android:background="@drawable/ic_p_unchecked"
-            app:layout_constraintStart_toEndOf="@+id/size_pp"
-            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_pp"
+                style="@style/CustomChipStyle"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/size_m"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:layout_marginLeft="@dimen/spacing_xs"
-            android:background="@drawable/ic_m_checked"
-            app:layout_constraintStart_toEndOf="@+id/size_p"
-            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_p"
+                style="@style/CustomChipStyle"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/size_g"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:layout_marginLeft="@dimen/spacing_xs"
-            android:background="@drawable/ic_g_unchecked"
-            app:layout_constraintStart_toEndOf="@+id/size_m"
-            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_m"
+                style="@style/CustomChipStyle"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/size_gg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:layout_marginLeft="@dimen/spacing_xs"
-            android:background="@drawable/ic_gg_unchecked"
-            app:layout_constraintStart_toEndOf="@+id/size_g"
-            app:layout_constraintTop_toBottomOf="@+id/title_size_product"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_g"
+                style="@style/CustomChipStyle"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_gg"
+                style="@style/CustomChipStyle"/>
+
+        </com.google.android.material.chip.ChipGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
