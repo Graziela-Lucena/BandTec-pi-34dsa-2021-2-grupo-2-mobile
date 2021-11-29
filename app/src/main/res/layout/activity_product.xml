@@ -186,7 +186,7 @@
                     android:id="@+id/text_quantity_variable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_result_quantity"
+                    android:text="0"
                     android:fontFamily="@font/regular_exo2"
                     android:textSize="@dimen/font_size_small"
                     android:textColor="@color/gray_text"
@@ -288,7 +288,6 @@
                 android:id="@+id/container_product_review"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/spacing_medium"
                 android:background="@drawable/bg_container_light"
                 android:layout_marginTop="@dimen/spacing_medium"
                 app:layout_constraintTop_toBottomOf="@+id/container_product_address">
@@ -301,6 +300,8 @@
                     android:textColor="@color/pattern_light"
                     android:textSize="@dimen/font_size_medium"
                     android:text="@string/title_evaluation"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingStart="@dimen/spacing_medium"
                     app:layout_constraintStart_toStartOf="@+id/container_product_review"
                     app:layout_constraintTop_toTopOf="@+id/container_product_review"/>
 
@@ -325,43 +326,31 @@
                         app:layout_constraintStart_toStartOf="@+id/container_average_review"
                         app:layout_constraintTop_toTopOf="@+id/container_average_review"/>
 
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/spacing_xml"
+                        android:layout_height="@dimen/spacing_xml"
+                        android:src="@drawable/ic_star_filled"
+                        app:layout_constraintBottom_toBottomOf="@+id/container_average_review"
+                        app:layout_constraintTop_toTopOf="@+id/container_average_review"
+                        app:layout_constraintEnd_toEndOf="@+id/container_average_review"/>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/fragment_comments_reviews"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_comments_reviews"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    app:layout_constraintTop_toBottomOf="@+id/container_average_review"/>
+                    android:padding="@dimen/spacing_medium"
+                    app:layout_constraintTop_toBottomOf="@+id/container_average_review">
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragment_comments_reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        app:layout_constraintTop_toTopOf="@+id/container_comments_reviews"/>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_you_may_like"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_container_light"
-                android:padding="@dimen/spacing_medium"
-                android:layout_marginTop="@dimen/spacing_medium"
-                app:layout_constraintTop_toBottomOf="@+id/container_product_review">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/title_you_may_like"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/semibold_exo2"
-                    android:textColor="@color/pattern_light"
-                    android:textSize="@dimen/font_size_medium"
-                    android:text="@string/title_suggestion"
-                    app:layout_constraintStart_toStartOf="@+id/container_you_may_like"
-                    app:layout_constraintTop_toTopOf="@+id/container_you_may_like"/>
-
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/fragment_you_may_like"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_medium"
-                    app:layout_constraintTop_toBottomOf="@+id/title_you_may_like"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
