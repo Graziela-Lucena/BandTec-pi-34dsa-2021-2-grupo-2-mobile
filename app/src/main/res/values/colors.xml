@@ -46,6 +46,7 @@
 
 <!--JustGeek GRAY TEXT color pallet-->
     <color name="gray_text">#D5D4D8</color>
+    <color name="light_gray_text">#C1BEC8</color>
 <!-- END JustGeek BLUE color pallet-->
 
 </resources>

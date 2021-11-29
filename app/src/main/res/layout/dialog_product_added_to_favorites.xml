@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_container_verification"
+    android:padding="@dimen/spacing_ml">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_close_dialog_added_to_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refuse_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_product_added_to_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_favorite_title"
+        android:fontFamily="@font/semibold_exo2"
+        android:textSize="@dimen/font_size_medium"
+        android:textColor="@color/pattern_light"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintEnd_toStartOf="@+id/ic_close_dialog_added_to_favorites"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_close_dialog_added_to_favorites"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_see_my_favorites"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:background="@drawable/bg_button_next"
+        android:text="@string/button_favorite"
+        android:textAllCaps="false"
+        android:textColor="@color/pattern_light"
+        android:fontFamily="@font/semibold_exo2"
+        android:textSize="@dimen/font_size_medium"
+        app:layout_constraintEnd_toEndOf="@+id/text_product_added_to_favorites"
+        app:layout_constraintStart_toStartOf="@+id/text_product_added_to_favorites"
+        app:layout_constraintTop_toBottomOf="@+id/text_product_added_to_favorites"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
