@@ -7,6 +7,8 @@ import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
+import androidx.appcompat.widget.AppCompatTextView
+import androidx.core.content.ContextCompat
 
 class ProductActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +19,33 @@ class ProductActivity : AppCompatActivity() {
 
         val btn_add_to_favorites = findViewById<AppCompatImageView>(R.id.button_add_to_favorites)
 
+        val addedToCart = false
+
+        val quantity = findViewById<AppCompatTextView>(R.id.text_quantity_variable)
+
+        var mutableQuantity = 0
+
+        val btn_plus = findViewById<AppCompatButton>(R.id.button_text_plus)
+        val btn_less = findViewById<AppCompatButton>(R.id.button_text_less)
+
+        btn_plus.setOnClickListener {
+            mutableQuantity ++
+            quantity.text = "$mutableQuantity"
+        }
+
+        btn_less.setOnClickListener {
+            mutableQuantity --
+            quantity.text = "$mutableQuantity"
+        }
+
+
         btn_add_to_favorites.setOnClickListener {
+            if (addedToCart == false) {
+                btn_add_to_favorites.setImageDrawable(getDrawable(R.drawable.ic_id_favorite_filled))
+            } else {
+                btn_add_to_favorites.setImageDrawable(getDrawable(R.drawable.ic_navigation_bar_favorite_icon))
+            }
+
             val view = View.inflate(this@ProductActivity,
             R.layout.dialog_product_added_to_favorites, null)
 
