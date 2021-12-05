@@ -55,7 +55,7 @@
         android:text="@string/title_email"
         app:layout_constraintTop_toBottomOf="@id/page_indicator_contacts"
         app:layout_constraintStart_toStartOf="@id/page_indicator_contacts"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:layout_marginTop="@dimen/spacing_big"/>
 
     <EditText
@@ -79,7 +79,7 @@
         android:text="@string/error_message"
         android:visibility="gone"
         android:layout_marginTop="@dimen/spacing_minimum"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_email"
@@ -110,7 +110,7 @@
         android:text="@string/title_cellphone"
         app:layout_constraintTop_toBottomOf="@id/email"
         app:layout_constraintStart_toStartOf="@id/email"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:layout_marginTop="@dimen/spacing_big"/>
 
     <EditText
@@ -134,7 +134,7 @@
         android:text="@string/error_message"
         android:visibility="gone"
         android:layout_marginTop="@dimen/spacing_minimum"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cellphone_check"
@@ -165,7 +165,7 @@
         app:layout_constraintStart_toStartOf="@id/continue_button"
         android:text="@string/checkbox_newsletter"
         android:textColor="@color/pattern_light"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:button="@drawable/ic_custom_checkbox" />
 
     <androidx.appcompat.widget.AppCompatButton

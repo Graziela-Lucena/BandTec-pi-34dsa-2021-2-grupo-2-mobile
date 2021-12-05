@@ -7,55 +7,24 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.justgeek_base_app.adapter.ProductAdapter
+import com.example.justgeek_base_app.adapter.ProductPromotionCartViewHold
 import com.example.justgeek_base_app.data.ProductItem
+import com.example.justgeek_base_app.viewmodel.ProductViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductPromoFragment: Fragment(R.layout.fragment_promotions) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val listItems: List<ProductItem> = mutableListOf(
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-            ProductItem(
-                "20%",
-                "Camiseta Naruto",
-                "R$ 65.00",
-                "RS 80.00",
-                R.drawable.popular1
-            ),
-        )
-        val adapterPromo = ProductAdapter(listItems)
+        val viewModel: ProductViewModel by viewModel()
         val layoutManagerPromo = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-
         val showcase = view.findViewById<RecyclerView>(R.id.recycler_promo)
-        showcase.adapter = adapterPromo
         showcase.layoutManager = layoutManagerPromo
-
         PagerSnapHelper().attachToRecyclerView(showcase)
+        viewModel.getPromotionalProduct().observe(viewLifecycleOwner) {
+            data {
+                val adapterPromo = ProductAdapter(it)
+                showcase.adapter = adapterPromo
+            }
+        }
     }
 }

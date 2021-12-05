@@ -3,7 +3,6 @@ package com.example.justgeek_base_app.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
@@ -27,7 +26,7 @@ class ProductCartAdapter(private val productAdapterList : List<ProductCartData>)
         holder.productName.text = current.productName
         holder.productPrice.text = current.productPrice
         holder.productQuantity.text = current.productQuantity
-        }
+    }
     }
 
 class ProductCartOnViewHold(itemView : View) : RecyclerView.ViewHolder(itemView) {

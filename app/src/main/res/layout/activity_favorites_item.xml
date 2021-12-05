@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         tools:text="@string/subtitle_old_price"
         android:textColor="@color/pattern_light"
-        android:textAppearance="@style/Exo2_Thin_Price"
+        android:textAppearance="@style/Exo2_Light_Price"
         android:layout_marginTop="@dimen/spacing_medium"
         app:layout_constraintStart_toStartOf="@id/title_review"
         app:layout_constraintTop_toBottomOf="@id/title_review"/>

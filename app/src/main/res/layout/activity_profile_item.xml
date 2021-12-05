@@ -33,7 +33,7 @@
         android:text="@string/title_date_recent_order"
         android:textColor="@color/pattern_light"
         android:textSize="@dimen/font_size_small"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:layout_marginStart="@dimen/spacing_xml"
         app:layout_constraintStart_toEndOf="@+id/recent_order_image"
         app:layout_constraintTop_toTopOf="@id/recent_order_image"/>

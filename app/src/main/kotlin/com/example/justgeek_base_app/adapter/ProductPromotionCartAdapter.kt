@@ -17,7 +17,7 @@ class ProductPromotionCartAdapter(private val promotionList : List<ProductItem>)
         viewType: Int
     ): ProductPromotionCartViewHold {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.activity_homepage_itens, parent, false)
+            .inflate(R.layout.promotion_product_item, parent, false)
         return ProductPromotionCartViewHold(itemView)
     }
 
