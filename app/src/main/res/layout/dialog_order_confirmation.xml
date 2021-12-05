@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_container_verification"
+    android:padding="@dimen/spacing_ml">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refuse_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_want_proceed_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_finalize_request_question"
+        android:textAppearance="@style/Exo2_Medium_Title_Dialog"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_close_dialog"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm_dialog"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:text="@string/button_finish_yes"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_light_rounded"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/text_want_proceed_dialog"
+        app:layout_constraintTop_toBottomOf="@id/text_want_proceed_dialog"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_refuse_dialog"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_button_next"
+        android:text="@string/button_finish_no"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Exo2_Medium_Title_Dialog"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintEnd_toEndOf="@id/text_want_proceed_dialog"
+        app:layout_constraintTop_toBottomOf="@id/text_want_proceed_dialog"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

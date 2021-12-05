@@ -3,7 +3,7 @@
     package="com.example.justgeek_base_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".JustGeekApplication"
@@ -15,8 +15,29 @@
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ArtistProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ArtistsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientChangeAddressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyCouponsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientChangeDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyCartOrderConfirmationActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomePageActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,12 +46,10 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".OnboardingActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".TutorialFirstFour"
             android:exported="false" />
@@ -43,7 +62,18 @@
         <activity
             android:name=".TutorialAccessFirst"
             android:exported="false" />
-    </application>
+        <activity
+            android:name=".MyCartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
 
+        <activity android:name=".ArtistFormActivity"
+            android:exported="true"/>
+    </application>
 
 </manifest>

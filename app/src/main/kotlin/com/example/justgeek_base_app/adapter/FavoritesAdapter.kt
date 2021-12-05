@@ -34,7 +34,7 @@ class FavoritesOrderViewHolder(itemView : View) : RecyclerView.ViewHolder(itemVi
     val imageFavorite : AppCompatImageView = itemView.findViewById(R.id.image_favorite)
     val reviewProduct : AppCompatTextView = itemView.findViewById(R.id.title_review)
     val icFavorite : AppCompatImageView = itemView.findViewById(R.id.ic_favorite)
-    val nameFavorite : AppCompatTextView = itemView.findViewById(R.id.title_name_favorite)
+    val nameFavorite : AppCompatTextView = itemView.findViewById(R.id.title_product_name_favorite)
     val oldPriceFavorite : AppCompatTextView = itemView.findViewById(R.id.title_old_price_favorite)
     val newPriceFavorite : AppCompatTextView = itemView.findViewById(R.id.title_new_price_favorite)
 }

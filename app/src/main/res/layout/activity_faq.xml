@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqActivity"
+    android:background="@color/pattern_dark">
+
+    <Toolbar
+        android:id="@+id/faq_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        android:title="@string/title_faq_toolbar"
+        android:titleTextColor="@color/pattern_light"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/showcase_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_showcase_faq"
+            app:layout_constraintTop_toBottomOf="@id/faq_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_faq_showcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_showcase_faq"
+        style="@style/Exo2_Regular_Subtitle_Showcase"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/showcase_faq"
+        app:layout_constraintBottom_toBottomOf="@id/showcase_faq"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_faq_showcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_showcase_faq"
+        style="@style/Exo2_Semibold_Title_Showcase"
+        android:layout_marginBottom="@dimen/spacing_sl"
+        app:layout_constraintStart_toStartOf="@id/text_faq_showcase"
+        app:layout_constraintBottom_toTopOf="@id/text_faq_showcase"/>
+
+    <RelativeLayout
+        android:id="@+id/container_custom_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/showcase_faq">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/Exo2_Regular_Subtitle_Showcase"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_payment_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        app:layout_constraintTop_toBottomOf="@+id/container_custom_product">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_payment_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/Exo2_Regular_Subtitle_Showcase"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_return_refund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        app:layout_constraintTop_toBottomOf="@+id/container_payment_promotion">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_return_refund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/Exo2_Regular_Subtitle_Showcase"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        app:layout_constraintTop_toBottomOf="@+id/container_return_refund">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/Exo2_Regular_Subtitle_Showcase"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/bg_card_dark"
+        app:layout_constraintTop_toBottomOf="@+id/container_delivery">
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/Exo2_Regular_Subtitle_Showcase"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

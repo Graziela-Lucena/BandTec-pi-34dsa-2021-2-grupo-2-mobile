@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_container_light"
-    android:padding="@dimen/spacing_medium">
+    android:padding="@dimen/spacing_medium"
+    android:layout_marginBottom="@dimen/spacing_medium">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image_item_bag"
@@ -43,73 +44,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg_dark_size_choose"
         android:padding="@dimen/spacing_xs"
-        android:text="@string/subtitle_filter_tam_pp"
+        android:text="@string/subtitle_filter_tam_choosed"
         android:textAlignment="center"
         android:textAppearance="@style/Exo2_Medium_Title_Size"
         android:textColor="@color/pattern_light"
         android:layout_marginTop="@dimen/spacing_medium"
         app:layout_constraintStart_toStartOf="@+id/title_price_item_bag"
         app:layout_constraintTop_toBottomOf="@+id/title_price_item_bag"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/button_p_size"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
-        android:text="@string/subtitle_filter_tam_p"
-        android:textColor="@color/pattern_light"
-        android:textAlignment="center"
-        android:textAppearance="@style/Exo2_Medium_Title_Size"
-        android:padding="@dimen/spacing_xs"
-        android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_sm"
-        app:layout_constraintBottom_toBottomOf="@id/button_pp_size"
-        app:layout_constraintTop_toTopOf="@id/button_pp_size"
-        app:layout_constraintStart_toEndOf="@+id/button_pp_size"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/button_m_size"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@color/pattern_light"
-        android:textAppearance="@style/Exo2_Medium_Title_Size"
-        android:text="@string/subtitle_filter_tam_m"
-        android:padding="@dimen/spacing_xs"
-        android:layout_marginStart="@dimen/spacing_sm"
-        android:background="@drawable/bg_dark_size_choose"
-        app:layout_constraintBottom_toBottomOf="@id/button_p_size"
-        app:layout_constraintTop_toTopOf="@id/button_p_size"
-        app:layout_constraintStart_toEndOf="@id/button_p_size"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/button_g_size"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/pattern_light"
-        android:textAlignment="center"
-        android:text="@string/subtitle_filter_tam_g"
-        android:textAppearance="@style/Exo2_Medium_Title_Size"
-        android:padding="@dimen/spacing_xs"
-        android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_sm"
-        app:layout_constraintBottom_toBottomOf="@+id/button_m_size"
-        app:layout_constraintTop_toTopOf="@+id/button_m_size"
-        app:layout_constraintStart_toEndOf="@+id/button_m_size"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/button_gg_size"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/pattern_light"
-        android:textAlignment="center"
-        android:padding="@dimen/spacing_xs"
-        android:textAppearance="@style/Exo2_Medium_Title_Size"
-        android:text="@string/subtitle_filter_tam_gg"
-        android:background="@drawable/bg_dark_size_choose"
-        android:layout_marginStart="@dimen/spacing_sm"
-        app:layout_constraintBottom_toBottomOf="@+id/button_g_size"
-        app:layout_constraintTop_toTopOf="@+id/button_g_size"
-        app:layout_constraintStart_toEndOf="@+id/button_g_size"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/button_less"
@@ -143,7 +84,7 @@
         android:text="@string/title_plus_button"
         android:textAlignment="center"
         android:background="@drawable/bg_plus_button"
-        app:layout_constraintBottom_toBottomOf="@+id/button_gg_size"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

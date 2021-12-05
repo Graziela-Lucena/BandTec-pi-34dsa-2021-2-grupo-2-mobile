@@ -14,14 +14,19 @@ class ProductPopFragment: Fragment(R.layout.fragment_popular) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val productViewModel: ProductViewModel by viewModel()
-        val listItems = productViewModel.getPromotionalProduct()
-        val adapterPromo = ProductPopAdapter(listItems)
-        val layoutManagerPromo = GridLayoutManager(requireContext(), 2)
 
         val showcase = view.findViewById<RecyclerView>(R.id.recycler_promo)
-        showcase.adapter = adapterPromo
+        val layoutManagerPromo = GridLayoutManager(requireContext(), 2)
         showcase.layoutManager = layoutManagerPromo
 
         PagerSnapHelper().attachToRecyclerView(showcase)
+
+        productViewModel.getPopularProduct().observe(viewLifecycleOwner) {
+            data {
+                val adapterPromo = ProductPopAdapter(it)
+                showcase.adapter = adapterPromo
+            }
+        }
+
     }
 }

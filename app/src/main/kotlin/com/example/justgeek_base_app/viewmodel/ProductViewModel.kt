@@ -9,4 +9,7 @@ class ProductViewModel(private val repository: ProductRepository): ViewModel() {
     fun getPromotionalProduct() : ResponseLiveData<List<ProductItem>> {
         return repository.getPromotionProduct()
     }
+    fun getPopularProduct(): ResponseLiveData<List<ProductItem>> {
+        return repository.getPopularProduct()
+    }
 }

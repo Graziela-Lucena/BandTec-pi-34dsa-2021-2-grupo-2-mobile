@@ -9,7 +9,7 @@
     <string name="button_next_sing_up">Continuar</string>
     <string name="button_back_sing_up">Voltar</string>
     <string name="title_name">Insira seu nome:</string>
-    <string name="title_last_name">Insira seu sobrenome:</string>
+    <string name="title_last_name">:</string>
     <string name="title_cpf">Insira seu CPF:</string>
     <string name="title_birthdate">Insira sua data de nascimento:</string>
     <string name="title_email" translatable="false">Insira seu email:</string>
@@ -94,7 +94,7 @@
     <string name="subtitle_filter_start_price_category_page" translatable="false">R$ %1$.2f</string>
     <string name="subtitle_filter_end_price_category_page" translatable="false">R$ %1$.2f</string>
     <string name="title_filter_tam_category_page">Tamanho</string>
-    <string name="subtitle_filter_tam_pp" translatable="false">PP</string>
+    <string name="subtitle_filter_tam_choosed" translatable="false">%1$s</string>
     <string name="subtitle_filter_tam_p" translatable="false">P</string>
     <string name="subtitle_filter_tam_m" translatable="false">M</string>
     <string name="subtitle_filter_tam_g" translatable="false">G</string>
@@ -127,25 +127,25 @@
     <!--FAQ PAGE-->
     <string name="title_faq_toolbar" translatable="false">FAQ</string>
     <string name="title_faq_option_product_custom">Produtos customizados</string>
-    <string name="text_faq_answer_option_product_custom">Para fazer um pedido de um produto custumizado,
+    <string name="text_faq_answer_option_product_custom">Produtos customizados: para fazer um pedido de um produto custumizado,
         é necessário acessar a página do artista de sua preferência, e assim, selecionar a arte
         que mais combina com você ;)</string>
     <string name="title_faq_option_payment_promotion">Pagamento e promoções</string>
-    <string name="text_faq_answer_option_payment_promotion">O processo de pagamento da Just Geek é
+    <string name="text_faq_answer_option_payment_promotion">Pagamento e promoções: o processo de pagamento da Just Geek é
         integrado com o Mercado Pago, incluindo as seguintes formas de pagamento: boleto, débito
         e crédito. Para conseguir seus descontos, colecione cupons de descontos que surgem pelo APP,
         eles tem data de expiração ;)</string>
     <string name="title_faq_option_return_refund">Devolução e reembolso</string>
-    <string name="text_faq_answer_option_return_refund">Caso o produto tenha chegado em sua
+    <string name="text_faq_answer_option_return_refund">Devolução e reembolso: caso o produto tenha chegado em sua
         residência com defeito, tamanho inadequado, estampa/cor errada, é possÍvel contatar a
         Just Geek através do nosso email, temos um prazo de 2 a 4 dias para revisar o email,
         e mais os dias estimados pelo fretista. A taxa de envio fica por nossa conta ;)</string>
     <string name="title_faq_option_delivery">Entrega</string>
-    <string name="text_faq_answer_option_delivery">Todo o sistema de entrega dos produtos da
+    <string name="text_faq_answer_option_delivery">Entrega: todo o sistema de entrega dos produtos da
         Just Geek é feito em parceria com a Correios, o preço do frete irá depender
         da distância entre o estoque e sua residência ;)</string>
     <string name="title_faq_option_account">Conta</string>
-    <string name="text_faq_answer_option_account">Todas as suas informações podem ser acessadas
+    <string name="text_faq_answer_option_account">Conta: todas as suas informações podem ser acessadas
         através do botão “Perfil”, podendo visualizar suas informações atuais, alterá - los
         através das configurações da conta.</string>
 
@@ -194,14 +194,14 @@
     <string name="birth_date_client" translatable="false">%1$s</string>
     <string name="email_client" translatable="false">%1$s</string>
     <string name="contact_number_client" translatable="false">%1$s</string>
-    <string name="change_data">Alterar dados pessoais ></string>
+    <string name="change_data">Alterar dados pessoais </string>
     <string name="my_addresses">Meus endereços</string>
 
     <!--ACCOUNT CONFIG (Addresses 1) -->
     <string name="addresses_client_name" translatable="false">%1$s</string>
-    <string name="street_name_addresses_one" translatable="false">%1$s,</string>
+    <string name="street_name_addresses_one" translatable="false">%1$s</string>
     <string name="number_home_addresses_one" translatable="false">%1$s</string>
-    <string name="neighborhood_addresses_one" translatable="false">%1$s,</string>
+    <string name="neighborhood_addresses_one" translatable="false">%1$s</string>
     <string name="city_addresses_one" translatable="false">%1$s</string>
     <string name="cep_addresses_one" translatable="false">CEP %1$s</string>
 
@@ -211,6 +211,32 @@
     <string name="district_city_adresses_two" translatable="false">%1$s,%2$s</string>
     <string name="cep_adresses_two" translatable="false">CEP %1$s</string>
     <string name="add_new_address" translatable="false">Adicionar novo endereço ></string>
+
+    <!--ACCONT CONFIG (EDIT DATA) -->
+    <string name="label_config_name" translatable="false">Nome completo</string>
+    <string name="label_config_cpf" translatable="false">CPF</string>
+    <string name="label_config_birthday" translatable="false">Data de nascimento</string>
+    <string name="title_config_contact" translatable="false">Meus dados de contato</string>
+    <string name="label_config_phone" translatable="false">Telefone</string>
+    <string name="label_config_email" translatable="false">Email</string>
+    <string name="title_config_password" translatable="false">Minha senha de acesso</string>
+    <string name="label_config_password" translatable="false">Senha</string>
+    <string name="label_config_password_confirmation" translatable="false">Confirmar senha</string>
+    <string name="btn_save" translatable="false">Salvar</string>
+
+    <!-- ACCOUNT CONFIG (EDIT/ADD ADDRESS) -->
+    <string name="toolbar_config_address_add" translatable="false">Adicionar endereço</string>
+    <string name="toolbar_config_address_edit" translatable="false">Editar endereço</string>
+    <string name="label_config_recipient" translatable="false">Nome do destinatário</string>
+    <string name="label_config_cep" translatable="false">CEP</string>
+    <string name="label_config_address" translatable="false">Endereço</string>
+    <string name="label_config_number" translatable="false">Número</string>
+    <string name="label_config_complement" translatable="false">Complemento</string>
+    <string name="label_config_reference" translatable="false">Referência</string>
+    <string name="label_config_neighborhood" translatable="false">Bairro</string>
+    <string name="label_config_city" translatable="false">Cidade</string>
+    <string name="label_config_uf" translatable="false">UF</string>
+    <string name="btn_remove_address" translatable="false">Remover endereço</string>
 
     <!--FAQ PAGE-->
     <string name="profile_name">Olá, %1$s</string>
@@ -234,6 +260,11 @@
     <string name="title_plus_button" translatable="false">+</string>
     <string name="title_less_button" translatable="false">-</string>
     <string name="title_result_quantity" translatable="false">%1$s</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_category">Categoria</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_notifications">Notifications</string>
 
     <!--PRODUCT PAGE-->
     <string name="product_step">%1$d/3</string>
@@ -247,10 +278,11 @@
     <string name="size_gg">GG</string>
     <string name="title_shipping">Taxa de envio</string>
     <string name="subtitle_shipping">Oi :) é novo por aqui ? Cadastre um endereço
-         novo por aqui</string>
+         novo por</string>
+    <string name="link_shipping_add_address">aqui</string>
     <string name="subtitle_invite">Frete  grátis em compras acima de R$100,00</string>
     <string name="subtitle_shipping_price">Preço de entrega estimado: R$ %1$.2f</string>
-    <string name="title_evaluation">Avaliações</string>
+    <string name="title_evaluation">Avaliações:</string>
     <string name="title_suggestion">Você também pode gostar</string>
     <string name="title_button_add_cart">Adicionar ao carrinho</string>
     <string name="pop_up_add_cart">Tamanho: %1$s</string>
@@ -259,16 +291,19 @@
     <string name="button_keep_buying">Continuar comprando</string>
     <string name="pop_up_favorite_title">Produto adicionado aos seus favoritos</string>
     <string name="button_favorite">Ver favoritos</string>
+    <string name="title_name_product" translatable="false">%1$s</string>
+    <string name="quantity_selector">Quantidade:</string>
+    <string name="text_average" translatable="false">%1$.2f</string>
 
     <!--ORDER CONFIRMATION PAGE-->
     <string name="title_order_confirmation">Confirmação do pedido</string>
     <string name="subtitle_method_shipping">Método de envio</string>
     <string name="title_shipping_fee">Taxa mínima de envio</string>
-    <string name="subtitle_shipping_fee">R$ 12,00 - 10 dias úteis de espera mínima</string>
+    <string name="subtitle_shipping_fee">R$ %1$s - %2$s dias úteis de espera mínima</string>
     <string name="title_payment_method">Método de pagamento</string>
     <string name="subtitle_payment_method">Mercado Pago</string>
     <string name="subtitle_payment_method_info">Inclui boleto, débito/crédito</string>
-    <string name="title_apply_coupon">Aplicar cupomde desconto</string>
+    <string name="title_apply_coupon">Aplicar cupom de desconto</string>
     <string name="title_bag_products">Sacola de compras</string>
     <string name="title_ratail_price">Preço de varejo:</string>
     <string name="title_discount_coupon">Cupom de desconto:</string>
@@ -278,6 +313,9 @@
     <string name="button_finish_yes">Sim</string>
     <string name="button_finish_no">Não</string>
     <string name="title_finish_purchase">Deseja finalizar o pedido</string>
+    <string name="title_price_from_coupon" translatable="false">R$ %1$.2f</string>
+    <string name="title_price_tax" translatable="false">R$ %1$.2f</string>
+    <string name="title_quantity_product_chosen" translatable="false">%1$d</string>
 
     <!--COUPON PAGE-->
     <string name="title_my_coupons">Meus cupons</string>
@@ -285,6 +323,9 @@
     <string name="button_apply">Aplicar</string>
     <string name="title_coupons">Cupons</string>
     <string name="button_ok">OK</string>
+    <string name="title_less_price" translatable="false">-R$ %1$.2f</string>
+    <string name="title_code_coupon" translatable="false">%1$s</string>
+    <string name="divisor" translatable="false">|</string>
 
     <!--PROFILE PAGE-->
     <string name="title_welcome">Olá %1$s</string>
@@ -322,4 +363,65 @@
     <!--FAVORITE PAGE-->
     <string name="button_purchase">Comprar</string>
 
+    <!-- ARTISTS PAGE -->
+    <string name="title_showcase_artists" translatable="false">Suas ideias, nosso traço.</string>
+    <string name="subtitle_showcase_artists" translatable="false">Customize suas roupas como quiser</string>
+    <string name="title_artists" translatable="false">ARTISTAS POPULARES</string>
+    <string name="others_artists" translatable="false">ARTISTAS SIMILARES</string>
+
+    <!-- CUSTOMIZATION -->
+    <string name="title_step_one_customization">CUSTOMIZAÇÃO</string>
+    <string name="subtitle_step_one_customization">Opa! Que tal colocar toda sua criatividade para
+        fritar e encher suas roupas de personalidade e unicidade? Tenha algo que é só seu e ninguém
+        vai poder ter igual!</string>
+    <string name="title_step_two_customization">ACHAR O ARTISTA</string>
+    <string name="subtitle_step_two_customization">Entre na página de artistas e escolha o que mais
+        gostar para fazer sua estampa! Depois, é só entrar em contato com ele se o status
+        dos pedidos estiverem abertos.</string>
+    <string name="title_step_three_customization">FORMULÁRIO</string>
+    <string name="subtitle_step_three_customization">Depois de achar o artista perfeito para você,
+        é preciso preencher um formulário com suas ideais, referências e especificações. Depois
+        disso, é só esperar o artista entrar em contato.</string>
+    <string name="title_step_four_customization">CONTATO</string>
+    <string name="subtitle_step_four_customization">Depois que o artista receber seu formulário,
+        ele decidirá se irá aceitar ou não a oferta. Caso dê tudo certo, enviaremos um email com
+        todas as informações de contato para vocês discutirem a ideia.</string>
+    <string name="title_step_five_customization">PROCESSAMENTO</string>
+    <string name="subtitle_step_five_customization">Quando tudo for decidido, iniciará o processo de
+        produção. Esse status vai poder ser acompanhado no seu perfil, na seção dos seus pedidos.
+        Quando tudo for finalizado, você vai receber uma notificação via app.</string>
+    <string name="title_step_six_customization">PAPELADA</string>
+    <string name="subtitle_step_six_customization">Agora que você sabe do processo, vai precisar
+        saber das questões legais e nossos termos de uso referentes a customização. Tenha certeza
+        de ler e entender bem todos os tópicos!</string>
+
+    <string name="title_custom" translatable="false">---- CUSTOMIZAÇÃO ----</string>
+    <string name="title_custom_two" translatable="false">Os artistas tem uma agenda</string>
+    <string name="title_custom_three" translatable="false">Arrumadinhas para lá e para cá</string>
+    <string name="title_custom_four" translatable="false">Bola de Cristal?</string>
+    <string name="title_custom_five" translatable="false">Reembolso</string>
+    <string name="title_custom_six" translatable="false">Termos de uso</string>
+    <string name="title_custom_seven" translatable="false">Respeito</string>
+    <string name="text_custom_one" translatable="false">Quando você pede um produto customizado, é
+        de suma importância ter certeza do que deseja. Vide:</string>
+    <string name="text_custom_two" translatable="false">Nas galerias existe um status de encomendas
+        fechadas/abertas. Pedir muitos ajustes fará com que o prazo da sua encomenda aumente e
+        congestionará a agenda do artista escolhido. É importante também ter paciência e compreensão
+        quando os pedidos do artista estiverem indisponíveis. Existem muitas opções!</string>
+    <string name="text_custom_three" translatable="false">Depois do passo de CONTATO terminar e
+        começar o processo de PRODUÇÃO, sua encomenda não poderá mais ser alterada.
+        Isso inclui o preço do produto.</string>
+    <string name="text_custom_four" translatable="false">Seja CLARO com suas ideias. Cite exemplos,
+        mostre referências e converse o máximo possível com o artista para que o produto final
+        esteja de acordo com o que você imaginava.</string>
+    <string name="text_custom_five" translatable="false">Reembolsos e trocas serão possiveis dentro
+        do prazo de 7 dias úteis após o recebimento do produto.
+Para mais informações, acesse DÚVIDAS/REEMBOLSO E TROCAS no FAQ, disponível no menu lateral do app.</string>
+    <string name="text_custom_six" translatable="false">Caso precise de mais informações, você
+        sempre poderá ler os nossos termos de uso, política de privade ou nossa documentação.
+        Tudo presente no menu lateral do app.</string>
+    <string name="text_custom_seven" translatable="false">A regra principal é NUNCA desrespeitar
+        os nossos colaboradores, sejam eles quais forem. Caso ocorra essa infração, seu pedido não
+        será efetuado. Leia os termos de uso, citados acima.</string>
+    <string name="text_final" translatable="false">A JustGeek Agradece!</string>
 </resources>

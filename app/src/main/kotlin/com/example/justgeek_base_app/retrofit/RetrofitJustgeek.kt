@@ -62,7 +62,7 @@ object RetrofitJustgeek {
             }).build()
         val retrofit = Retrofit.Builder()
             .client(getUnsafeOkHttpClient())
-            .baseUrl("http://35.171.51.43:8081")
+            .baseUrl("http://10.3.0.105:8081")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofit
