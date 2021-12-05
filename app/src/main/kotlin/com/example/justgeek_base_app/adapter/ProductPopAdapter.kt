@@ -18,8 +18,12 @@ class ProductPopAdapter(private val productList: List<ProductItem>):  RecyclerVi
 
     override fun onBindViewHolder(holder: ProductPopViewHolder, position: Int) {
         val currentItem = productList[position]
+<<<<<<< Updated upstream
         Picasso.get().load(currentItem.productImage).into(holder.productImage)
         holder.discount.text = currentItem.discount
+=======
+        currentItem.productImage.let { Picasso.get().load(it?.firstOrNull()).into(holder.productImage) }
+>>>>>>> Stashed changes
         holder.name.text = currentItem.name
         holder.price.text = currentItem.price
         holder.oldPrice.text = currentItem.oldPrice

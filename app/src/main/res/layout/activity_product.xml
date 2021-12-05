@@ -329,7 +329,7 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/spacing_xml"
                         android:layout_height="@dimen/spacing_xml"
-                        android:src="@drawable/ic_star_filled"
+                        android:src="@drawable/ic_rate_star"
                         app:layout_constraintBottom_toBottomOf="@+id/container_average_review"
                         app:layout_constraintTop_toTopOf="@+id/container_average_review"
                         app:layout_constraintEnd_toEndOf="@+id/container_average_review"/>

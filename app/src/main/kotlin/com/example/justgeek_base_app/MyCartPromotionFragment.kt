@@ -9,62 +9,26 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.justgeek_base_app.adapter.ProductPromotionCartAdapter
 import com.example.justgeek_base_app.data.ProductItem
+import com.example.justgeek_base_app.viewmodel.ProductViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class MyCartPromotionFragment:Fragment(R.layout.fragment_my_cart_promotion) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val cartPromotionsList : List<ProductItem> = mutableListOf(
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-            ProductItem(
-                getString(R.string.tag_promotion),
-                getString(R.string.title_product_name),
-                getString(R.string.subtitle_new_price),
-                getString(R.string.subtitle_old_price),
-                R.drawable.popular1
-            ),
-        )
+        val productViewModel: ProductViewModel by viewModel()
 
-        val adapter = ProductPromotionCartAdapter(cartPromotionsList)
         val layout = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val itemsCartPromotion = view.findViewById<RecyclerView>(R.id.recycler_promo_cart)
 
-        itemsCartPromotion.adapter = adapter
         itemsCartPromotion.layoutManager = layout
 
         PagerSnapHelper().attachToRecyclerView(itemsCartPromotion)
+
+        productViewModel.getPromotionalProduct().observe(viewLifecycleOwner) {
+            data {
+                val adapter = ProductPromotionCartAdapter(it)
+                itemsCartPromotion.adapter = adapter
+            }
+        }
     }
 }

@@ -1,11 +1,18 @@
 package com.example.justgeek_base_app.retrofit
 
+<<<<<<< Updated upstream:app/src/main/kotlin/com/example/justgeek_base_app/retrofit/RetrofitUser.kt
+=======
+import com.example.justgeek_base_app.api.CommentApi
+import com.example.justgeek_base_app.api.ProductApi
+>>>>>>> Stashed changes:app/src/main/kotlin/com/example/justgeek_base_app/retrofit/RetrofitJustgeek.kt
 import com.example.justgeek_base_app.api.UserApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.apache.http.conn.ssl.SSLSocketFactory.SSL
+import org.w3c.dom.Comment
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import java.security.SecureRandom
 import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
@@ -61,7 +68,7 @@ object RetrofitUser {
             }).build()
         val retrofit = Retrofit.Builder()
             .client(getUnsafeOkHttpClient())
-            .baseUrl("http://10.3.0.105:8081")
+            .baseUrl("http://18.210.174.15")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofit
@@ -70,5 +77,9 @@ object RetrofitUser {
         return retrofit.create(UserApi::class.java)
     }
 
+
+    fun comment(retrofit: Retrofit): CommentApi {
+        return retrofit.create(CommentApi::class.java)
+    }
 
 }

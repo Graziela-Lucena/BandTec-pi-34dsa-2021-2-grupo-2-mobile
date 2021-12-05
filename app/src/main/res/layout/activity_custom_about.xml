@@ -358,7 +358,7 @@
 
                         <TextView
                             android:id="@+id/text"
-                            style="@style/Exo2_Regular_Small_Subtitle"
+                            style="@style/Exo2_Medium_Small_Subtitle"
                             android:layout_width="@dimen/spacing_zero"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/spacing_xsl"

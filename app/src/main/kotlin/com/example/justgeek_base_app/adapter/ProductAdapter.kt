@@ -18,7 +18,7 @@ class ProductAdapter(private val productList: List<ProductItem>):  RecyclerView.
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val currentItem = productList[position]
-        Picasso.get().load(currentItem.productImage).into(holder.productImage)
+        Picasso.get().load(currentItem.productImage?.firstOrNull()).into(holder.productImage)
         holder.discount.text = currentItem.discount
         holder.name.text = currentItem.name
         holder.price.text = currentItem.price

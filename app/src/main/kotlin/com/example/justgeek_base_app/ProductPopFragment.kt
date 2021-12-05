@@ -1,6 +1,7 @@
 package com.example.justgeek_base_app
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -57,5 +58,20 @@ class ProductPopFragment: Fragment(R.layout.fragment_popular) {
         showcase.layoutManager = layoutManagerPromo
 
         PagerSnapHelper().attachToRecyclerView(showcase)
+<<<<<<< Updated upstream
+=======
+
+        productViewModel.getPopularProduct().observe(viewLifecycleOwner) {
+            data {
+                val adapterPromo = ProductPopAdapter(it)
+                showcase.adapter = adapterPromo
+                Log.i("grazi", it.toString())
+            }
+            error { t ->
+                Log.i("grazi", t.toString())
+            }
+        }
+
+>>>>>>> Stashed changes
     }
 }

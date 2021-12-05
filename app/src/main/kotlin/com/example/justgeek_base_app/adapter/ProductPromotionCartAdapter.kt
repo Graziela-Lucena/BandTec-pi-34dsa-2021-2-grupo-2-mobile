@@ -30,7 +30,7 @@ class ProductPromotionCartAdapter(private val promotionList : List<ProductItem>)
         holder.name.text = current.name
         holder.price.text = current.price
         holder.oldPrice.text = current.oldPrice
-        Picasso.get().load(current.productImage).into(holder.productImage)
+        Picasso.get().load(current.productImage?.firstOrNull()).into(holder.productImage)
     }
         }
 
