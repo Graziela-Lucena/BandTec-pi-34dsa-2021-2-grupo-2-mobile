@@ -10,10 +10,6 @@ class ProductItem (
     @SerializedName("preco")
     val price: String,
     val oldPrice: String,
-<<<<<<< Updated upstream
-    @DrawableRes val productImage: Int
-=======
     @SerializedName("imagens")
     val productImage: List<String?>?
->>>>>>> Stashed changes
 )

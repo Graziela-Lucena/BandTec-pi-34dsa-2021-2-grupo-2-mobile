@@ -55,7 +55,7 @@
         android:text="@string/title_cpf"
         app:layout_constraintTop_toBottomOf="@id/page_indicator"
         app:layout_constraintStart_toStartOf="@id/page_indicator"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle"
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle"
         android:layout_marginTop="@dimen/spacing_big"/>
 
     <androidx.appcompat.widget.AppCompatEditText
@@ -78,7 +78,7 @@
         android:text="@string/error_message"
         android:visibility="gone"
         android:layout_marginTop="@dimen/spacing_minimum"
-        android:textAppearance="@style/Exo2_Regular_Small_Subtitle_Pink"/>
+        android:textAppearance="@style/Exo2_Medium_Small_Subtitle_Pink"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/check_valid"

@@ -1,25 +1,20 @@
 package com.example.justgeek_base_app.retrofit
 
-<<<<<<< Updated upstream:app/src/main/kotlin/com/example/justgeek_base_app/retrofit/RetrofitUser.kt
-=======
 import com.example.justgeek_base_app.api.CommentApi
 import com.example.justgeek_base_app.api.ProductApi
->>>>>>> Stashed changes:app/src/main/kotlin/com/example/justgeek_base_app/retrofit/RetrofitJustgeek.kt
 import com.example.justgeek_base_app.api.UserApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.apache.http.conn.ssl.SSLSocketFactory.SSL
-import org.w3c.dom.Comment
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import java.security.SecureRandom
 import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
 import javax.net.ssl.*
 
-object RetrofitUser {
+object RetrofitJustgeek {
     private fun getUnsafeOkHttpClient(): OkHttpClient? {
         return try {
             val trustAllCerts: Array<TrustManager> = arrayOf<TrustManager>(
@@ -77,6 +72,9 @@ object RetrofitUser {
         return retrofit.create(UserApi::class.java)
     }
 
+    fun product(retrofit: Retrofit): ProductApi {
+        return retrofit.create(ProductApi::class.java)
+    }
 
     fun comment(retrofit: Retrofit): CommentApi {
         return retrofit.create(CommentApi::class.java)
