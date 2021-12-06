@@ -71,14 +71,14 @@
                 android:background="@drawable/bg_container_light"
                 app:layout_constraintTop_toTopOf="@+id/container_product_page">
 
-                <androidx.appcompat.widget.AppCompatImageView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/product_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:cropToPadding="true"
-                    android:src="@drawable/photo_product"
-                    android:padding="@dimen/spacing_medium"
+                    tools:listitem="@layout/product_images_items"
+                    tools:itemCount="1"
                     app:layout_constraintEnd_toEndOf="@+id/container_product"
                     app:layout_constraintStart_toStartOf="@+id/container_product"
                     app:layout_constraintTop_toTopOf="@+id/container_product" />
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
-                    android:text="@string/title_name_product"
+                    tools:text="@string/title_name_product"
                     android:textAppearance="@style/Exo2_Semibold_Title_Showcase"
                     app:layout_constraintStart_toStartOf="@+id/divider_product"
                     app:layout_constraintTop_toBottomOf="@+id/divider_product"/>
@@ -117,7 +117,7 @@
                     android:id="@+id/product_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/subtitle_new_price"
+                    tools:text="@string/subtitle_new_price"
                     android:textColor="@color/hot_blue"
                     android:fontFamily="@font/bold_exo2"
                     android:textSize="@dimen/font_size_medium"
@@ -129,7 +129,7 @@
                     android:id="@+id/product_old_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/subtitle_old_price"
+                    tools:text="@string/subtitle_old_price"
                     android:textSize="@dimen/font_size_minimum"
                     android:textColor="@color/gray_text"
                     android:fontFamily="@font/semibold_exo2"
@@ -145,7 +145,7 @@
                     android:textSize="@dimen/font_size_minimum"
                     android:textColor="@color/gray_text"
                     android:fontFamily="@font/semibold_exo2"
-                    android:text="@string/installments"
+                    tools:text="@string/installments"
                     android:layout_marginTop="@dimen/spacing_sl"
                     app:layout_constraintStart_toStartOf="@+id/product_price"
                     app:layout_constraintTop_toBottomOf="@+id/product_old_price"/>

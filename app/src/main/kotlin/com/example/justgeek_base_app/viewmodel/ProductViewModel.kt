@@ -12,4 +12,7 @@ class ProductViewModel(private val repository: ProductRepository): ViewModel() {
     fun getPopularProduct(): ResponseLiveData<List<ProductItem>> {
         return repository.getPopularProduct()
     }
+    fun getProductById(idProduct: Int) : ResponseLiveData<ProductItem> {
+        return repository.getProductById(idProduct)
+    }
 }

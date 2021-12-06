@@ -267,7 +267,7 @@
     <string name="title_notifications">Notifications</string>
 
     <!--PRODUCT PAGE-->
-    <string name="product_step">%1$d/3</string>
+    <string name="product_step">%1$d/%2$d</string>
     <string name="price">R$ %1$.2f</string>
     <string name="installments">2x  de R$ %1$.2f sem juros</string>
     <string name="amount">Qtd:</string>
