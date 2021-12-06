@@ -30,12 +30,13 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
         val averageRate = findViewById<TextView>(R.id.text_average)
         val pageIndicator = findViewById<TextView>(R.id.pointer_image)
 
-        val idProduct = intent.getIntExtra("idProduto", 2)
+//        val idProduct = intent.getIntExtra("idProduto", 2)
+          val idProduct = 1
 
         val recyclerViewImages = findViewById<RecyclerView>(R.id.product_image)
 
         recyclerViewImages.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        productViewModel.getProductById(1).observe(this) {
+        productViewModel.getProductById(idProduct).observe(this) {
             data{
                 recyclerViewImages.adapter = ProductImageAdapter(it.productImage)
                 productName.text = it.name
@@ -47,6 +48,24 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
             }
             error { t->
                 Log.i("grazi", t.toString())
+            }
+        }
+
+        ratingViewModel.getProductComments(idProduct).observe(this) {
+            data {
+                val list = it
+                val listSize = it.size
+               it.map {
+                   var cont: Int = listSize
+                   var average = 0f
+                   var rate = 0f
+                   while (cont >= 0) {
+                       rate += list.getOrNull(cont)?.rate ?: 0f
+                       average = rate / listSize
+                       cont--
+                   }
+                   averageRate.text = average.toString()
+                }
             }
         }
 
@@ -135,7 +154,7 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
         val fragmentTransactionWithoutAddress = supportFragmentManager.beginTransaction()
         val withoutAddressItem = WithoutAddressFragment()
         val fragmentTransactionReview = supportFragmentManager.beginTransaction()
-        val reviewFragment = ProductReviewFragment()
+        val reviewFragment = ProductReviewFragment(idProduct)
 
         fragmentTransactionWithoutAddress.add(R.id.fragment_address_request, withoutAddressItem)
         fragmentTransactionWithoutAddress.commit()

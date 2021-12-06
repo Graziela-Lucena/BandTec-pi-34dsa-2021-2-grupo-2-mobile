@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.justgeek_base_app.R
+import com.example.justgeek_base_app.data.CommentItem
 import com.example.justgeek_base_app.data.CommentReview
 
-class CommentReviewAdapter (private val itemCommentReview : List<CommentReview>)
+class CommentReviewAdapter (private val itemCommentReview : List<CommentItem>)
     : RecyclerView.Adapter<CommentReviewViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentReviewViewHolder {
             val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_product_review,
@@ -20,9 +21,8 @@ class CommentReviewAdapter (private val itemCommentReview : List<CommentReview>)
 
     override fun onBindViewHolder(holder: CommentReviewViewHolder, position: Int) {
             val current = itemCommentReview[position]
-
-            holder.userName.text = current.userName
-            holder.commentReview.text = current.commentReview
+            holder.userName.text = current.name
+            holder.commentReview.text = current.comment
         }
     }
 
