@@ -1,9 +1,6 @@
 package com.example.justgeek_base_app.retrofit
 
-import com.example.justgeek_base_app.api.CategoryApi
-import com.example.justgeek_base_app.api.CommentApi
-import com.example.justgeek_base_app.api.ProductApi
-import com.example.justgeek_base_app.api.UserApi
+import com.example.justgeek_base_app.api.*
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.apache.http.conn.ssl.SSLSocketFactory.SSL
@@ -64,7 +61,7 @@ object RetrofitJustgeek {
             }).build()
         val retrofit = Retrofit.Builder()
             .client(getUnsafeOkHttpClient())
-            .baseUrl("http://192.168.15.10:8083")
+            .baseUrl("http://10.5.0.27:8083")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofit
@@ -83,6 +80,10 @@ object RetrofitJustgeek {
 
     fun category(retrofit: Retrofit) : CategoryApi {
         return retrofit.create(CategoryApi::class.java)
+    }
+
+    fun popularArtists(retrofit: Retrofit) : ArtistApi {
+        return retrofit.create(ArtistApi::class.java)
     }
 
 }

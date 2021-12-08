@@ -13,7 +13,8 @@ import com.squareup.picasso.Picasso
 class ProductCategoryAdapter (private val listCategoryProduct : List<ProductItem>)
     : RecyclerView.Adapter<CategoryProductViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryProductViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.popular_product_item, parent, false)
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.popular_product_item, parent, false)
         return CategoryProductViewHolder(itemView)
         }
 
