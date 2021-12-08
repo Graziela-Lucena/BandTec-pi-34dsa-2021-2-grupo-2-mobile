@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:background="@color/pattern_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/category_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        app:title="JustGEEK"
+        app:navigationIcon="@drawable/ic_menu_homepage"
+        app:titleTextAppearance="@style/Logo_Text"
+        app:titleTextColor="@color/pattern_light"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="@id/category_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/category_toolbar"
+        app:layout_constraintEnd_toStartOf="@id/shop"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintTop_toTopOf="@id/category_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/category_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/category_toolbar"
+        android:layout_marginEnd="@dimen/spacing_xsl"/>
+
+    <ImageView
+        android:layout_width="@dimen/spacing_minimum"
+        android:layout_height="@dimen/spacing_zero"
+        android:src="@drawable/bg_light_rounded"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/category_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/category_toolbar"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_sm"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/showcase_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cartoon"
+        app:layout_constraintTop_toBottomOf="@id/category_toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_cartoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semibold_exo2"
+        android:textColor="@color/pattern_light"
+        android:textSize="@dimen/font_size_big"
+        android:text="@string/title_showcase_category_page"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/showcase_category"
+        app:layout_constraintTop_toTopOf="@id/showcase_category"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_cartoon"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular_exo2"
+        android:textColor="@color/pattern_light"
+        android:textSize="@dimen/font_size_small"
+        android:text="@string/subtitle_showcase_category_page"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/title_cartoon"
+        app:layout_constraintTop_toBottomOf="@id/title_cartoon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_all_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium_exo2"
+        android:textColor="@color/pattern_light"
+        android:textSize="@dimen/font_size_small"
+        android:text="@string/title_products_category_page"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showcase_category"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_category_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/text_all_products"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

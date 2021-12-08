@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Justgeekbaseapp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CategoryActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ProductActivity"
             android:exported="true" />
         <activity
@@ -37,12 +46,8 @@
             android:exported="true" />
         <activity
             android:name=".HomePageActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -71,9 +76,9 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
-
-        <activity android:name=".ArtistFormActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".ArtistFormActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
