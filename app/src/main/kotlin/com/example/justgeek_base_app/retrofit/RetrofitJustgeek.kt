@@ -1,5 +1,6 @@
 package com.example.justgeek_base_app.retrofit
 
+import com.example.justgeek_base_app.api.CategoryApi
 import com.example.justgeek_base_app.api.CommentApi
 import com.example.justgeek_base_app.api.ProductApi
 import com.example.justgeek_base_app.api.UserApi
@@ -78,6 +79,10 @@ object RetrofitJustgeek {
 
     fun comment(retrofit: Retrofit): CommentApi {
         return retrofit.create(CommentApi::class.java)
+    }
+
+    fun category(retrofit: Retrofit) : CategoryApi {
+        return retrofit.create(CategoryApi::class.java)
     }
 
 }
