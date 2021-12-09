@@ -23,5 +23,4 @@ class GalleryAdapter(private var listImgs: List<String>): RecyclerView.Adapter<G
 
 class GalleryViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
     val img : AppCompatImageView = itemView.findViewById(R.id.art_image)
-
 }

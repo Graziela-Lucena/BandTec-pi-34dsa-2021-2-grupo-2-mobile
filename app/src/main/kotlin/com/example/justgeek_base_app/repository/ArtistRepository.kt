@@ -30,9 +30,7 @@ class ArtistRepository(private val artist: ArtistApi) {
             try {
                 liveData.postLoading()
                 val artistLiveData = artist.getArtist(idArtista)
-                val profileLiveData = artist.getProfilePicture(idArtista)
                 val galleryLiveData = artist.getGallery(idArtista)
-                artistLiveData.imagemPerfil = profileLiveData
                 artistLiveData.artes = galleryLiveData
                 liveData.postData(artistLiveData)
             } catch (e: Exception) {

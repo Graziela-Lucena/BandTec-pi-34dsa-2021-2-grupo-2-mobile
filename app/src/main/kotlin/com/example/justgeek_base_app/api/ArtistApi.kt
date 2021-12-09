@@ -8,9 +8,6 @@ interface ArtistApi {
     @GET("/artists/{idArtista}")
     fun getArtist(@Path("idArtista") idArtista: Int): ArtistData
 
-    @GET("/artist-image/perfil/{idArtista}")
-    fun getProfilePicture(@Path("idArtista") idArtista: Int): String
-
     @GET("/artist-image/images/{idArtista}")
     fun getGallery(@Path("idArtista") idArtista: Int): List<String>
 
