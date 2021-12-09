@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pattern_dark">
+    <Toolbar
+        android:id="@+id/artist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
+        android:title="JustGEEK"
+        android:titleTextColor="@color/pattern_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextAppearance="@style/Logo_Text" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/artist_toolbar"
+        app:layout_constraintEnd_toStartOf="@id/shop"
+        app:layout_constraintTop_toTopOf="@id/artist_toolbar" />
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_xsl"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintBottom_toBottomOf="@id/artist_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/artist_toolbar"
+        app:layout_constraintTop_toTopOf="@id/artist_toolbar" />
+
+    <ImageView
+        android:layout_width="@dimen/spacing_minimum"
+        android:layout_height="@dimen/spacing_zero"
+        android:layout_marginVertical="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:src="@drawable/bg_light_rounded"
+        app:layout_constraintBottom_toBottomOf="@id/artist_toolbar"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/artist_toolbar" />
+
+    <ImageView
+        android:id="@+id/image_art"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/art_camiseta"
+        app:layout_constraintTop_toBottomOf="@id/artist_toolbar"
+        android:layout_marginTop="@dimen/spacing_ml" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        app:layout_constraintStart_toStartOf="@id/divisor_name_artist"
+        app:layout_constraintEnd_toEndOf="@id/divisor_name_artist"
+        app:layout_constraintTop_toBottomOf="@id/image_art"
+        android:text="@string/subtitle_description_art"
+        android:textAlignment="center"
+        style="@style/Exo2_SemiBold_Title_Promotion_Bag"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divisor_name_artist"
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:background="@drawable/bg_hot_blue"
+        android:layout_marginHorizontal="@dimen/spacing_ml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/random"
+        android:layout_width="@dimen/spacing_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@id/divisor_name_artist"
+        app:layout_constraintEnd_toEndOf="@id/divisor_name_artist"
+        app:layout_constraintTop_toBottomOf="@id/divisor_name_artist"
+        android:text="Outras artes deste artista:"
+        android:textAlignment="center"
+        style="@style/Exo2_SemiBold_Title_Toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/random"
+        android:layout_marginTop="@dimen/spacing_ml"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_bottom_navigation"
+        android:text="FAZER PEDIDO"
+        style="@style/Exo2_Semibold_Button_Text"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
