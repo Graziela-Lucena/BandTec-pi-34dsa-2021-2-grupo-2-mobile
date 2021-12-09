@@ -11,13 +11,31 @@
         android:id="@+id/my_coupons_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:titleTextColor="@color/pattern_light"
-        android:title="@string/title_my_coupons"
-        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
         android:background="@color/dark_purple"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_return_order_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_toolbar_nav_icon"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/my_coupons_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/my_coupons_toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_my_coupons_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_my_coupons"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Toolbar"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@+id/ic_return_order_confirm"
+        app:layout_constraintTop_toTopOf="@+id/ic_return_order_confirm"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/apply_coupon_field"
@@ -95,6 +113,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_apply_coupon_back"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:background="@drawable/bg_button_next"

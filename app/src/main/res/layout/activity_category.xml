@@ -24,11 +24,11 @@
         android:src="@drawable/ic_search"
         app:layout_constraintTop_toTopOf="@id/category_toolbar"
         app:layout_constraintBottom_toBottomOf="@id/category_toolbar"
-        app:layout_constraintEnd_toStartOf="@id/shop"
+        app:layout_constraintEnd_toStartOf="@id/ic_cart_category"
         android:layout_marginEnd="@dimen/spacing_sm"/>
 
     <ImageView
-        android:id="@+id/shop"
+        android:id="@+id/ic_cart_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_shop"
@@ -99,6 +99,19 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/spacing_medium"
         android:layout_marginTop="@dimen/spacing_medium"
-        app:layout_constraintTop_toBottomOf="@+id/text_all_products"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_all_products"
+        android:paddingBottom="80dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/dark_purple"
+        app:itemTextColor="@drawable/selector_bottom_navigation"
+        app:itemIconTint="@drawable/selector_bottom_navigation"
+        app:menu="@menu/menu_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

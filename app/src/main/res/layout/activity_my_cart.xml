@@ -12,13 +12,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/dark_purple"
-        app:titleTextColor="@color/pattern_light"
-        app:titleTextAppearance="@style/Exo2_SemiBold_Title_Toolbar"
-        app:title="@string/toolbar_title_cart"
-        app:navigationIcon="@drawable/ic_refuse_transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_close_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refuse_transparent"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_page_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Toolbar"
+        android:text="@string/toolbar_title_cart"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@+id/ic_close_cart"
+        app:layout_constraintTop_toTopOf="@+id/ic_close_cart"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_cart_items"
@@ -97,7 +114,8 @@
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragment_promotion_cart"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:paddingBottom="85dp"/>
 
         </ScrollView>
 

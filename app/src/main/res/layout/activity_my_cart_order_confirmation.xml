@@ -13,12 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/dark_purple"
-        app:title="@string/title_order_confirmation"
-        app:titleTextColor="@color/pattern_light"
-        app:navigationIcon="@drawable/ic_toolbar_nav_icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_back_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_toolbar_nav_icon"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/confirmation_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/confirmation_toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_order_confirmation_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_order_confirmation"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Toolbar"
+        android:textColor="@color/pattern_light"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@+id/ic_back_to_cart"
+        app:layout_constraintTop_toTopOf="@+id/ic_back_to_cart"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icon_help"

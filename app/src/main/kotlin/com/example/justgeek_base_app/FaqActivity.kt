@@ -2,6 +2,7 @@ package com.example.justgeek_base_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.AppCompatImageView
 import com.ms.square.android.expandabletextview.ExpandableTextView
 
 class FaqActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class FaqActivity : AppCompatActivity() {
         val expTvThree: ExpandableTextView = findViewById(R.id.expand_text_return_refund)
         val expTvFour: ExpandableTextView = findViewById(R.id.expand_text_delivery)
         val expTvFive: ExpandableTextView = findViewById(R.id.expand_text_account)
+        val ic_return_to_order_confirmation = findViewById<AppCompatImageView>(R.id.ic_return_to_order_confirmation)
 //
         expTv.setText(getString(R.string.text_faq_answer_option_product_custom))
 //
@@ -24,5 +26,7 @@ class FaqActivity : AppCompatActivity() {
         expTvFour.setText(getString(R.string.text_faq_answer_option_delivery))
 
         expTvFive.setText(getString(R.string.text_faq_answer_option_account))
+
+        ic_return_to_order_confirmation.setOnClickListener { finish() }
     }
 }
