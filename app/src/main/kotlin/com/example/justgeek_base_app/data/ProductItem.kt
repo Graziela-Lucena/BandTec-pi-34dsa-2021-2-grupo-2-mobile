@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes
 import com.google.gson.annotations.SerializedName
 
 class ProductItem (
+    @SerializedName("idProduto")
+    val idProduct: String,
     val discount: String,
     @SerializedName("nomeProduto")
     val name: String,
@@ -11,5 +13,7 @@ class ProductItem (
     val price: String,
     val oldPrice: String,
     @SerializedName("imagens")
-    val productImage: List<String?>?
+    val productImage: List<String?>?,
+    @SerializedName("especificacoes")
+    val description: String
 )
