@@ -11,6 +11,8 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.res.ResourcesCompat
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
 class MyCartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/pattern_dark">
 
     <androidx.appcompat.widget.Toolbar
@@ -80,30 +81,35 @@
             app:layout_constraintTop_toBottomOf="@+id/title_size_product">
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/tamanhoPP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/size_pp"
                 style="@style/CustomChipStyle"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/tamanhoP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/size_p"
                 style="@style/CustomChipStyle"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/tamanhoM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/size_m"
                 style="@style/CustomChipStyle"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/tamanhoG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/size_g"
                 style="@style/CustomChipStyle"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/tamanhoGG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/size_gg"
@@ -135,24 +141,28 @@
             app:layout_constraintStart_toStartOf="@+id/container_color_artist_page"
             app:layout_constraintTop_toTopOf="@+id/container_color_artist_page"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/color_black_artist_request"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:background="@drawable/ic_color_artist_request"
-            app:layout_constraintStart_toStartOf="@+id/title_color_product"
-            app:layout_constraintTop_toBottomOf="@+id/title_color_product"/>
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_color_product">
+            <RadioButton
+                android:id="@+id/color_black_artist_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:button="@drawable/custom_black_shirt" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/color_white_artist_request"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:layout_marginLeft="@dimen/spacing_xs"
-            android:background="@drawable/ic_color_artist_request_white"
-            app:layout_constraintStart_toEndOf="@+id/color_black_artist_request"
-            app:layout_constraintTop_toBottomOf="@+id/title_color_product"/>
+            <RadioButton
+                android:id="@+id/color_white_artist_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:layout_marginLeft="@dimen/spacing_xs"
+                android:button="@drawable/custom_radio_white"/>
+        </RadioGroup>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -178,115 +188,67 @@
             app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
             app:layout_constraintTop_toTopOf="@+id/container_revision_request_artist_page"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/revision_size_request_artist_page"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tamanho"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_medium"
-            android:padding="@dimen/spacing_medium"
-            android:layout_marginStart="@dimen/spacing_medium"
-            android:layout_marginEnd="@dimen/spacing_medium"
-            android:background="@drawable/bg_card_dark"
-            app:layout_constraintTop_toBottomOf="@+id/title_revision_request_product"
-            app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
-            app:layout_constraintEnd_toEndOf="@+id/container_revision_request_artist_page">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/title_revision_request_size_product"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/subtitle_tam_choosed"
-                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
-                android:paddingBottom="@dimen/spacing_xs"
-                app:layout_constraintTop_toTopOf="@+id/revision_size_request_artist_page"
-                app:layout_constraintStart_toStartOf="@+id/revision_size_request_artist_page"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/title_revision_request_color_product"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/subtitle_color_choosed"
-                android:paddingBottom="@dimen/spacing_xs"
-                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
-                app:layout_constraintTop_toBottomOf="@+id/title_revision_request_size_product"
-                app:layout_constraintStart_toStartOf="@+id/title_revision_request_size_product"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/revision_art_request_artist_page"
-            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="@id/title_revision_request_product"
+            app:layout_constraintTop_toBottomOf="@id/title_revision_request_product"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:text="@string/subtitle_size"
+            style="@style/Exo2_Semibold_Title_Showcase"
+            android:textColor="@color/pattern_light"/>
+        <TextView
+            android:id="@+id/cor"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_medium"
-            android:padding="@dimen/spacing_medium"
-            android:layout_marginStart="@dimen/spacing_medium"
-            android:layout_marginEnd="@dimen/spacing_medium"
-            android:background="@drawable/bg_card_dark"
-            app:layout_constraintTop_toBottomOf="@+id/revision_size_request_artist_page"
-            app:layout_constraintStart_toStartOf="@+id/container_revision_request_artist_page"
-            app:layout_constraintEnd_toEndOf="@+id/container_revision_request_artist_page">
+            app:layout_constraintStart_toStartOf="@id/title_revision_request_product"
+            app:layout_constraintTop_toBottomOf="@id/tamanho"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:text="@string/subtitle_color"
+            style="@style/Exo2_Semibold_Title_Showcase"
+            android:textColor="@color/pattern_light"/>
+        <TextView
+            android:id="@+id/artista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/title_revision_request_product"
+            app:layout_constraintTop_toBottomOf="@id/cor"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:text="@string/subtitle_author"
+            style="@style/Exo2_Semibold_Title_Showcase"
+            android:textColor="@color/pattern_light"/>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/revision_request_art"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/subtitle_art_choosed"
-                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
-                android:paddingBottom="@dimen/spacing_xs"
-                app:layout_constraintTop_toTopOf="@+id/revision_art_request_artist_page"
-                app:layout_constraintStart_toStartOf="@+id/revision_art_request_artist_page"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image_art"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/art_camiseta"
-                app:layout_constraintStart_toStartOf="@+id/revision_request_art"
-                app:layout_constraintTop_toBottomOf="@+id/revision_request_art"/>
-
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/revision_request_artist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/subtitle_artist_choosed"
-                android:layout_marginStart="@dimen/spacing_xml"
-                android:textAppearance="@style/Exo2_SemiBold_Title_Promotion_Bag"
-                android:paddingBottom="@dimen/spacing_xs"
-                app:layout_constraintTop_toTopOf="@+id/revision_art_request_artist_page"
-                app:layout_constraintStart_toEndOf="@+id/image_art"/>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image_artist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/artist_image"
-                app:layout_constraintStart_toStartOf="@+id/revision_request_artist"
-                app:layout_constraintTop_toBottomOf="@+id/revision_request_artist"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="@dimen/spacing_zero"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/art_camiseta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tamanho"
+            android:layout_marginStart="@dimen/spacing_ml"
+            android:scaleType="centerCrop"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_button_request"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_finish_request_artist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/spacing_medium"
-        android:background="@drawable/bg_button_next"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:background="@drawable/bg_bottom_navigation"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text_Spaced"
+        android:text="@string/title_button_finish_request"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_back_button"
+        android:textAppearance="@style/Exo2_Semibold_Button_Text_Spaced"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toTopOf="@id/button_finish_request_artist"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_finish_request_artist"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/bg_button_request_artist"
-            android:textAppearance="@style/Exo2_Semibold_Button_Text_Spaced"
-            android:text="@string/title_button_finish_request"
-            app:layout_constraintTop_toTopOf="@+id/container_button_request"/>
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

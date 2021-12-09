@@ -109,8 +109,8 @@
     <string name="title_artist_biography">%1$s</string>
     <string name="title_art_from_artist">Por: %1$s</string>
     <string name="title_similar_artists">ARTSITAS SIMILARES</string>
-    <string name="subtitle_description_art">Arte feita pela artista: %1$s</string>
-    <string name="title_other_arts">OUTRAS ARTES DA %1$s</string>
+    <string name="subtitle_description_art">Arte feita por: %1$s</string>
+    <string name="title_other_arts">OUTRAS ARTES DE %1$s</string>
     <string name="title_button_do_request">FAZER PEDIDO</string>
     <string name="title_choose_tam">Escolha o tamanho da sua camiseta:</string>
     <string name="title_choose_color">Escolha a cor da sua camiseta:</string>
@@ -348,8 +348,9 @@
     <string name="subtitle_shipping_company">Enviado para a transportadora</string>
     <string name="subtitle_in_transport">Em trânsito</string>
     <string name="title_products">Produtos</string>
-    <string name="subtitle_size">Tam: %1$s</string>
+    <string name="subtitle_size">Tamanho: %1$s</string>
     <string name="subtitle_color">Cor: %1$s</string>
+    <string name="subtitle_author" translatable="false">Artista: %1$s</string>
     <string name="subtitle_amount_unity">%1$d unidade</string>
     <string name="title_pay_sleep">Forma de pagamento</string>
     <string name="subtitle_mercado_pago">Mercado pago</string>

@@ -9,13 +9,19 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.justgeek_base_app.adapter.ArtistsAdapter
 import com.example.justgeek_base_app.data.ArtistData
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+import com.example.justgeek_base_app.viewmodel.ArtistViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
+
 import java.util.ArrayList
 
 class ArtistsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_artists)
+
 
         val shop_artists = findViewById<ImageView>(R.id.shop_artists)
         val ic_return_from_artists = findViewById<AppCompatImageView>(R.id.ic_return_from_artists)
@@ -126,13 +132,18 @@ class ArtistsActivity : AppCompatActivity() {
             )
         )
 
+        val viewModel: ArtistViewModel by viewModel()
+
+
         val recycler = findViewById<RecyclerView>(R.id.recycler_artists)
 
-        val adapter = ArtistsAdapter(listArtist)
+        viewModel.getAllArtists().observe(this) {
+            data {
+                recycler.adapter = ArtistsAdapter(it)
+            }
+        }
 
         val layoutManeger = GridLayoutManager(this, 2)
-
-        recycler.adapter = adapter
         recycler.layoutManager = layoutManeger
 
 
