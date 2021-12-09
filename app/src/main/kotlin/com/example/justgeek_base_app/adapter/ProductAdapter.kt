@@ -10,7 +10,7 @@ import com.example.justgeek_base_app.R
 import com.example.justgeek_base_app.data.ProductItem
 import com.squareup.picasso.Picasso
 
-class ProductAdapter(private val productList: List<ProductItem>):  RecyclerView.Adapter<ProductViewHolder>(){
+class ProductAdapter(private val productList: List<ProductItem>, val onClick: (ProductItem) -> Unit):  RecyclerView.Adapter<ProductViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.promotion_product_item, parent, false)
         return ProductViewHolder(itemView)
@@ -23,6 +23,9 @@ class ProductAdapter(private val productList: List<ProductItem>):  RecyclerView.
         holder.name.text = currentItem.name
         holder.price.text = currentItem.price
         holder.oldPrice.text = currentItem.oldPrice
+        holder.productImage.setOnClickListener {
+            onClick.invoke(currentItem)
+        }
     }
 
     override fun getItemCount(): Int = productList.size

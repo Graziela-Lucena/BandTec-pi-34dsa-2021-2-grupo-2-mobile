@@ -126,13 +126,16 @@ class SingUpPasswordFragment: Fragment(R.layout.fragment_sing_up_fifth_step_pass
         buttonNext.setOnClickListener {
             userViewModel.singUpUser(
                 DataUser(
+                    60,
                 passwordArgs.nameUser,
                 passwordArgs.lastNameUser,
                 passwordArgs.cpfUser,
                 passwordArgs.birthdateUser,
                 passwordArgs.emailUser,
                 passwordArgs.phoneUser,
-                password.text.toString()
+                password.text.toString(),
+                    true,
+                    false
             )
             ).observe(viewLifecycleOwner) {
                 data {

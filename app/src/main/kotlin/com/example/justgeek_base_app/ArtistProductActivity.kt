@@ -14,9 +14,9 @@ import com.squareup.picasso.Picasso
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ArtistProductActivity: AppCompatActivity(R.layout.activity_artist_product_page) {
+    val viewModel: ArtistViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val viewModel: ArtistViewModel by viewModel()
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         val img = findViewById<ImageView>(R.id.image_art)
         val title = findViewById<TextView>(R.id.title)
@@ -24,7 +24,9 @@ class ArtistProductActivity: AppCompatActivity(R.layout.activity_artist_product_
         val info = viewModel.getArtist(1).observe(this) {
            data {
                title.text = resources.getString(R.string.subtitle_description_art, it.apelido)
-               recycler.adapter = GalleryAdapter(it.artes)
+               recycler.adapter = GalleryAdapter(it.artes) {
+                   intent.putExtra("pathArtImage", it)
+               }
                Picasso.get().load("path").into(img)
            }
         }

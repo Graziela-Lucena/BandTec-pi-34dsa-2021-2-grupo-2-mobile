@@ -50,4 +50,19 @@ class ProductRepository(private val product: ProductApi) {
         }
         return liveData
     }
+
+    fun rp(productItem: ProductItem): ResponseLiveData<Unit> {
+        val liveData:  MutableResponseLiveData<Unit> = MutableResponseLiveData<Unit>()
+        GlobalScope.launch {
+            try {
+                liveData.postLoading()
+                val idProductLiveData = product.registerProduct(productItem.idProduto, productItem)
+                liveData.postData(idProductLiveData)
+            } catch (e: Exception) {
+                liveData.postError(e)
+            }
+        }
+        return liveData
+    }
+
 }

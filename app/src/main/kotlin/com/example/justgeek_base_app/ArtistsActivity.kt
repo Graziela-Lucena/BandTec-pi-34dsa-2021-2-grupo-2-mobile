@@ -18,6 +18,8 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import java.util.ArrayList
 
 class ArtistsActivity : AppCompatActivity() {
+    val viewModel: ArtistViewModel by viewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_artists)
@@ -73,73 +75,15 @@ class ArtistsActivity : AppCompatActivity() {
             }
         }
 
-        val listArtist : List<ArtistData> = mutableListOf(
-            ArtistData(
-                0,
-                R.drawable.bg_artist,
-                "Graziela Lucena",
-                "Grazi",
-                19,
-                "Biography",
-                true,
-                "grazi@bandtec.com.br",
-                "instagram",
-                "twitter",
-                "cartoon",
-                arrayOf("desenhos", "figma"),
-            ),
-            ArtistData(
-                0,
-                R.drawable.bg_artist,
-                "Taiza Marques",
-                "Tai",
-                20,
-                "Biography",
-                true,
-                "taiza@bandtec.com.br",
-                "instagram",
-                "twitter",
-                "cartoon",
-                arrayOf("desenhos", "figma"),
-            ),
-            ArtistData(
-                0,
-                R.drawable.bg_artist,
-                "Gabriel Santos",
-                "Santos",
-                20,
-                "Biography",
-                true,
-                "gabriel@bandtec.com.br",
-                "instagram",
-                "twitter",
-                "cartoon",
-                arrayOf("desenhos", "figma"),
-            ),
-            ArtistData(
-                0,
-                R.drawable.bg_artist,
-                "Gisele Flor",
-                "Gi",
-                23,
-                "Biography",
-                true,
-                "gisele@bandtec.com.br",
-                "instagram",
-                "twitter",
-                "cartoon",
-                arrayOf("desenhos", "figma"),
-            )
-        )
-
-        val viewModel: ArtistViewModel by viewModel()
 
 
         val recycler = findViewById<RecyclerView>(R.id.recycler_artists)
 
         viewModel.getAllArtists().observe(this) {
             data {
-                recycler.adapter = ArtistsAdapter(it)
+                recycler.adapter = ArtistsAdapter(it) {
+                    startActivity(Intent(this@ArtistsActivity, ArtistProfileActivity::class.java))
+                }
             }
         }
 

@@ -1,18 +1,11 @@
 package com.example.justgeek_base_app
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.TextView
-import android.widget.Toolbar
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.appcompat.widget.AppCompatTextView
-import androidx.core.content.res.ResourcesCompat
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+
 
 class MyCartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

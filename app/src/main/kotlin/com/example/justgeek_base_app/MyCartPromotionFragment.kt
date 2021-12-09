@@ -13,9 +13,10 @@ import com.example.justgeek_base_app.viewmodel.ProductViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MyCartPromotionFragment:Fragment(R.layout.fragment_my_cart_promotion) {
+    val productViewModel: ProductViewModel by viewModel()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val productViewModel: ProductViewModel by viewModel()
 
         val layout = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val itemsCartPromotion = view.findViewById<RecyclerView>(R.id.recycler_promo_cart)

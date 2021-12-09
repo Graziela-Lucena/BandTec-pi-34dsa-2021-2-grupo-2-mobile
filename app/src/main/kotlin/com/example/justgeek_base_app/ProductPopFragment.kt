@@ -12,9 +12,10 @@ import com.example.justgeek_base_app.viewmodel.ProductViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductPopFragment: Fragment(R.layout.fragment_popular) {
+    val productViewModel: ProductViewModel by viewModel()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val productViewModel: ProductViewModel by viewModel()
 
         val showcase = view.findViewById<RecyclerView>(R.id.recycler_promo)
         val layoutManagerPromo = GridLayoutManager(requireContext(), 2)

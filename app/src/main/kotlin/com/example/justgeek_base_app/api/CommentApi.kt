@@ -8,5 +8,5 @@ interface CommentApi{
     @GET("/products/best-rating")
     suspend fun getHomeComments(): List<CommentItem>
     @GET("/products/rating/{idProduto}")
-    suspend fun getProductComments(@Path("idProduto") idProduct: Int): List<CommentItem>
+    suspend fun getProductComments(@Path("idProduto") idProduct: Int): List<CommentItem>?
 }

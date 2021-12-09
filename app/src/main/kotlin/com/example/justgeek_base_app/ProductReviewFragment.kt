@@ -12,9 +12,9 @@ import com.example.justgeek_base_app.viewmodel.CommentViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductReviewFragment(val productId: Int) : Fragment(R.layout.fragment_product_review) {
+    val viewModel: CommentViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val viewModel: CommentViewModel by viewModel()
         val layout = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,
             false)
         val reviews = view.findViewById<RecyclerView>(R.id.recycler_product_reviews)

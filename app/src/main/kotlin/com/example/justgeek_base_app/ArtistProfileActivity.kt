@@ -1,5 +1,6 @@
 package com.example.justgeek_base_app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -13,9 +14,10 @@ import com.squareup.picasso.Picasso
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ArtistProfileActivity : AppCompatActivity(R.layout.activity_artist_profile) {
+    val artistViewModel: ArtistViewModel by viewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val artistViewModel: ArtistViewModel by viewModel()
 
         val image = findViewById<ImageView>(R.id.photo_artist)
         val name = findViewById<TextView>(R.id.name_artist)
@@ -28,7 +30,11 @@ class ArtistProfileActivity : AppCompatActivity(R.layout.activity_artist_profile
                 Picasso.get().load(it.imagemPerfil).into(image)
                 name.text = it.apelido
                 bio.text = it.biografia
-                gallery.adapter = GalleryAdapter(it.artes)
+                gallery.adapter = GalleryAdapter(it.artes) {
+                    startActivity(Intent(this@ArtistProfileActivity, ArtistFormActivity::class.java).apply {
+                        putExtra("imageProduct", it)
+                    })
+                }
             }
         }
 

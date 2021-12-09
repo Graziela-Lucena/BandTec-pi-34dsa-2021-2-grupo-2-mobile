@@ -12,11 +12,10 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import com.example.justgeek_base_app.viewmodel.CategoryViewModel
 
 class CategoryFragment : Fragment(R.layout.fragment_category) {
+    val categoryProductViewModel : CategoryViewModel by viewModel()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val categoryProductViewModel : CategoryViewModel by viewModel()
-
         val showcase = view.findViewById<RecyclerView>(R.id.recycler_category)
         val layoutManagerCategory = GridLayoutManager(requireContext(), 2)
         showcase.layoutManager = layoutManagerCategory

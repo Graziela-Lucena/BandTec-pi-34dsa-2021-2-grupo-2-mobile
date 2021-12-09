@@ -12,15 +12,18 @@ import com.example.justgeek_base_app.viewmodel.ArtistViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ArtistsSimilarFragment:Fragment(R.layout.fragment_artists_similar) {
+    val artistViewModel: ArtistViewModel by viewModel()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val artistViewModel: ArtistViewModel by viewModel()
         val recycler = view.findViewById<RecyclerView>(R.id.recycler_similar_artists)
         val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         artistViewModel.getSimilarArtists(1).observe(viewLifecycleOwner) {
             data {
-                val adapter = ArtistsAdapter(it)
+                val adapter = ArtistsAdapter(it) {
+
+                }
                 recycler.adapter = adapter
             }
         }

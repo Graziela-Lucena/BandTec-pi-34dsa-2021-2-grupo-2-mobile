@@ -12,6 +12,8 @@ class HomePageActivity: AppCompatActivity(R.layout.homepage_activity) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        intent.getIntExtra("idUserExtra", 1)
+
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val iconCart = findViewById<ImageView>(R.id.shop)
 
