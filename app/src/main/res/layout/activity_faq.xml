@@ -12,10 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/dark_purple"
-        android:navigationIcon="@drawable/ic_toolbar_nav_icon"
-        android:title="@string/title_faq_toolbar"
-        android:titleTextColor="@color/pattern_light"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_return_to_order_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_toolbar_nav_icon"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="@+id/faq_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/faq_toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_faq_toolbar"
+        android:textColor="@color/pattern_light"
+        android:textAppearance="@style/Exo2_SemiBold_Title_Toolbar"
+        android:layout_marginStart="@dimen/spacing_medium"
+        app:layout_constraintStart_toEndOf="@+id/ic_return_to_order_confirmation"
+        app:layout_constraintTop_toTopOf="@+id/ic_return_to_order_confirmation"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/showcase_faq"
