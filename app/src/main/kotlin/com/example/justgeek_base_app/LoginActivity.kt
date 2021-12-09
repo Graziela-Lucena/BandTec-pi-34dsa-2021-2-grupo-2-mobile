@@ -3,19 +3,24 @@ package com.example.justgeek_base_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.service.autofill.UserData
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
+import com.example.justgeek_base_app.data.DataUser
 import com.example.justgeek_base_app.retrofit.ApiInterface
 import com.example.justgeek_base_app.retrofit.RetrofitInstance
 import com.example.justgeek_base_app.data.SignInBody
+import com.example.justgeek_base_app.viewmodel.UserViewModel
 import okhttp3.ResponseBody
+import org.koin.android.viewmodel.ext.android.viewModel
 import retrofit2.Response
 
 class LoginActivity: AppCompatActivity(R.layout.activity_main_login) {
+    val userViewModel: UserViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val singUpButton = findViewById<AppCompatButton>(R.id.button_sign_up)
@@ -53,8 +58,32 @@ class LoginActivity: AppCompatActivity(R.layout.activity_main_login) {
             }
             override fun onResponse(call: retrofit2.Call<ResponseBody>, response: Response<ResponseBody>) {
                 if (response.code() == 200) {
+                userViewModel.getUser(1).observe(this@LoginActivity) {
+                        data {
+                            com.example.justgeek_base_app.data.UserData.userId = it.idUser
+                            if(it.isFirstAccess == true) {
+                                startActivity(Intent(this@LoginActivity, TutorialAccessFirst::class.java))
+                                userViewModel.updateUserInfo(it.idUser, DataUser(
+                                    it.idUser,
+                                    it.name,
+                                    it.lastName,
+                                    it.cpf,
+                                    it.birthDate,
+                                    it.userEmail,
+                                    it.cellphone,
+                                    it.password,
+                                    false,
+                                    it.isFirstPurchase
+                                ))
+
+                            } else {
+                                val intent = Intent(this@LoginActivity, HomePageActivity::class.java)
+                                intent.putExtra("idUserExtra", it.idUser)
+                                startActivity(intent)
+                            }
+                        }
+                    }
                     Toast.makeText(this@LoginActivity, "Login success!", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@LoginActivity, TutorialAccessFirst::class.java))
                 } else {
                     Toast.makeText(this@LoginActivity, "Login failed!", Toast.LENGTH_SHORT).show()
                 }

@@ -11,7 +11,7 @@ import com.example.justgeek_base_app.data.ArtistData
 import com.example.justgeek_base_app.data.ProductItem
 import com.squareup.picasso.Picasso
 
-class ArtistsAdapter(private val artistList: List<ArtistData>):  RecyclerView.Adapter<ArtistViewHolder>(){
+class ArtistsAdapter(private val artistList: List<ArtistData>, val onClick: (ArtistData) -> Unit):  RecyclerView.Adapter<ArtistViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArtistViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.artist_item, parent, false)
         return ArtistViewHolder(itemView)
@@ -22,6 +22,9 @@ class ArtistsAdapter(private val artistList: List<ArtistData>):  RecyclerView.Ad
         Picasso.get().load(currentItem.imagemPerfil).into(holder.artistImage)
         holder.description.text = currentItem.biografia
         holder.name.text = currentItem.nomeCompleto
+        holder.artistImage.setOnClickListener {
+            onClick.invoke(currentItem)
+        }
     }
 
     override fun getItemCount(): Int = artistList.size

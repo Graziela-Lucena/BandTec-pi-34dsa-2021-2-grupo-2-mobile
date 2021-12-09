@@ -19,24 +19,21 @@ import com.example.justgeek_base_app.viewmodel.ProductViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductActivity : AppCompatActivity(R.layout.activity_product) {
+    val productViewModel: ProductViewModel by viewModel()
+    val ratingViewModel: CommentViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val productViewModel: ProductViewModel by viewModel()
-        val ratingViewModel: CommentViewModel by viewModel()
         val productName = findViewById<TextView>(R.id.title_name_product)
         val productPrice = findViewById<TextView>(R.id.product_price)
         val oldProductPrice = findViewById<TextView>(R.id.product_old_price)
         val installment = findViewById<TextView>(R.id.text_installment)
         val averageRate = findViewById<TextView>(R.id.text_average)
         val pageIndicator = findViewById<TextView>(R.id.pointer_image)
-
-//        val idProduct = intent.getIntExtra("idProduto", 2)
-          val idProduct = 1
-
+        val extra = intent.getIntExtra("idProductExtra", 1)
         val recyclerViewImages = findViewById<RecyclerView>(R.id.product_image)
 
         recyclerViewImages.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        productViewModel.getProductById(idProduct).observe(this) {
+        productViewModel.getProductById(extra).observe(this) {
             data{
                 recyclerViewImages.adapter = ProductImageAdapter(it.productImage)
                 productName.text = it.name
@@ -51,7 +48,7 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
             }
         }
 
-        ratingViewModel.getProductComments(idProduct).observe(this) {
+        ratingViewModel.getProductComments(extra).observe(this) {
             data {
                 val list = it
                 val listSize = it.size
@@ -70,6 +67,7 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
         }
 
         PagerSnapHelper().attachToRecyclerView(recyclerViewImages)
+
 
         val btn_add_to_cart = findViewById<AppCompatButton>(R.id.button_add_to_cart)
 
@@ -154,7 +152,7 @@ class ProductActivity : AppCompatActivity(R.layout.activity_product) {
         val fragmentTransactionWithoutAddress = supportFragmentManager.beginTransaction()
         val withoutAddressItem = WithoutAddressFragment()
         val fragmentTransactionReview = supportFragmentManager.beginTransaction()
-        val reviewFragment = ProductReviewFragment(idProduct)
+        val reviewFragment = ProductReviewFragment(extra)
 
         fragmentTransactionWithoutAddress.add(R.id.fragment_address_request, withoutAddressItem)
         fragmentTransactionWithoutAddress.commit()

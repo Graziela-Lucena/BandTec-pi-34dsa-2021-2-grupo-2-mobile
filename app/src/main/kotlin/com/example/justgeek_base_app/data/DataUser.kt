@@ -3,6 +3,8 @@ package com.example.justgeek_base_app.data
 import com.google.gson.annotations.SerializedName
 
 data class DataUser (
+    @SerializedName("idUsuario")
+    val idUser: Int,
     @SerializedName("nome")
     val name: String,
     @SerializedName("sobrenome")
@@ -15,5 +17,9 @@ data class DataUser (
     @SerializedName("celular")
     val cellphone: String,
     @SerializedName("senha")
-    val password: String
+    val password: String,
+    @SerializedName("primeiroAcesso")
+    var isFirstAccess: Boolean? = null,
+    @SerializedName("primeiraCompra")
+    val isFirstPurchase: Boolean
 )

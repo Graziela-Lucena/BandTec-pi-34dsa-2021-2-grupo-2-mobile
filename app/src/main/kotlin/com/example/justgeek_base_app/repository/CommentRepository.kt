@@ -27,7 +27,7 @@ class CommentRepository(private val product: CommentApi) {
             try {
                 liveData.postLoading()
                 val productLiveData = product.getProductComments(idProduct)
-                liveData.postData(productLiveData)
+                liveData.postData(productLiveData ?: listOf())
             } catch (e: Exception) {
                 liveData.postError(e)
             }
